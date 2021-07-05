@@ -1,11 +1,18 @@
-import { Navbar, Nav, Button, NavDropdown, FormControl } from "react-bootstrap";
+import { Navbar, Nav, Button, NavDropdown, FormControl, Container } from "react-bootstrap";
 import Form from 'react-bootstrap/Form'
 
 const NavBar = () => {
     return (
-        <Navbar bg="dark" variant="dark">
+        <Navbar class="nav" bg="dark" variant="dark">
 
-            <Navbar.Brand href="/">Home</Navbar.Brand>
+            <Navbar.Brand href="/"> <img
+                src="/cinema logo.png"
+                width="150"
+                height="50"
+                className="d-inline-block align-top"
+                alt="React Bootstrap logo"
+            />
+            </Navbar.Brand>
             <Navbar.Toggle aria-controls="basic-navbar-nav" />
             <Navbar.Collapse id="basic-navbar-nav">
                 <Nav className="me-auto">
@@ -33,7 +40,9 @@ const NavBar = () => {
                     />
                     <Button variant="outline-success">Search</Button>
                 </Form>
+
             </Navbar.Collapse>
+
 
 
 
