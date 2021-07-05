@@ -1,12 +1,12 @@
 import { Navbar, Nav, Button, NavDropdown, FormControl, Container } from "react-bootstrap";
 import Form from 'react-bootstrap/Form'
-
+import Logo from './img/Logo.png'
 const NavBar = () => {
     return (
         <Navbar class="nav" bg="dark" variant="dark">
 
             <Navbar.Brand href="/"> <img
-                src="/cinema logo.png"
+                src={Logo}
                 width="150"
                 height="50"
                 className="d-inline-block align-top"
