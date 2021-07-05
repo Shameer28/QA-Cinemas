@@ -57,4 +57,19 @@ router.get("/get/:id", async (req, res) => {
 	}
 })
 
+router.post("/create", async (req, res) => {
+	// TODO: Change this so that we deconstruct the object instead of directly passing it to the db
+	const data = req.body;
+
+	try {
+		const film = new Film(data); 
+	
+		await film.save();
+	
+		res.send(film);
+	} catch (e) {
+		res.status(404).send(e.name + ': ' + e.message);
+	}
+});
+
 module.exports = router;
