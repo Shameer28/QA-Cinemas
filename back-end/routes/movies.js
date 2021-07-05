@@ -20,6 +20,7 @@ const router = express.Router();
 
 */
 
+const FilmDB = require("./../models/films")
 
 const tempData = {
 	_id: "123123123123123",
