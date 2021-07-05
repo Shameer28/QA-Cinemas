@@ -36,15 +36,25 @@ const tempData = {
 	plot: "Some info"
 }
 
-
-router.get("/getAll", (req, res) => {
-	res.send([tempData]);
+router.get("/getAll", async (req, res) => {
+	const data = []
+	await FilmDB.find({ "title": true }, (err, films) => {
+		if (err) {
+			res.status(505).send(err.message);
+		} else {
+			res.send(films);
+		}
+	});
 });
 
-router.get("/get/:id", (req, res) => {
-	const id = req.params.id;
+router.get("/get/:id", async (req, res) => {
+	try {
+		const film = await FilmDB.findById(req.params.id);
+		res.send(film);
 
-	res.send(tempData);
-});
+	} catch {
+		res.status(404).send("No film found");
+	}
+})
 
 module.exports = router;
