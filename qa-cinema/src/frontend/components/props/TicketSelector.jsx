@@ -1,6 +1,6 @@
 const TicketSelector = (props) => {
 
-    // Get All Data () .select only showingTimes
+    // Get All .select only showingTimes & title
     // Axios
     const data = [{"id":-1, "Title":"Detective", "ShowTimes":[81452812842129,20]},{"id":2, "Title":"Picka", "ShowTimes":[81452812842129]}];
 
@@ -11,21 +11,12 @@ const TicketSelector = (props) => {
         })
     })
 
-    console.log(slots);
-
     const {getCart, setCart} = props;
-
-    let timings = (<div></div>)
     
     const handleSubmit = (e) => {
         e.preventDefault();
         console.log("submited");
-        console.log(e);
-        console.log(getCart)
     }
-
-
-    
 
     return (      
     <div>

@@ -4,7 +4,7 @@ import TicketSelector from "./TicketSelector";
 
 const PurchaseManager = () => {
 
-    const [getCart, setCart] = useState({id:0});
+    const [getCart, setCart] = useState({});
 
     return ( 
     <div>
