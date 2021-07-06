@@ -1,10 +1,10 @@
 import Container from 'react-bootstrap/Container'
 import Row from 'react-bootstrap/Row'
 import Col from 'react-bootstrap/Col'
-import Carousels from './props/Carousel';
-import image1 from './img/BlackWidow.jpg'
-import image2 from './img/Fast9.jpg'
-import image3 from './img/JamesBond.jpg'
+import Carousels from './Carousel';
+import image1 from './../img/BlackWidow.jpg'
+import image2 from './../img/Fast9.jpg'
+import image3 from './../img/JamesBond.jpg'
 
 const HomePage = () => {
     return (
