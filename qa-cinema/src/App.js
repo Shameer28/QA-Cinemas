@@ -11,6 +11,7 @@ import PlacesToGo from './components/PlacesToGo';
 import DiscussionBoard from './components/DiscussionBoard';
 import AboutPage from './components/AboutPage';
 import ContactPage from './components/ContactPage';
+import GettingThere from './components/GettingThere';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import RecentMoviesPage from './components/RecentMoviePage';
 
@@ -43,10 +44,10 @@ function App() {
         <Route path="/placestogo">
           <PlacesToGo />
         </Route>
-        {/* 
-        <Route path="/gettingthere"> //HAARIS
-
-        </Route> */}
+        
+        <Route path="/gettingthere"> 
+          <GettingThere/>
+        </Route>
 
         <Route path="/discussionboard">
           <DiscussionBoard />
