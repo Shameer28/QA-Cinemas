@@ -12,8 +12,8 @@ const Payment = (props) => {
                 <label htmlFor="CardNumber" >Card Number:</label><br/>
                 <input type="number" id="CardNumber" /><br/>
 
-                <label htmlFor="ExpiryData" >Child:</label><br/>
-                <input type="text" id="ExpiryData" /><br/>
+                <label htmlFor="ExpiryDate" >Expiry Date:</label><br/>
+                <input type="text" id="ExpiryDate" /><br/>
 
                 <label htmlFor="CVC" >CVC:</label><br/>
                 <input type="number" id="CVC" /><br/>

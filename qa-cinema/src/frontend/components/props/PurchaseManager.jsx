@@ -7,7 +7,7 @@ const PurchaseManager = () => {
     const [getCart, setCart] = useState({});
 
     return ( 
-    <div>
+    <div className="text-center">
         <TicketSelector getCart={getCart} setCart={setCart}/>
 
         <br/> {/* Add Cart? Prop that looks pretty with itemz? */}
