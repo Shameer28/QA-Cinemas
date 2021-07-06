@@ -1,9 +1,12 @@
 import GoogleMapReact from 'google-map-react';
 import Marker from './Marker'
+import ApiKey from './../api.json'
 const GoogleMaps = () => {
-    return ( <div style={{ height: '800px', width: '100%' }}>
+    
+    return (<div style={{ height: '800px', width: '100%' }}>
+        
     <GoogleMapReact
-        bootstrapURLKeys={{ key: "AIzaSyAsZATOk3fWHMx7kVUlDbqQzbozoGdMev8" }}
+        bootstrapURLKeys={{ key: ApiKey.Api.api }}
         defaultCenter={{
             lat: 53.47566305627514,
             lng: -2.241819282720947
