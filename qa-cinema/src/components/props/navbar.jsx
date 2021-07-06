@@ -1,6 +1,6 @@
-import { Navbar, Nav, Button, NavDropdown, FormControl, Container } from "react-bootstrap";
+import { Navbar, Nav, Button, NavDropdown, FormControl } from "react-bootstrap";
 import Form from 'react-bootstrap/Form'
-import Logo from './img/Logo.png'
+import Logo from '../img/Logo.png';
 const NavBar = () => {
     return (
         <Navbar class="nav" bg="dark" variant="dark">
@@ -18,16 +18,16 @@ const NavBar = () => {
                 <Nav className="me-auto">
                     <NavDropdown title="Movies" id="basic-nav-dropdown">
                         <NavDropdown.Item
-                            href="/listinggallery">Now Showing</NavDropdown.Item>
+                            href="/nowshowing">Now Showing</NavDropdown.Item>
                         <NavDropdown.Item
                             href="/newreleases">New Releases</NavDropdown.Item>
                     </NavDropdown>
                     <Nav.Link href="/openingtimes">Opening Times</Nav.Link>
-                    <Nav.Link href="#pricing">Classifcations</Nav.Link>
+                    <Nav.Link href="/classification">Classifcations</Nav.Link>
                     <Nav.Link href="/ticketbookings">Bookings</Nav.Link>
                     <Nav.Link href="/placestogo">Places to Go </Nav.Link>
-                    <Nav.Link href="gettingthere">Getting There</Nav.Link>
-                    <Nav.Link href="/dicussionboard">Discussion Board</Nav.Link>
+                    <Nav.Link href="/gettingthere">Getting There</Nav.Link>
+                    <Nav.Link href="/discussionboard">Discussion Board</Nav.Link>
                     <Nav.Link href="/aboutpage">About Us</Nav.Link>
                     <Nav.Link href="/contactpage">Contact Us</Nav.Link>
                 </Nav>

@@ -49,7 +49,11 @@ const filmSchema = new Schema({
 	actors: [actors],
 	showTimes: [{
 		type: String,
-	}]
+	}],
+	releaseData: {
+		type: Number,
+		require: true,
+	}
 });
 
 module.exports = mongoose.model("Films", filmSchema);

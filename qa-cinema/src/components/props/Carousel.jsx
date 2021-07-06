@@ -1,7 +1,7 @@
 import Carousel from 'react-bootstrap/Carousel'
-import image1 from './img/BlackWidow.jpg'
-import image2 from './img/Fast9.jpg'
-import image3 from './img/JamesBond.jpg'
+import image1 from '../img/BlackWidow.jpg'
+import image2 from '../img/Fast9.jpg'
+import image3 from '../img/JamesBond.jpg'
 import Image from 'react-bootstrap/Image'
 const Carousels = () => {
     return (
