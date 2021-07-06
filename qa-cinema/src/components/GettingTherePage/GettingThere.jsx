@@ -8,11 +8,11 @@ const GettingThere = () => {
     return (
         <Container>
             <h1><u>Getting There</u></h1>
-            <Slideshow/>
-            
+            <Slideshow />
+
             <h2>Map</h2>
             <GoogleMaps />
-            
+
 
 
             <h2><u>Address</u></h2>
@@ -29,11 +29,11 @@ const GettingThere = () => {
             <h3><u>Train</u></h3>
             <p>41 CrossingCity</p>
 
-            
+
             <h2><u>Parking</u></h2>
             <p>Pay and Display: All fuel types: £6 per hour (£3 per half hour, £1.50 for 15mins) </p>
-            
-            
+
+
         </Container >
     )
 }

@@ -3,34 +3,34 @@ import PosterLink from "./PosterLink";
 
 import axios from "axios";
 
-import {useState, useEffect} from "react";
+import { useState, useEffect } from "react";
 
-const ListMovies = (  {url, sort} ) => {
+const ListMovies = ({ url, sort }) => {
 
 	const [data, setData] = useState([]);
 	const [err, setError] = useState("");
 	const [loading, setLoading] = useState(true);
 
 	const getData = () => {
-		axios.get(url).then( (resp) => {
-			
+		axios.get(url).then((resp) => {
+
 			let info = resp.data;
-			
+
 			if (sort) {
 				// sort the info here
 			}
-			
+
 			setLoading(false);
 			setData(info);
-		}).catch( (err) => {
+		}).catch((err) => {
 			setLoading(false);
 			setError(err);
 		});
 	}
 
 	useEffect(() => {
-        getData();
-    }, []);
+		getData();
+	}, []);
 
 	if (loading) {
 		return <p>Loading</p>
@@ -46,5 +46,5 @@ const ListMovies = (  {url, sort} ) => {
 		{data.map(x => <PosterLink image={x.image} _id={x._id} />)}
 	</div>);
 }
- 
+
 export default ListMovies;

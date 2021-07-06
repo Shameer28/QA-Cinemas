@@ -2,18 +2,15 @@ import Image from 'react-bootstrap/Image'
 import Row from 'react-bootstrap/Row'
 import Col from 'react-bootstrap/Col'
 import Container from 'react-bootstrap/Container'
-import image2 from './img/christophers.jpg'
-import image1 from './img/christopher2.jpg'
-import image3 from './img/christophers3.jpg'
-import image4 from './img/MirrorBar.jpg'
-import image5 from './img/MirrorBar2.jpg'
-import image6 from './img/MirrorBar3.jpg'
-import image7 from './img/Namco.jpg'
-import image8 from './img/Namco2.jpg'
-import image9 from './img/Namco3.jpg'
-
-
-
+import image2 from './../img/christophers.jpg'
+import image1 from './../img/christopher2.jpg'
+import image3 from './../img/christophers3.jpg'
+import image4 from './../img/MirrorBar.jpg'
+import image5 from './../img/MirrorBar2.jpg'
+import image6 from './../img/MirrorBar3.jpg'
+import image7 from './../img/Namco.jpg'
+import image8 from './../img/Namco2.jpg'
+import image9 from './../img/Namco3.jpg'
 
 const PlacesToGo = () => {
     return (
@@ -24,13 +21,13 @@ const PlacesToGo = () => {
                 <h5>Christophers</h5>
                 <Row>
                     <Col xs={6} md={4}>
-                        <Image src={image1} alt="Christophers Building Photo" thumbnail />
+                        <Image src={image1} width="100%" height="100%" alt="Christophers Building Photo" thumbnail />
                         <p><b>Open Hours: 11AM - 12AM</b></p>
                         <p><b>Venue Description:</b><br />
                             Classic all-day American steakhouse and grill plus martini cocktail bar in high-ceilinged rooms. </p>
                     </Col>
                     <Col xs={6} md={4}>
-                        <Image src={image3} alt="Christophers Food Photo" thumbnail />
+                        <Image src={image3} width="100%" height="100%" alt="Christophers Food Photo" thumbnail />
                         <p><b>Offers:</b><br />
                             <ul>
                                 <li>Get 25% off with your cinema ticket, if you dine with us</li>
@@ -38,7 +35,7 @@ const PlacesToGo = () => {
                             </ul> </p>
                     </Col>
                     <Col xs={6} md={4}>
-                        <Image src={image2} alt="Christophers Dining Decor" thumbnail />
+                        <Image src={image2} width="100%" height="100%" alt="Christophers Dining Decor" thumbnail />
                         <p><b>Contact Details:</b><br />
                             Phone: 020 7240 4222 <br />
                             Email: christophersgrill@live.com</p>

@@ -3,7 +3,7 @@ import Form from 'react-bootstrap/Form'
 import Logo from '../img/Logo.png';
 const NavBar = () => {
     return (
-        <Navbar class="nav" bg="dark" variant="dark">
+        <Navbar className="nav" bg="dark" variant="dark">
 
             <Navbar.Brand href="/" id="navlogo"> <img
                 src={Logo}
