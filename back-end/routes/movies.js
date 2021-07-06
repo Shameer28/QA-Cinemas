@@ -33,7 +33,8 @@ const tempData = {
 	showingTimes : [
 
 	],
-	plot: "Some info"
+	plot: "Some info",
+	releaseDate: 100,
 }
 
 router.get("/getAll", async (req, res) => {
@@ -42,7 +43,9 @@ router.get("/getAll", async (req, res) => {
 		if (err) {
 			res.status(505).send(err.message);
 		} else {
-			res.send(films);
+			res.send([tempData]);
+
+			// res.send(films);
 		}
 	});
 });
