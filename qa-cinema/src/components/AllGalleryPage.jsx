@@ -1,5 +1,5 @@
-
 import ListMovies from "./props/ListMovies"
+
 
 const AllGalleryPage = () => {
     return (<div>
@@ -7,4 +7,5 @@ const AllGalleryPage = () => {
         <ListMovies url="http://localhost:3000/movies/getAll"/>
     </div>);
 }
+
 export default AllGalleryPage;
