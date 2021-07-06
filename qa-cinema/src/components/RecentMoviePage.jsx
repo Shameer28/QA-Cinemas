@@ -4,9 +4,8 @@ import PosterLink from "./props/PosterLink";
 import ListMovies from "./props/ListMovies"
 
 const RecentMoviesPage = () => {
-
 	const sortFunc = (a, b) => {
-		return a > b;
+		return a.releaseDate > b.releaseDate;
 	}
 
     return (<div>
