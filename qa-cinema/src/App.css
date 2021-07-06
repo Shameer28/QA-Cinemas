@@ -44,4 +44,10 @@
   overflow: hidden;
 }
 
+#navsearch{
+  padding-right: 20px;
+}
 
+#navlogo{
+  padding-left: 20px;
+}
