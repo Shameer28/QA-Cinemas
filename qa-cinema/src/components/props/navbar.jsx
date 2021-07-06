@@ -1,6 +1,6 @@
 import { Navbar, Nav, Button, NavDropdown, FormControl, Container } from "react-bootstrap";
 import Form from 'react-bootstrap/Form'
-import Logo from './img/Logo.png'
+import Logo from '../img/Logo.png';
 const NavBar = () => {
     return (
         <Navbar class="nav" bg="dark" variant="dark">
