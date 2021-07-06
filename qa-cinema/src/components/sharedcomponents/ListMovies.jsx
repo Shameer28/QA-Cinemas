@@ -3,7 +3,7 @@ import PosterLink from "./PosterLink";
 
 import movieUtils from "./../../utils/movies";
 
-import {useState, useEffect} from "react";
+import { useState, useEffect } from "react";
 
 const ListMovies = (  {sort} ) => {
 
@@ -31,14 +31,14 @@ const ListMovies = (  {sort} ) => {
 	useEffect(() => {
 		movieUtils.getAll().then( (resp) =>{
 			let info = resp.data;
-			
+
 			if (sort) {
 				// sort the info here
 			}
 
 			setLoading(false);
 			setData(info);
-		}).catch( (err) => {
+		}).catch((err) => {
 			setLoading(false);
 			setError(err);
 		})
@@ -61,5 +61,5 @@ const ListMovies = (  {sort} ) => {
 		{data.map(x => <PosterLink image={x.image} _id={x._id} />)}
 	</div>);
 }
- 
+
 export default ListMovies;
