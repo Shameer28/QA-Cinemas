@@ -5,7 +5,7 @@ const NavBar = () => {
     return (
         <Navbar class="nav" bg="dark" variant="dark">
 
-            <Navbar.Brand href="/"> <img
+            <Navbar.Brand href="/" id="navlogo"> <img
                 src={Logo}
                 width="150"
                 height="50"
@@ -31,7 +31,7 @@ const NavBar = () => {
                     <Nav.Link href="/aboutpage">About Us</Nav.Link>
                     <Nav.Link href="/contactpage">Contact Us</Nav.Link>
                 </Nav>
-                <Form className="d-flex">
+                <Form className="d-flex" id="navsearch">
                     <FormControl
                         type="search"
                         placeholder="Search"
