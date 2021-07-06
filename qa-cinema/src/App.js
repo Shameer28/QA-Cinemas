@@ -11,6 +11,10 @@ import PlacesToGo from './components/PlacesToGo';
 import DiscussionBoard from './components/DiscussionBoard';
 import AboutPage from './components/AboutPage';
 import ContactPage from './components/ContactPage';
+import ReviewAddPage from './components/ReviewAddPage';
+
+
+
 import 'bootstrap/dist/css/bootstrap.min.css';
 
 function App() {
@@ -47,9 +51,13 @@ function App() {
 
         </Route> */}
 
+		<Route path="/reviews">
+          <ReviewAddPage/>
+        </Route>
         <Route path="/discussionboard">
           <DiscussionBoard />
         </Route>
+
 
         <Route path="/aboutpage">
           <AboutPage />

@@ -39,7 +39,7 @@ const tempData = {
 
 router.get("/getAll", async (req, res) => {
 	const data = []
-	await FilmDB.find({ "title": true }, (err, films) => {
+	await FilmDB.find({ "title": true, "image": true}, (err, films) => {
 		if (err) {
 			res.status(505).send(err.message);
 		} else {

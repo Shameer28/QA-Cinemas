@@ -1,6 +1,3 @@
-import axios from "axios";
-import PosterLink from "./props/PosterLink";
-
 import ListMovies from "./props/ListMovies"
 
 const RecentMoviesPage = () => {
@@ -10,7 +7,7 @@ const RecentMoviesPage = () => {
 
     return (<div>
         <h1>RecentMovies</h1>
-        <ListMovies url="http://localhost:3000/movies/getAll" sort = {sortFunc}/>
+        <ListMovies sort = {sortFunc}/>
     </div>);
 }
  

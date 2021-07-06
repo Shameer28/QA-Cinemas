@@ -42,10 +42,6 @@ const NavBar = () => {
                 </Form>
 
             </Navbar.Collapse>
-
-
-
-
         </Navbar>
     );
 }
