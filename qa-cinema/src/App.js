@@ -12,6 +12,7 @@ import DiscussionBoard from './components/DiscussionBoard';
 import AboutPage from './components/AboutPage';
 import ContactPage from './components/ContactPage';
 import 'bootstrap/dist/css/bootstrap.min.css';
+import RecentMoviesPage from './components/RecentMoviePage';
 
 function App() {
   return (
@@ -27,9 +28,9 @@ function App() {
           <AllGalleryPage />
         </Route>
 
-        {/* <Route path="/newreleases">//OLIVER
-
-        </Route> */}
+        <Route path="/newreleases">
+			<RecentMoviesPage/>
+		</Route>
 
         <Route path="/openingtimes">
           <OpeningTimesPage />
