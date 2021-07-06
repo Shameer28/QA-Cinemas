@@ -42,7 +42,7 @@ router.get("/getAll", async (req, res) => {
 		if (err) {
 			res.status(505).send(err.message);
 		} else {
-			res.send(films);
+			res.send([tempData]);
 		}
 	});
 });
