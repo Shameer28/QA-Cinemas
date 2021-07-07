@@ -47,27 +47,29 @@ const Email = () => {
     }
     return (
         <Container>
-            <h3> Please fill out the form to submit a request</h3>
-            <br></br>
-            <Form onSubmit={handleSubmit} >
-                <Form.Group>
-                    <Form.Label><u>Email address</u></Form.Label>
-                    <Form.Control id="Email" type="email" className="form-control" placeholder="name@example.com" value={Email} pattern="/^[a-zA-Z0-9.!#$%&’*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*$/"
-                        required onChange={(e) => { setEmail(e.target.value) }} />
-                </Form.Group>
-                <Form.Group >
-                    <Form.Label>First Name</Form.Label>
-                    <Form.Control id="FirstName" type="text" className="form-control" required minLength={3} placeholder="First Name" value={FirstName} onChange={(e) => { setFirstName(e.target.value) }} />
+            
+                <h3> Please fill out the form to submit a request</h3>
+                <br></br>
+                <Form onSubmit={handleSubmit} >
+                    <Form.Group>
+                        <Form.Label><u>Email address</u></Form.Label>
+                        <Form.Control id="Email" type="email" className="form-control" placeholder="name@example.com" value={Email} pattern="/^[a-zA-Z0-9.!#$%&’*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*$/"
+                            required onChange={(e) => { setEmail(e.target.value) }} />
+                    </Form.Group>
+                    <Form.Group >
+                        <Form.Label>First Name</Form.Label>
+                        <Form.Control id="FirstName" type="text" className="form-control" required minLength={3} placeholder="First Name" value={FirstName} onChange={(e) => { setFirstName(e.target.value) }} />
 
-                    <Form.Label>Last Name</Form.Label>
-                    <Form.Control id="LastName" type="text" className="form-control" required minLength={3} placeholder="Last Name" value={LastName} onChange={(e) => { setLastName(e.target.value) }} />
-                </Form.Group>
-                <Form.Group >
-                    <Form.Label>Message</Form.Label>
-                    <Form.Control id="TextArea" as="textarea" className="form-control" required minLength={3} rows={3} value={TextArea} onChange={(e) => { setTextArea(e.target.value) }} />
-                </Form.Group>
-                <button type="submit"> submit</button>
-            </Form>
+                        <Form.Label>Last Name</Form.Label>
+                        <Form.Control id="LastName" type="text" className="form-control" required minLength={3} placeholder="Last Name" value={LastName} onChange={(e) => { setLastName(e.target.value) }} />
+                    </Form.Group>
+                    <Form.Group >
+                        <Form.Label>Message</Form.Label>
+                        <Form.Control id="TextArea" as="textarea" className="form-control" required minLength={3} rows={3} value={TextArea} onChange={(e) => { setTextArea(e.target.value) }} />
+                    </Form.Group>
+                    <button type="submit"> submit</button>
+                </Form>
+            
         </Container>
     );
 }
