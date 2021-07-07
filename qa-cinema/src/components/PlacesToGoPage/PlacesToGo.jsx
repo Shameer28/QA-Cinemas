@@ -1,6 +1,7 @@
 import Image from 'react-bootstrap/Image'
 import Row from 'react-bootstrap/Row'
 import Col from 'react-bootstrap/Col'
+import './PlacesToGoPage.css'
 import image2 from './../img/christophers.jpg'
 import image1 from './../img/christopher2.jpg'
 import image3 from './../img/christophers3.jpg'
@@ -13,7 +14,7 @@ import image9 from './../img/Namco3.jpg'
 
 const PlacesToGo = () => {
     return (
-        <div>
+        <div className="pldiv">
             <h3>Places To Go</h3><br />
             <h4>Here Are Some Local Venues to Checkout!</h4><br />
 

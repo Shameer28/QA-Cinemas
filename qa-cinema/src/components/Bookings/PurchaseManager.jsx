@@ -5,14 +5,15 @@ import TicketSelector from "./TicketSelector";
 const PurchaseManager = () => {
 
     const [getCart, setCart] = useState({});
+    const [getPage, setPage] = useState("TicketSelector")
 
     return ( 
     <div className="text-center">
-        <TicketSelector getCart={getCart} setCart={setCart}/>
-
-        <br/> {/* Add Cart? Prop that looks pretty with itemz? */}
-
-        <Payment cart={getCart}/> {/*Maybe a Button to new page*/}
+        {getPage=="TicketSelector" ? (
+        <TicketSelector setPage={setPage} getCart={getCart} setCart={setCart} url="http://localhost:3000/movies/"/>
+        ) : (
+        <Payment setPage={setPage} cart={getCart}/>
+        )}
     </div> 
     );
 }
