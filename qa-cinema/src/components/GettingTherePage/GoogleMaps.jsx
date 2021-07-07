@@ -18,6 +18,13 @@ const GoogleMaps = () => {
                 name="Marker"
                 color="red"
             />
+
+            <Marker
+                lat={53.47486984108448}
+                lng={-2.286237866636726}
+                name="Marker"
+                color="red"
+            />
         </GoogleMapReact>
     </div>);
 }
