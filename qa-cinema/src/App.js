@@ -8,7 +8,10 @@ import AllGalleryPage from './components/AllGalleryPage/AllGalleryPage';
 import OpeningTimesPage from './components/OpeningTimesPage/OpeningTimesPage';
 import Classification from './components/ClassificationPage/Classification';
 import PlacesToGo from './components/PlacesToGoPage/PlacesToGo';
-import DiscussionBoard from './components/DiscussionBoard';
+
+import DiscussionBoard from './components/DiscussionPage/DiscussionBoard';
+import ReviewAddPage from './components/DiscussionPage/ReviewAddPage';
+
 
 import AboutPage from './components/AboutPage/AboutPage';
 import ContactPage from './components/ContactPage/ContactPage';

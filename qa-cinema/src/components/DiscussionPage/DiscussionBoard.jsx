@@ -2,7 +2,7 @@ import {useState} from "react"
 
 import Tab from 'react-bootstrap/Tab'
 import Tabs from 'react-bootstrap/Tabs'
-import DiscussionRatings from "./props/DiscussionRatings";
+import DiscussionRatings from "./DiscussionRatings";
 
 const DiscussionBoard = () => {
 	const [key, setKey] = useState("reviews");
