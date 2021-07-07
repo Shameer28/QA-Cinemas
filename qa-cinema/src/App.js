@@ -14,6 +14,7 @@ import ContactPage from './components/ContactPage/ContactPage';
 import GettingThere from './components/GettingTherePage/GettingThere';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import RecentMoviesPage from './components/RecentMoviePage/RecentMoviePage';
+import Screen from './components/Screens/Screen';
 import MoviePage from './components/MoviePage';
 import PurchaseManager from './components/Bookings/PurchaseManager'
 
@@ -62,15 +63,19 @@ function App() {
         <Route path="/contactpage">
           <ContactPage />
         </Route>
+    
+        <Route path="/ticketBookings">
+           <Screen/>
+         </Route>
 
         <Route path="/movieDetail/:id">
-          <MoviePage url="http://localhost:3000/movies/get/"/>
-        </Route>
+           <MoviePage url="http://localhost:3000/movies/get/"/>
+         </Route>
 
         <Route path="/ticketbookings">
-          <PurchaseManager/>
+           <PurchaseManager/>
         </Route>
-
+    
         <Footer />
       </BrowserRouter>
     </div >
