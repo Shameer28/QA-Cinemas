@@ -11,11 +11,11 @@ const MoviePage = () => {
 
     return ( <div>
         <h2>{data.Title}</h2>
-        <img src={data.Image} alt={data.Title + "'s Poster"} />
-        <h4><b>Director: </b> {data.Director} <br/>
-            <b>Actors: </b> {data.Actors.forEach(t => <span>{t}</span>)} <br/>
-            <b>Plot: {data.Plot}</b> <br/>
-            <b>Show Times: </b> {data.ShowTimes.forEach(t => <span>{t}</span>)} <br/>
+        <img src={data.Image} alt={data.title + "'s Poster"} />
+        <h4><b>Director: </b> {data.director} <br/>
+            <b>Actors: </b> {data.actors.forEach(t => <span>{t}</span>)} <br/>
+            <b>Plot: {data.plot}</b> <br/>
+            {/* <b>Show Times: </b> {data.ShowTimes.forEach(t => <span>{t}</span>)} <br/> */}
         </h4>
     </div> );
 

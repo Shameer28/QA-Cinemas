@@ -1,6 +1,12 @@
+import { Button } from "react-bootstrap";
+
 const Payment = (props) => {
 
-    const {getCart, setCart} = props;
+    const {setPage, getCart, setCart} = props;
+
+    const checkout = (e) =>{
+        console.log("stripe Here")
+    }
 
     return (
         <div>
@@ -20,7 +26,9 @@ const Payment = (props) => {
 
                 <input type="submit" value="Submit" />
             </form>
+            <br/><Button onClick={(x)=>{setPage("TicketSelector")}}>Back</Button> <Button onClick={checkout}>Pay</Button>
         </div> 
+
      );
 }
  

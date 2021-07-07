@@ -15,7 +15,7 @@ import GettingThere from './components/GettingTherePage/GettingThere';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import RecentMoviesPage from './components/RecentMoviePage/RecentMoviePage';
 import MoviePage from './components/MoviePage';
-import PurchaseManager from './components/sharedcomponents/PurchaseManager'
+import PurchaseManager from './components/Bookings/PurchaseManager'
 
 function App() {
   return (
