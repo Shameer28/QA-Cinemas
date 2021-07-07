@@ -1,16 +1,17 @@
 import { useParams } from "react-router";
 import axios from "axios";
 import { useEffect } from "react";
-import { get } from "jquery";
 
-const MoviePage = () => {
+const MoviePage = (url) => {
     
     const {id} = useParams();
-    const url = "http://localhost:3000/movies/get/"; //GetByID without id ofc
+    //const url = "http://localhost:3000/movies/get/"; //GetByID without id ofc
 
     useEffect(()=>{
         getData();
     },[])
+
+    let data = {}
 
     //GET axios Call DB
     // GetOneById
@@ -18,11 +19,10 @@ const MoviePage = () => {
     const getData = () => {
 		axios.get(url+String(id)).then((res) => {
 
-            const data = res.body;
+            data = res.body;
 
 		}).catch((err) => {
-			setLoading(false);
-			setError(err);
+			console.log(err);
 		});
 	}
     
