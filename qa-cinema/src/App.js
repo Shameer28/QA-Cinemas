@@ -14,6 +14,7 @@ import ContactPage from './components/ContactPage/ContactPage';
 import GettingThere from './components/GettingTherePage/GettingThere';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import RecentMoviesPage from './components/RecentMoviePage/RecentMoviePage';
+import Screen from './components/Screens/Screen';
 
 function App() {
   return (
@@ -61,6 +62,9 @@ function App() {
           <ContactPage />
         </Route>
 
+        <Route path="/ticketBookings">
+          <Screen/>
+        </Route>
         <Footer />
       </BrowserRouter>
     </div >
