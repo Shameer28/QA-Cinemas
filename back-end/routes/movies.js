@@ -65,7 +65,7 @@ router.post("/create", async (req, res) => {
 	const data = req.body;
 
 	try {
-		const film = new Film(data); 
+		const film = new FilmDB(data); 
 	
 		await film.save();
 	
