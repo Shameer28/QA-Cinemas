@@ -52,7 +52,8 @@ const Email = () => {
             <Form onSubmit={handleSubmit} >
                 <Form.Group>
                     <Form.Label><u>Email address</u></Form.Label>
-                    <Form.Control id="Email" type="email" className="form-control" placeholder="name@example.com" value={Email} onChange={(e) => { setEmail(e.target.value) }} />
+                    <Form.Control id="Email" type="email" className="form-control" placeholder="name@example.com" value={Email} pattern="/^[a-zA-Z0-9.!#$%&’*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*$/"
+                        required onChange={(e) => { setEmail(e.target.value) }} />
                 </Form.Group>
                 <Form.Group >
                     <Form.Label>First Name</Form.Label>
