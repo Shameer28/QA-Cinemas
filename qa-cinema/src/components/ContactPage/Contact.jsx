@@ -58,8 +58,6 @@ const Contact = () => {
 
   return (
     <div className="App">
-      <img src={image1} alt="contact us banner" width="100%" height= "100%"/>
-
       <Container className="p-3">
         <Container>
           <Row>
@@ -73,8 +71,6 @@ const Contact = () => {
                   and errors.
                 </p>
                 <hr />
-
-
               </Alert>
             </Col>
           </Row>
