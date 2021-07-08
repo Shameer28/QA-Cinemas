@@ -1,19 +1,35 @@
 
 import PosterLink from "./PosterLink";
 
-import axios from "axios";
+import movieUtils from "./../../utils/movies";
 
 import { useState, useEffect } from "react";
 
-const ListMovies = ({ url, sort }) => {
+const ListMovies = (  {sort} ) => {
 
 	const [data, setData] = useState([]);
 	const [err, setError] = useState("");
 	const [loading, setLoading] = useState(true);
 
-	const getData = () => {
-		axios.get(url).then((resp) => {
+	// const getData = () => {
+	// 	axios.get(url).then( (resp) => {
+			
+	// 		let info = resp.data;
+			
+	// 		if (sort) {
+	// 			// sort the info here
+	// 		}
+			
+	// 		setLoading(false);
+	// 		setData(info);
+	// 	}).catch( (err) => {
+	// 		setLoading(false);
+	// 		setError(err);
+	// 	});
+	// }
 
+	useEffect(() => {
+		movieUtils.getAll().then( (resp) =>{
 			let info = resp.data;
 
 			if (sort) {
@@ -25,12 +41,11 @@ const ListMovies = ({ url, sort }) => {
 		}).catch((err) => {
 			setLoading(false);
 			setError(err);
-		});
-	}
+		})
 
-	useEffect(() => {
-		getData();
-	}, []);
+        //getData();
+		// eslint-disable-next-line react-hooks/exhaustive-deps
+    }, []);
 
 	if (loading) {
 		return <p>Loading</p>

@@ -8,10 +8,15 @@ import AllGalleryPage from './components/AllGalleryPage/AllGalleryPage';
 import OpeningTimesPage from './components/OpeningTimesPage/OpeningTimesPage';
 import Classification from './components/ClassificationPage/Classification';
 import PlacesToGo from './components/PlacesToGoPage/PlacesToGo';
-import DiscussionBoard from './components/DiscussionBoard';
+
+import DiscussionBoard from './components/DiscussionPage/DiscussionBoard';
+import ReviewAddPage from './components/DiscussionPage/ReviewAddPage';
+
+
 import AboutPage from './components/AboutPage/AboutPage';
 import ContactPage from './components/ContactPage/ContactPage';
 import GettingThere from './components/GettingTherePage/GettingThere';
+
 import 'bootstrap/dist/css/bootstrap.min.css';
 import RecentMoviesPage from './components/RecentMoviePage/RecentMoviePage';
 import Screen from './components/Screens/Screen';
@@ -52,9 +57,13 @@ function App() {
           <GettingThere />
         </Route>
 
+		<Route path="/reviews">
+          <ReviewAddPage/>
+        </Route>
         <Route path="/discussionboard">
           <DiscussionBoard />
         </Route>
+
 
         <Route path="/aboutpage">
           <AboutPage />

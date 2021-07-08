@@ -39,16 +39,16 @@ const tempData = {
 
 router.get("/getAll", async (req, res) => {
 	const data = []
-	await FilmDB.find({ "title": true }, (err, films) => {
+	await FilmDB.find({ "title": true, "image": true}, (err, films) => {
 		if (err) {
 			res.status(505).send(err.message);
 		} else {
-			res.send([tempData]);
+			// res.send([tempData]);
 
-			// res.send(films);
+			res.send(films);
 		}
 	});
-});
+}); 
 
 router.get("/get/:id", async (req, res) => {
 	try {
@@ -65,7 +65,7 @@ router.post("/create", async (req, res) => {
 	const data = req.body;
 
 	try {
-		const film = new Film(data); 
+		const film = new FilmDB(data); 
 	
 		await film.save();
 	
