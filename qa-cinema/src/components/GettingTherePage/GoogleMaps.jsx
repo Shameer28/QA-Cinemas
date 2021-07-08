@@ -3,8 +3,8 @@ import Marker from './Marker'
 import ApiKey from '../../api.json'
 const GoogleMaps = () => {
 
-    return (<div style={{ height: '800px', width: '100%' }}>
-
+    return (<div style={{ height: '600px', width: '100%' }}>
+{/* <div style={{ height: '800px', width: '100%' } */}
         <GoogleMapReact
             bootstrapURLKeys={{ key: ApiKey.Api.api }}
             defaultCenter={{

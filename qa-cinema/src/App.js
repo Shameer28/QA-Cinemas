@@ -22,7 +22,7 @@ import RecentMoviesPage from './components/RecentMoviePage/RecentMoviePage';
 import Screen from './components/Screens/Screen';
 import MoviePage from './components/MoviePage';
 import PurchaseManager from './components/Bookings/PurchaseManager'
-
+import Test from './components/ContactPage/Contact'
 function App() {
   return (
     <div>
@@ -71,6 +71,7 @@ function App() {
 
         <Route path="/contactpage">
           <ContactPage />
+          {/* <Test/> */}
         </Route>
     
         <Route path="/ticketBookings">
