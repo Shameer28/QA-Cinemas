@@ -23,7 +23,7 @@ router.post("/create", async (req, res) => {
 });
 
 router.get("/getAll", async (req, res) => {
-	await ForumDB.find({}, { name: true, updatedAt: true}, (err, forums) => {
+	await ForumDB.find({}, { name: true, updatedAt: true, author: true, tags: true,}, (err, forums) => {
 		if (err) {
 			res.status(505).send(err.message);
 		} else {
