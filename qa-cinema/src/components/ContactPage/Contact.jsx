@@ -4,13 +4,10 @@ import "bootstrap/dist/css/bootstrap.min.css";
 import Container from "react-bootstrap/Container";
 import Row from "react-bootstrap/Row";
 import Col from "react-bootstrap/Col";
-import Button from "react-bootstrap/Button";
 import Jumbotron from "react-bootstrap/Jumbotron";
-import Form from "react-bootstrap/Form";
 import Alert from "react-bootstrap/Alert";
-
 import GoogleMaps from "../GettingTherePage/GoogleMaps";
-import image1 from './../img/contact-banner.jpg'
+
 
 const Contact = () => {
 
