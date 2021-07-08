@@ -9,7 +9,7 @@ import './HomePage.css';
 
 const HomePage = () => {
     return (
-        <div>
+        <div class="background">
             <Carousels />
             <Container>
                 <br></br>
