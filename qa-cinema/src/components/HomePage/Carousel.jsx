@@ -5,22 +5,22 @@ import image3 from '../img/JamesBondLandscape.jpg'
 
 const Carousels = () => {
     return (
-        <Carousel controls={true} fade={true} pause={false}>
-            <Carousel.Item interval={2000}>
+        <Carousel controls={false} fade={true} pause={false}>
+            <Carousel.Item interval={3000}>
                 <img
                     className="d-block w-100"
                     src={image1}
                     alt="First slide"                    
                 />
             </Carousel.Item>
-            <Carousel.Item interval={2000}>
+            <Carousel.Item interval={3000}>
                 <img
                     className="d-block w-100"
                     src={image2}
                     alt="Second slide"                    
                 />
             </Carousel.Item>
-            <Carousel.Item interval={2000}>
+            <Carousel.Item interval={3000}>
                 <img
                     className="d-block w-100"
                     src={image3}
