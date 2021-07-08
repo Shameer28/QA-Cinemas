@@ -10,7 +10,7 @@ const OpeningTimesPage = () => {
             <br />
 
             <Container>
-                <h1>QA Cinemas' Opening Hours :</h1><br />
+                <h1 id="o1">QA Cinemas' Opening Hours :</h1><br />
                 <Tables />
             </Container>
         </div>
