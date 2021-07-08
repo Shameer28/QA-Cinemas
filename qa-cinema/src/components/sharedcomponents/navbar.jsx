@@ -1,9 +1,9 @@
-import { Navbar, Nav, Button, NavDropdown, FormControl, Container } from "react-bootstrap";
+import { Navbar, Nav, Button, NavDropdown, FormControl } from "react-bootstrap";
 import Form from 'react-bootstrap/Form'
 import Logo from '../img/Logo.png';
 const NavBar = () => {
     return (
-        <Navbar class="nav" bg="dark" variant="dark">
+        <Navbar className="nav" bg="dark" variant="dark">
 
             <Navbar.Brand href="/" id="navlogo"> <img
                 src={Logo}
@@ -42,10 +42,6 @@ const NavBar = () => {
                 </Form>
 
             </Navbar.Collapse>
-
-
-
-
         </Navbar>
     );
 }
