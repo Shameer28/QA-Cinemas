@@ -22,7 +22,6 @@ const ReviewAddPage = () => {
 
 	useEffect( ()=> {
 		movieUtils.getAll().then( (resp) => {
-			console.log(resp);
 			setFilms(resp.data);
 		})
 	}, []);
@@ -30,8 +29,6 @@ const ReviewAddPage = () => {
 
 	const selectFilm = (e, film) => {
 		e.preventDefault();
-
-		console.log("AHHHH");
 
 		setFilm(film);
 		setStage(1);
