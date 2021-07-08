@@ -5,21 +5,6 @@ const Schema = mongoose.Schema;
 
 const actors = require("./actors");
 
-
-const tempData = {
-	_id: "123123123123123",
-	title: "Detective Pikachu",
-	image: "icon",
-	actors: [
-		"Ryan Reynolds",
-	],
-	director: "Rob Letterman",
-	showingTimes : [
-
-	],
-	plot: "Some info"
-}
-
 // Validation of the Schema
 const filmSchema = new Schema({
     title: {

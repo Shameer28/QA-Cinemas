@@ -19,6 +19,7 @@ const reviews = new Schema({
 	filmID: {
 		type: Schema.Types.ObjectId
 	}
-});
+	// https://masteringjs.io/tutorials/mongoose/timestamps source
+}, { timestamps: { currentTime: () => Math.floor(Date.now() / 1000) } });
 
 module.exports = mongoose.model("Reviews", reviews);
