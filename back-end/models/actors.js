@@ -2,12 +2,7 @@ const mongoose = require('mongoose');
 const Schema = mongoose.Schema;
 
 const actors = new Schema({
-    firstName: {
-        type: String,
-        required: true,
-        minlength: 1
-    },
-    surname: {
+    name: {
         type: String,
         required: true,
         minlength: 1
@@ -17,9 +12,6 @@ const actors = new Schema({
         enum: ["Male", "Female", "Other", null]
     },
     dateOfBirth: Date,
-    movies: [{
-        type: String
-    }]
 })
 
 module.exports = actors;
