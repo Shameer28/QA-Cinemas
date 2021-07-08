@@ -41,8 +41,6 @@ router.get("/getAll", async (req, res) => {
 			res.send(ratings);
 		}
 	});
-
-
 });
 
 router.get("/getAll/:filmId", async( req, res) => {

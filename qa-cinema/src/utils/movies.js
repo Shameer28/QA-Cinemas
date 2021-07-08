@@ -23,7 +23,37 @@ const get = (id, callback, errorCallback) => {
 	});
 }
 
+const getRecentReviews = ()=> {
+	return new Promise( (callback, errorCallback) => {
+		
+		axios.get(url + "/ratings/getAll").then( (resp) => {
+			callback(resp);
+		}).catch( (err) => {
+			errorCallback(err);
+		});
+	});
+
+}
+
+
+const createRating = (data) => {
+	return new Promise( (callback, errorCallback) => {
+		axios.post(url + "/ratings/create", data).then( (resp)=> {
+			// tell them they did good
+
+			callback();
+			// redirect
+		}).catch( (err) => {
+			// error
+			errorCallback(err);
+		});
+	})
+}
+
+
 export default {
 	getAll: getAll,
 	get: get,
+	getRecentReviews: getRecentReviews,
+	createRating: createRating
 }

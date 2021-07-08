@@ -5,7 +5,7 @@ import movieUtils from "../../utils/movies";
 
 const ReviewAddPage = () => {
 
-	const [stage, setStage] = useState(1);
+	const [stage, setStage] = useState(0);
 
 	const [films, setFilms] = useState([]);
 
@@ -18,6 +18,24 @@ const ReviewAddPage = () => {
 	const [name, setName] = useState("");
 
 	const [email, setEmail] = useState("");
+
+
+	useEffect( ()=> {
+		movieUtils.getAll().then( (resp) => {
+			console.log(resp);
+			setFilms(resp.data);
+		})
+	}, []);
+
+
+	const selectFilm = (e, film) => {
+		e.preventDefault();
+
+		console.log("AHHHH");
+
+		setFilm(film);
+		setStage(1);
+	}
 
 
 	const msgUpdate = (e, str)=> {
@@ -57,7 +75,13 @@ const ReviewAddPage = () => {
 			filmId: film._id,
 		}
 
-		movieUtils.createReview(reviewData);
+		movieUtils.createRating(reviewData).then( () => {
+			setStage(3);
+		}).catch( (err) => {
+			// Put this in an alert of something
+			setStage(1);
+		});
+		setStage(2);
 	};
 
 	if (stage === 0) {
@@ -65,15 +89,11 @@ const ReviewAddPage = () => {
 			<h4> Select a film to add a review</h4>
 
 			<div>
-				<p>films</p>
-				<p>films</p>
-				<p>films</p>
-				<p>films</p>
-				<p>films</p>
-				<p>films</p>
-				<p>films</p>
-				<p>films</p>
-				<p>films</p>
+				{ films.map(  (resp) => (
+					<button onClick = {  (e) => {  selectFilm(e, resp) } }>
+						{resp.title}
+					</button>
+				)) }
 			</div>
 
 
@@ -122,7 +142,20 @@ const ReviewAddPage = () => {
 			</div>
 		);
 	}
-
+	else if (stage == 2) {
+		return ( <div>
+			<p>
+				Waiting ...
+			</p>
+		</div>)
+	}
+	else if (stage == 3) {
+		return ( <div>
+			<p>
+				Rating added succesfully
+			</p>
+		</div>)
+	}
 
 
 	return ( <div>
