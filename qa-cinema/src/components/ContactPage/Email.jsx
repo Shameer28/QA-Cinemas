@@ -48,7 +48,7 @@ const Email = () => {
 
     }
     return (
-        <div class="background">
+        <div >
             <Container>
                 <Card className="text-center">
                     <Card.Header>Contact US</Card.Header>

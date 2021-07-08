@@ -6,7 +6,8 @@ const ContactPage = () => {
         <div class="background">
             <img src={image1} alt="About us photo" width="100%" fluid /><br />
             <Contact />
-            <Email/>
+            <Email />
+            <br></br>
             
         </div>
     );
