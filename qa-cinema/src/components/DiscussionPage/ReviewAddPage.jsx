@@ -1,5 +1,4 @@
 
-import { Button } from "bootstrap";
 import {useState, useEffect} from "react"
 import movieUtils from "../../utils/movies";
 
@@ -56,7 +55,7 @@ const ReviewAddPage = () => {
 			// enter a valid raiting
 			return
 		}
-		if (msg.length == 0) {
+		if (msg.length === 0) {
 			// add a valid review
 			return
 		}
@@ -97,7 +96,7 @@ const ReviewAddPage = () => {
 		</div>
 		);
 
-	}else if (stage == 1) {
+	}else if (stage === 1) {
 
 
 		const ratings = []
@@ -139,14 +138,14 @@ const ReviewAddPage = () => {
 			</div>
 		);
 	}
-	else if (stage == 2) {
+	else if (stage === 2) {
 		return ( <div>
 			<p>
 				Waiting ...
 			</p>
 		</div>)
 	}
-	else if (stage == 3) {
+	else if (stage === 3) {
 		return ( <div>
 			<p>
 				Rating added succesfully
