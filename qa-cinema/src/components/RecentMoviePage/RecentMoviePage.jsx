@@ -1,4 +1,4 @@
-import ListMovies from "./props/ListMovies"
+import ListMovies from "./../sharedcomponents/ListMovies"
 
 const RecentMoviesPage = () => {
 	const sortFunc = (a, b) => {
