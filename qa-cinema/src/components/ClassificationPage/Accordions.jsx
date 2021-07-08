@@ -15,9 +15,9 @@ const Accordions = () => {
     return (
         <div>
 
-            <Accordion defaultActiveKey="1">
+            <Accordion defaultActiveKey="0">
                 <Card>
-                    <Accordion.Toggle as={Card.Header} eventKey="0">
+                    <Accordion.Toggle as={Card.Header} eventKey="1">
                         <b><u>U Universal - Suitable for all</u></b><img className="accorimg" src={image1} alt="U logo" width="5%" />
                     </Accordion.Toggle>
                     <Accordion.Collapse eventKey="1">
