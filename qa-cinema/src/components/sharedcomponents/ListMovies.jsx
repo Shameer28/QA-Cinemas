@@ -11,23 +11,6 @@ const ListMovies = (  {sort} ) => {
 	const [err, setError] = useState("");
 	const [loading, setLoading] = useState(true);
 
-	// const getData = () => {
-	// 	axios.get(url).then( (resp) => {
-			
-	// 		let info = resp.data;
-			
-	// 		if (sort) {
-	// 			// sort the info here
-	// 		}
-			
-	// 		setLoading(false);
-	// 		setData(info);
-	// 	}).catch( (err) => {
-	// 		setLoading(false);
-	// 		setError(err);
-	// 	});
-	// }
-
 	useEffect(() => {
 		movieUtils.getAll().then( (resp) =>{
 			let info = resp.data;
@@ -43,7 +26,6 @@ const ListMovies = (  {sort} ) => {
 			setError(err);
 		})
 
-        //getData();
 		// eslint-disable-next-line react-hooks/exhaustive-deps
     }, []);
 

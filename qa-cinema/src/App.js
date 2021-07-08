@@ -19,7 +19,10 @@ import GettingThere from './components/GettingTherePage/GettingThere';
 
 import 'bootstrap/dist/css/bootstrap.min.css';
 import RecentMoviesPage from './components/RecentMoviePage/RecentMoviePage';
-
+import Screen from './components/Screens/Screen';
+import MoviePage from './components/sharedcomponents/MoviePage';
+import PurchaseManager from './components/Bookings/PurchaseManager';
+import Test from './components/ContactPage/Contact';
 function App() {
   return (
     <div>
@@ -54,8 +57,8 @@ function App() {
           <GettingThere />
         </Route>
 
-		<Route path="/reviews">
-          <ReviewAddPage/>
+        <Route path="/reviews">
+          <ReviewAddPage />
         </Route>
         <Route path="/discussionboard">
           <DiscussionBoard />
@@ -68,6 +71,19 @@ function App() {
 
         <Route path="/contactpage">
           <ContactPage />
+          {/* <Test/> */}
+        </Route>
+
+        <Route path="/ticketBookings">
+          <Screen />
+        </Route>
+
+        <Route path="/movieDetail/:id">
+          <MoviePage url="http://localhost:3000/movies/get/" />
+        </Route>
+
+        <Route path="/ticketbookings">
+          <PurchaseManager />
         </Route>
 
         <Footer />
