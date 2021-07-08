@@ -38,10 +38,10 @@
 }
 
 .background{
-  background: rgb(255,255,255) center center no-repeat;
-  background: radial-gradient(circle, rgba(255,255,255,1) 48%, rgba(0,0,0,0.9136029411764706) 100%);
-  background-position: 0 0, center;
-}
+  
+  background: rgb(83,3,3);
+  background: radial-gradient(circle, rgba(83,3,3,1) 0%, rgba(1,1,13,1) 70%);
+} 
 
 .carousel {
   width:auto;
