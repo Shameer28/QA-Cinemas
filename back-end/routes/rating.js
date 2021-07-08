@@ -11,6 +11,7 @@ const ratingsReader = {
 	"rating": true,
 	"msg": true,
 	"filmID": true,
+	"createdAt": true,
 }
 
 router.post("/create", async (req, res) => {
@@ -29,11 +30,11 @@ router.post("/create", async (req, res) => {
 
 });
 
-
 router.get("/getAll", async (req, res) => {
 	// GET ALL RATINGS
-
-	await RatingsDB.find({}, ratingsReader, (err, ratings) => {
+	const limit = 10;
+	
+	await RatingsDB.find({}, ratingsReader).sort({createdAt: -1}).limit(limit).exec((err, ratings) => {
 		if (err) {
 			res.status(505).send(err.message);
 		} else {
@@ -42,7 +43,6 @@ router.get("/getAll", async (req, res) => {
 	});
 
 
-	const limit = 10;
 });
 
 router.get("/getAll/:filmId", async( req, res) => {
