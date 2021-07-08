@@ -1,5 +1,3 @@
-import axios from "axios";
-
 import ListMovies from "./../sharedcomponents/ListMovies"
 
 const RecentMoviesPage = () => {
