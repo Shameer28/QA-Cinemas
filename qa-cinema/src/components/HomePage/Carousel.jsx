@@ -1,30 +1,31 @@
 import Carousel from 'react-bootstrap/Carousel'
-import image1 from '../img/BlackWidow.jpg'
-import image2 from '../img/F9Landscape.jpg'
-import image3 from '../img/JamesBondLandscape.jpg'
+import Container from 'react-bootstrap/esm/Container'
+import image1 from '../img/MovieThumbnails/BlackWidow.jpg'
+import image2 from '../img/MovieThumbnails/F9Landscape.jpg'
+import image3 from '../img/MovieThumbnails/JamesBondLandscape.jpg'
 
 const Carousels = () => {
     return (
-        <Carousel controls={false} fade={true} pause={false}>
+        <Carousel controls={false} slide={true} fade={true} pause={false}>
             <Carousel.Item interval={3000}>
                 <img
                     className="d-block w-100"
                     src={image1}
-                    alt="First slide"                    
+                    alt="First slide"
                 />
             </Carousel.Item>
             <Carousel.Item interval={3000}>
                 <img
                     className="d-block w-100"
                     src={image2}
-                    alt="Second slide"                    
-                />
+                    alt="Second slide"
+                />               
             </Carousel.Item>
             <Carousel.Item interval={3000}>
                 <img
                     className="d-block w-100"
                     src={image3}
-                    alt="Third slide"                    
+                    alt="Third slide"
                 />
             </Carousel.Item>
         </Carousel>

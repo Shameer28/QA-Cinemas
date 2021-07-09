@@ -9,9 +9,9 @@ const NavBar = () => {
 
             <Navbar.Brand href="/" id="navlogo"> <Image
                 src={Logo}
-                width="150"
-                height="50"
+                width="45%"
                 className="d-inline-block align-top"
+                style={{marginLeft:"60%"}}
                 alt="React Bootstrap logo"
                 rounded
             />
