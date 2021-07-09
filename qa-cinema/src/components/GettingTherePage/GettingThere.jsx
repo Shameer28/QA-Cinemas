@@ -1,40 +1,48 @@
 import Container from 'react-bootstrap/Container';
-
-import Slideshow from './Slideshow';
+import Carousels from './Carousels';
 import GoogleMaps from './GoogleMaps';
-
+import Row from "react-bootstrap/Row";
+import Col from "react-bootstrap/Col";
+import Jumbotron from "react-bootstrap/Jumbotron";
+import GoogleMapsDirections from './GoogleMapsDirections';
+import Directions from './Directions';
+import Test from './Test'
 const GettingThere = () => {
 
     return (
-        <Container>
-            <h1><u>Getting There</u></h1>
-            <Slideshow />
+        <div class="background">
 
-            <h2>Map</h2>
-            <GoogleMaps />
+            <Carousels />
+            <div style={{ width: "50%", marginRight: "auto", marginLeft: "auto", backgroundColor: "white", border: "solid" }}>
+                <div >
+                    <Container className="p-3">
+                        <Container>
+                            <Row>
 
+                            </Row>
+                            <Row>
+                                <Col>
+                                    <Jumbotron>
+                                        <div style={{ border: "solid", height: "500px" }}>
+                                            {/* <GoogleMaps /> */}
+                                            <GoogleMapsDirections />
+                                            {/* <Test/> */}
+                                        </div>
+                                    </Jumbotron>
+                                </Col>
+                                <Col style={{ margin: "auto", width: "50%" }}>
+                                    <Directions />
+                                    
+                                </Col>
+                            </Row>
+                        </Container>
+                    </Container>
 
+                </div>
 
-            <h2><u>Address</u></h2>
-            <p>
-                8, St James's Bldg,<br />61-95 Oxford St <br />Manchester <br />M1 6FQ
-            </p>
-            <br />
-            <h2><u>Directions</u></h2>
-            <h3><u>Bus</u></h3>
-            <p>Busses available within the area: 42B, 43, 101, 102, 103, 111, 142, 143, 147</p>
-            <p>
-
-            </p>
-            <h3><u>Train</u></h3>
-            <p>41 CrossingCity</p>
-
-
-            <h2><u>Parking</u></h2>
-            <p>Pay and Display: All fuel types: £6 per hour (£3 per half hour, £1.50 for 15mins) </p>
-
-
-        </Container >
+            </div>
+            <br></br>
+        </div >
     )
 }
 

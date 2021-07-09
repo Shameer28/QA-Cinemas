@@ -5,8 +5,8 @@ import Container from "react-bootstrap/Container";
 import Row from "react-bootstrap/Row";
 import Col from "react-bootstrap/Col";
 import Jumbotron from "react-bootstrap/Jumbotron";
-import Alert from "react-bootstrap/Alert";
 import GoogleMaps from "../GettingTherePage/GoogleMaps";
+
 
 
 const Contact = () => {
@@ -59,18 +59,7 @@ const Contact = () => {
         <Container className="p-3">
           <Container>
             <Row>
-              <Col>
-                <Alert show={showMessage} variant="success">
-                  <Alert.Heading>Success</Alert.Heading>
-                  <p>
-                    This is an alert, and these can be shown in a variety of
-                    styles provided by Bootstrap. Our form submit button simply
-                    shows this alert. Another post will go through form validation
-                    and errors.
-                  </p>
-                  <hr />
-                </Alert>
-              </Col>
+              
             </Row>
             <Row>
               <Col>

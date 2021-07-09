@@ -8,15 +8,15 @@ import image3 from './../img/haaris.jpg'
 import image7 from './../img/andrew.jpg'
 import image4 from './../img/shameer.jpg'
 import image5 from './../img/social.jpg'
-import { Container } from 'react-bootstrap'
+import Container from 'react-bootstrap/Container';
 
 const AboutPage = () => {
     return (
-        <div>
+        <div class="background">
 
             <Image src={image1} alt="About us photo" width="100%" fluid /><br />
 
-            <Container className="apcontain">
+            <Container>
                 <div>
                     <h1>Meet the Team</h1><br />
                     <Container>

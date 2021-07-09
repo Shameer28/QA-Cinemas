@@ -9,7 +9,7 @@ const ContactPage = () => {
             <br></br>
             <div style={{width: "50%", marginRight: "auto", marginLeft: "auto", backgroundColor:"white", border: "solid"}}>
             <Contact />
-            <Email />
+            <Email/>
             
         </div>
         <br></br>
