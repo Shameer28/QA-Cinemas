@@ -75,13 +75,15 @@ const Contact = () => {
             <Row>
               <Col>
                 <Jumbotron>
-                  <GoogleMaps />
+                  <div style={{ border: "solid" }}>
+                    <GoogleMaps />
+                  </div>
                 </Jumbotron>
               </Col>
 
               <Col style={{ margin: "auto", width: "50%" }}>
-                <div style={{ margin: "auto", width: "50%" }}>
-                  <div class="text"><h2>Feel free to get in contact with us:</h2> </div>
+                <div style={{ margin: "auto" }}>
+                  <div class="text"><h2><u>Feel free to get in contact with us:</u></h2> </div>
                   <br></br>
                   <div>
                     <strong>Location: </strong>
@@ -95,7 +97,7 @@ const Contact = () => {
                   <br></br>
                   <div>
                     <strong>Email Us: </strong>
-                    <a href="#">SDar@qa.com</a>
+                    <a href="mailto:SDar@qa.com">SDar@qa.com</a>
                   </div>
                 </div>
               </Col>

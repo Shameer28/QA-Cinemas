@@ -53,11 +53,11 @@ const Email = () => {
                 <Card className="text-center">
                     <Card.Header>Contact US</Card.Header>
                     <Card.Body>
-                        <Card.Title>Please fill out the form to submit a request</Card.Title>
+                        <Card.Title><u>Please fill out the form to submit a request</u></Card.Title>
                         <Card.Text>
                             <Form onSubmit={handleSubmit} >
                                 <Form.Group>
-                                    <Form.Label><u>Email address</u></Form.Label>
+                                    <Form.Label>Email address</Form.Label>
                                     <Form.Control id="Email" type="email" className="form-control" placeholder="name@example.com" value={Email} pattern="/^[a-zA-Z0-9.!#$%&’*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*$/"
                                         required onChange={(e) => { setEmail(e.target.value) }} />
                                 </Form.Group>

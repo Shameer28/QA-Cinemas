@@ -22,5 +22,9 @@ mongoose.connect("mongodb://localhost/films", options).then( () =>{
 	// this could do with some improvement
 	app.use("/movies", require("./routes/movies") );
 	app.use("/ratings", require("./routes/rating") );
+
 	app.use("/forums", require("./routes/forum") );
+
+	// Stripe
+	app.use("/stripe", require("./routes/stripe") );
 });

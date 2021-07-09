@@ -9,9 +9,12 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
+    "@stripe/react-stripe-js": "^1.4.1",
+    "@stripe/stripe-js": "^1.15.1",
     "cors": "^2.8.5",
     "express": "^4.17.1",
     "mongoose": "^5.13.2",
-    "nodemon": "^2.0.9"
+    "nodemon": "^2.0.9",
+    "stripe": "^8.160.0"
   }
 }

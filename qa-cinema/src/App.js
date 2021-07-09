@@ -79,15 +79,16 @@ function App() {
         </Route>
 
         <Route path="/ticketBookings">
-          <Screen />
-        </Route>
+           <Screen/>
+           <PurchaseManager/>
+         </Route>
 
         <Route path="/movieDetail/:id">
           <MoviePage url="http://localhost:3000/movies/get/" />
         </Route>
 
-        <Route path="/ticketbookings">
-          <PurchaseManager />
+        <Route path="/paymentSuccess">
+           <h2>Payment Successful, thank you!</h2>
         </Route>
 
         <Footer />
