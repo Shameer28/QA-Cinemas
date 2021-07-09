@@ -25,8 +25,15 @@ const get = (id) => {
 	});
 }
 
-
-
+const addComment = (id, data) => {
+	return new Promise ( (callback, errorCallback) => {
+		axios.patch(url +"comment/add/" + id, data).then( resp=> {
+			callback(resp);
+		}).catch ( (err) => {
+			errorCallback(err);	
+		});
+	})
+};
 
 
 
@@ -35,4 +42,5 @@ const get = (id) => {
 export default {
 	getAll: getAll,
 	get: get,
+	addComment
 }
