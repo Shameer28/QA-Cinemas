@@ -4,10 +4,11 @@ import image1 from "./../img/contact-us-banner.png"
 const ContactPage = () => {
     return (
         <div class="background">
-            <img src={image1} alt="About us photo" width="100%" fluid /><br />
+            <img src={image1} alt="Contact us photo" width="100%" fluid /><br />
             <Contact />
-            <Email/>
-            
+            <Email />
+            <br></br>
+
         </div>
     );
 }

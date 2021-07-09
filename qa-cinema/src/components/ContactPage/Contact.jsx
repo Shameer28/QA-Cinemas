@@ -54,54 +54,55 @@ const Contact = () => {
   }
 
   return (
-    <div className="App">
-      <Container className="p-3">
-        <Container>
-          <Row>
-            <Col>
-              <Alert show={showMessage} variant="success">
-                <Alert.Heading>Success</Alert.Heading>
-                <p>
-                  This is an alert, and these can be shown in a variety of
-                  styles provided by Bootstrap. Our form submit button simply
-                  shows this alert. Another post will go through form validation
-                  and errors.
-                </p>
-                <hr />
-              </Alert>
-            </Col>
-          </Row>
-          <Row>
-            <Col>
-              <Jumbotron>
-                <div ><GoogleMaps /></div>
-              </Jumbotron>
-            </Col>
+    <div>
+      <div >
+        <Container className="p-3">
+          <Container>
+            <Row>
+              <Col>
+                <Alert show={showMessage} variant="success">
+                  <Alert.Heading>Success</Alert.Heading>
+                  <p>
+                    This is an alert, and these can be shown in a variety of
+                    styles provided by Bootstrap. Our form submit button simply
+                    shows this alert. Another post will go through form validation
+                    and errors.
+                  </p>
+                  <hr />
+                </Alert>
+              </Col>
+            </Row>
+            <Row>
+              <Col>
+                <Jumbotron>
+                  <GoogleMaps />
+                </Jumbotron>
+              </Col>
 
-            <Col style={{ margin: "auto", width: "50%" }}>
-              <div style={{ margin: "auto", width: "50%" }}>
-                <div class="text"><h2>Feel free to get in contact with us:</h2> </div>
-                <br></br>
-                <div>
-                  <strong>Location: </strong>
-                  8, St James's Bldg, 61-95 Oxford St, Manchester, M1 6FQ
+              <Col style={{ margin: "auto", width: "50%" }}>
+                <div style={{ margin: "auto", width: "50%" }}>
+                  <div class="text"><h2>Feel free to get in contact with us:</h2> </div>
+                  <br></br>
+                  <div>
+                    <strong>Location: </strong>
+                    8, St James's Bldg, 61-95 Oxford St, Manchester, M1 6FQ
+                  </div>
+                  <br></br>
+                  <div>
+                    <strong>Call Center: </strong>
+                    <a href="tel:+44 (0)345 074 7995">+44 (0)345 074 7995</a>
+                  </div>
+                  <br></br>
+                  <div>
+                    <strong>Email Us: </strong>
+                    <a href="#">SDar@qa.com</a>
+                  </div>
                 </div>
-                <br></br>
-                <div>
-                  <strong>Call Center: </strong>
-                  <a href="tel:+44 (0)345 074 7995">+44 (0)345 074 7995</a>
-                </div>
-                <br></br>
-                <div>
-                  <strong>Email Us: </strong>
-                  <a href="#">SDar@qa.com</a>
-                </div>
-              </div>
-            </Col>
-          </Row>
+              </Col>
+            </Row>
+          </Container>
         </Container>
-      </Container>
-
+      </div>
     </div>
   );
 }
