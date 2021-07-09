@@ -82,7 +82,7 @@ const Accordions = () => {
                     <Accordion.Toggle as={Card.Header} eventKey="7">
                         <b><u>R18 - To be shown only in specially licensed cinemas, and to adults only</u></b><img className="accorimg" src={image7} alt="PG logo" width="5%" />
                     </Accordion.Toggle>
-                    <Accordion.Collapse eventKey="8">
+                    <Accordion.Collapse eventKey="7">
                         <Card.Body>The R18 category is a special and legally-restricted classification primarily for explicit works of consenting sex or strong fetish material involving adults.
                             Films may only be shown to adults in specially licensed cinemas, and video works may be supplied to adults only.
                             R18 video works may not be supplied by mail order.</Card.Body>
