@@ -6,7 +6,7 @@ import Col from "react-bootstrap/Col";
 import Jumbotron from "react-bootstrap/Jumbotron";
 import GoogleMapsDirections from './GoogleMapsDirections';
 import Directions from './Directions';
-import Test from './Test'
+
 const GettingThere = () => {
 
     return (
@@ -18,7 +18,6 @@ const GettingThere = () => {
                     <Container className="p-3">
                         <Container>
                             <Row>
-
                             </Row>
                             <Row>
                                 <Col>
@@ -26,7 +25,7 @@ const GettingThere = () => {
                                         <div style={{ border: "solid", height: "500px" }}>
                                             {/* <GoogleMaps /> */}
                                             <GoogleMapsDirections />
-                                            {/* <Test/> */}
+                                            
                                         </div>
                                     </Jumbotron>
                                 </Col>

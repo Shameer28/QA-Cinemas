@@ -11,7 +11,7 @@ const GoogleMapsDirections = () => {
                 width="100%"
                 height="100%"
                 frameborder="1" style="border:1"
-                src="https://www.google.com/maps/embed/v1/directions?key=AIzaSyA-BrSbgrDnbvYCFXP6JyfDJDgCf_O0EfA&origin=London&destination=QA+Ltd+-+Manchester+(Oxford+Street)&avoid=tolls|highways&mode=transit" allowfullscreen>
+                src="https://www.google.com/maps/embed/v1/directions?key=AIzaSyA-BrSbgrDnbvYCFXP6JyfDJDgCf_O0EfA&origin=old+trafford+-+Manchester&destination=QA+Ltd+-+Manchester+(Oxford+Street)&avoid=tolls|highways&mode=transit&zoom=13" allowfullscreen>
             </Iframe>
             
         </div>
