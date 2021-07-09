@@ -3,6 +3,7 @@ import {useState} from "react"
 import Tab from 'react-bootstrap/Tab'
 import Tabs from 'react-bootstrap/Tabs'
 import DiscussionRatings from "./DiscussionRatings";
+import Forum from "./Forum";
 
 const DiscussionBoard = () => {
 	const [key, setKey] = useState("reviews");
@@ -21,7 +22,7 @@ const DiscussionBoard = () => {
 					<DiscussionRatings/>	
 				</Tab>
 				<Tab eventKey="forum" title="Film Discussion">
-					Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit cumque quisquam necessitatibus eligendi excepturi illo eveniet, architecto temporibus. Quasi, aliquid. Blanditiis, facere debitis. Temporibus inventore quis ad nulla sint sed!
+					<Forum/>
 				</Tab>
 			</Tabs>
 		</div>
