@@ -35,7 +35,7 @@ const TicketSelector = (props) => {
             if (res.data){
                 const timming = e.target.parentElement.querySelector("#MovieTimings");
                 timming.innerHTML="";
-                res.data.showtimes.map((t)=>{
+                res.data.showTimes.map((t)=>{
                     timming.innerHTML+=`<option>${t}</option>`
                 })
             }else{
@@ -52,52 +52,52 @@ const TicketSelector = (props) => {
 
         let formData = {};
         for (let i = 0; i < 5; i++) {
-            if (e.target[i].value == "Select A Movie" || e.target[i].value == ""){
+            if (e.target[i].value == "Select A Movie" || e.target[i].value == "" || e.target[i].value < 0){
                 alert("Please Fill In All Inputs");
                 return;
             }
             formData[e.target[i].id] = e.target[i].value;
+            if (i>1){
+                e.target[i].value = "";
+            }
         }
         formData.price = formData.Adults*10 + formData.Child*5
-        setCart(formData);
-
-        setPage("Checkout")
+        setCart(getCart => [...getCart, formData])
     }
 
     return (      
-    <div>
-    <h3>Ticket Select</h3>
-    {movies.length === 0 ? (
-        <h5>Loading Form</h5>
-      ) : (
-        <form onSubmit={handleSubmit}>
+        <div>
+        <h3>Ticket Select</h3>
+        {movies.length === 0 ? (
+            <h5>Loading Form</h5>
+        ) : (
+            <form onSubmit={handleSubmit}>
 
-            <select id="MovieTitle" onChange={updateForm}>
-            <option value={null}> Select A Movie </option>
-            {movies.map((m, key) => {
-                return <option key={key} value={String(m._id)}> {m.title} </option>
-            })}
-            </select>
-            <select id="MovieTimings">
-            </select><br/>
+                <select id="MovieTitle" onChange={updateForm}>
+                <option value={null}> Select A Movie </option>
+                {movies.map((m, key) => {
+                    return <option key={key} value={String(m._id)}> {m.title} </option>
+                })}
+                </select>
+                <select id="MovieTimings">
+                </select><br/>
 
-            <label htmlFor="Name" >Name:</label><br/>
-            <input type="text" id="Name" /><br/>
+                <label htmlFor="Name" >Name:</label><br/>
+                <input type="text" id="Name" /><br/>
 
-            <label htmlFor="Adults" >Adults £10:</label><br/>
-            <input type="number" id="Adults" /><br/>
+                <label htmlFor="Adults" >Adults £10:</label><br/>
+                <input type="number" id="Adults" /><br/>
 
-            <label htmlFor="Child" >Child (Under 16s) £5:</label><br/>
-            <input type="number" id="Child" /><br/>
+                <label htmlFor="Child" >Child (Under 16s) £5:</label><br/>
+                <input type="number" id="Child" /><br/>
 
-            {/* Drop Down For Concessions */}
+                {/* Drop Down For Concessions */}
 
-            <p>{getCart.price}</p>
-
-            <input type="submit" value="Submit" />
-        </form>
-      )}
-    </div>);
+                <br/><input type="submit" value="Add To Cart" />
+                <button onClick={() => {setPage("Checkout")}} disabled={getCart.length===0}>Checkout</button>
+            </form>
+        )}
+        </div>);
 }
  
 export default TicketSelector;
