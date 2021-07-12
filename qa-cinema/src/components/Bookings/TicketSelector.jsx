@@ -1,7 +1,7 @@
 import { useEffect, useState } from "react";
-import axios from "axios";
 import { Button } from "react-bootstrap";
-
+import movieUtils from "./../../utils/movies";
+import payment from "../../utils/payment";
 
 const TicketSelector = (props) => {
 
@@ -14,13 +14,8 @@ const TicketSelector = (props) => {
 
     const getData = () => {
         setMovies([]);
-		axios.get(url+"getAll/").then((res) => {
-            // res.data = [{"_id":-1, "title":"detective", "showtimes":[81452812842129,20]}, {"_id":2, "title":"picka", "showtimes":[81452812842129]}];
-            if (res.data){
-                setMovies(res.data)
-            }else{
-                throw new Error("No body on responce")
-            }
+        movieUtils.getAll().then((res) => {
+            setMovies(res.data)
 		}).catch((err) => {
 			console.log(err)
 		});
@@ -36,7 +31,7 @@ const TicketSelector = (props) => {
         if (firstOption.value === "Select A Movie"){
             firstOption.remove()
         }
-        axios.get(url+"get/"+e.target.value).then((res) => {
+        movieUtils.get(e.target.value).then((res) => {
             if (res.data){
                 const timming = e.target.parentElement.querySelector("#MovieTimings");
                 timming.innerHTML="";

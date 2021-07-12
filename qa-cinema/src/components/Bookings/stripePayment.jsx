@@ -24,6 +24,9 @@ const StripeCheckoutForm = (props) => {
             return;
         }
 
+        setProcessingTo(true);
+
+        console.log(elements);
         // TODO: NEED TO SET these from another form
         const billingDetails = {
             name: 'Imran Sayed',
@@ -36,7 +39,7 @@ const StripeCheckoutForm = (props) => {
             }
         };
 
-        setProcessingTo(true);
+        
         const cardElement = elements.getElement("card");
 
         try {
@@ -79,7 +82,12 @@ const StripeCheckoutForm = (props) => {
             <form onSubmit={handleFormSubmit} className="stripe-form w-308px lg:w-600px border border px-4 lg:px-8 py-6 lg:py-10 m-auto">
                 <h2 className="text-black mb-6 uppercase font-600">Stripe Payment: Pay with card</h2>
                 <div className="mb-4">
-                    <h6 className="text-sm mb-1 text-black">Card Information</h6>
+                    <form>
+                        <label htmlFor="Child" >Child (Under 16s) £5:</label><br/>
+                        <input type="number" id="Child" /><br/>
+                    </form>
+
+                    <h6>Card Information</h6>
                     <CardElement
                         onChange={handleCardDetailsChange}
                     />
