@@ -43,6 +43,17 @@
   
 } 
 
+.centerText{
+  display: table;
+  margin: auto;
+}
+.MoviePageImage{
+  display:block;
+    margin:auto;
+  width: 60%;
+  height: 50%;
+  filter: drop-shadow(0rem 0rem 0.6rem  rgba(245, 245, 245, 0.8));
+}
 .carousel {
   width:auto;
   height:750px;
