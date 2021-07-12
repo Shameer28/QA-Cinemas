@@ -1,7 +1,7 @@
 
 import axios from "axios";
 
-const url = "http://localhost:3000"
+const url = "http://5.226.143.166:3000"
 
 const getAll = () => {
 	
