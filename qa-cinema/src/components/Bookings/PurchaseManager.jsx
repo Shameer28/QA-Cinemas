@@ -1,5 +1,4 @@
 import { useState } from "react";
-import Payment from "./Payment";
 import TicketSelector from "./TicketSelector";
 import StripeCheckoutForm from './stripePayment';
 
@@ -18,10 +17,10 @@ const PurchaseManager = () => {
         {getPage=="TicketSelector" ? (
         <TicketSelector setPage={setPage} getCart={getCart} setCart={setCart} url="http://localhost:3000/movies/"/>
         ) : (
-        // <Payment setPage={setPage} cart={getCart}/>
         <Elements stripe={stripePromise}>
-            <StripeCheckoutForm />
+            <StripeCheckoutForm setPage={setPage} getCart={getCart} setCart={setCart}/>
         </Elements>
+
         )}
     </div> 
     );

@@ -1,12 +1,12 @@
 import { useState } from "react";
 import { CardElement, useStripe, useElements } from "@stripe/react-stripe-js";
-import { Router } from "react-router";
+import { Button } from "react-bootstrap";
 
 import axios from "axios";
 
 const StripeCheckoutForm = (props) => {
-    const price = 10;
-
+    
+    const {setPage, getCart, setCart} = props;
     const [isProcessing, setProcessingTo] = useState(false);
     const [checkoutError, setCheckoutError] = useState();
 
@@ -37,12 +37,11 @@ const StripeCheckoutForm = (props) => {
         };
 
         setProcessingTo(true);
-
         const cardElement = elements.getElement("card");
 
         try {
             const { data: clientSecret } = await axios.post("http://localhost:3000/stripe/request", { //Backend get client secret
-                amount: price * 100
+                amount: getCart.price * 100
             });
 
             const paymentMethodReq = await stripe.createPaymentMethod({
@@ -86,8 +85,9 @@ const StripeCheckoutForm = (props) => {
                     />
                 </div>
                 {checkoutError ? <div className="text-sm my-4 text-black">{checkoutError}</div> : null}
-                <button className="bg-pink-400 hover:bg-pink-300 text-black font-bold py-2 px-4" disabled={isProcessing || !stripe}>
-                    {isProcessing ? "Processing..." : `Pay £${price}`}
+                <button onClick={() => {setPage("TicketSelector")}}>Back</button>
+                <button disabled={isProcessing || !stripe}>
+                    {isProcessing ? "Processing..." : `Pay £${getCart.price}`}
                 </button>
             </form>
         </div>
