@@ -11,7 +11,6 @@ const GettingThere = () => {
 
     return (
         <div class="background">
-
             <Carousels />
             <div style={{ width: "50%", marginRight: "auto", marginLeft: "auto", backgroundColor: "white", border: "solid" }}>
                 <div >
@@ -22,17 +21,19 @@ const GettingThere = () => {
                             <Row>
                                 <Col>
                                     <Jumbotron>
-                                        <div style={{ border: "solid", height: "500px" }}>
+                                        <div style={{ border: "solid", height: "500px", width: "100%" }}>
                                             {/* <GoogleMaps /> */}
                                             <GoogleMapsDirections />
-                                            
                                         </div>
                                     </Jumbotron>
                                 </Col>
-                                <Col style={{ margin: "auto", width: "50%" }}>
-                                    <Directions />
-                                    
-                                </Col>
+                                <Row>
+                                    <Col>
+                                        <div style={{ margin: "auto", width: "100%" }}>
+                                            <Directions />
+                                        </div>
+                                    </Col>
+                                </Row>
                             </Row>
                         </Container>
                     </Container>
@@ -44,5 +45,4 @@ const GettingThere = () => {
         </div >
     )
 }
-
 export default GettingThere

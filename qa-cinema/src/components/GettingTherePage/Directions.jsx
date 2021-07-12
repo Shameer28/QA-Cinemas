@@ -1,6 +1,6 @@
 const Directions = () => {
     return (
-        <div style={{ margin: "auto" }}>
+        <div style={{  }}>
             <div class="text"><h2><u>How to get to QA Cinema:</u></h2> </div>
             <br></br>
             <div>
