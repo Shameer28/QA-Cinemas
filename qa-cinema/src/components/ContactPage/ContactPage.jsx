@@ -8,12 +8,13 @@ const ContactPage = () => {
             <img src={image1} alt="About us photo" width="100%" fluid /><br />
             <br></br>
             <div style={{width: "50%", marginRight: "auto", marginLeft: "auto", backgroundColor:"white", border: "solid"}}>
-				<Contact />
-				<Email />
-			</div>
-        <br></br>
+              <Contact />
+              <Email/>
+			      </div>
 
-        </div >
+         <br></br>
+
+       </div >
     );
 }
 
