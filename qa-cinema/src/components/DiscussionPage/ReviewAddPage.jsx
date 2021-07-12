@@ -166,11 +166,17 @@ const ReviewAddPage = () => {
 	}
 	else if (stage === 2) {
 		return (<div className="background">
-			<Container>
-				<p>
-					Waiting ...
-				</p>
-			</Container>
+			<Modal show={show} onHide={handleClose}>
+				<Modal.Header>
+					<Modal.Title>System Message</Modal.Title>
+				</Modal.Header>
+				<Modal.Body>Your request is processing...</Modal.Body>
+				<Modal.Footer>
+					<Button variant="primary" onClick={handleClose} href="/discussionboard">
+						Close
+					</Button>
+				</Modal.Footer>
+			</Modal>
 		</div>)
 	}
 	else if (stage === 3) {
@@ -187,12 +193,22 @@ const ReviewAddPage = () => {
 					</Button>
 				</Modal.Footer>
 			</Modal>
-
 		</div>)
 	}
 
 
 	return (<div>
+		<Modal show={show} onHide={handleClose}>
+			<Modal.Header>
+				<Modal.Title>System Message</Modal.Title>
+			</Modal.Header>
+			<Modal.Body>Looks like something went wrong, please try again</Modal.Body>
+			<Modal.Footer>
+				<Button variant="primary" onClick={handleClose} href="/discussionboard">
+					Close
+				</Button>
+			</Modal.Footer>
+		</Modal>
 		<p>
 			Looks like something went wrong, Please refresh the page
 		</p>
