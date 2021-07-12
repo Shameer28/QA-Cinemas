@@ -5,13 +5,16 @@ import './OpeningTimesPage.css'
 
 const OpeningTimesPage = () => {
     return (
-        <div>
+        <div class="background">
             < Image src={image1} alt="About us photo" width="100%" /> <br />
             <br />
 
             <Container>
-                <h1 id="o1">QA Cinemas' Opening Hours :</h1><br />
+                <h2 style={{
+                    color: "white", fontWeight: "400", fontfamily: "isonormregular, sans-serif", letterSpacing: ".15em", textTransform: "uppercase", lineHeight: "1.1", textAlign: "center"}}>QA Cinemas' Opening Hours :</h2>
+                <br/>
                 <Tables />
+                <br/>
             </Container>
         </div>
     );
