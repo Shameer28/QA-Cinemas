@@ -29,34 +29,31 @@ const DiscussionRatings = () => {
 				</Button>
 			</Link>
 			<br /><br />
-			<h3>
+			<h3 style={{ color: "white", fontWeight: "400", fontfamily: "isonormregular, sans-serif", letterSpacing: ".15em", textTransform: "uppercase", lineHeight: "1.1" }}>
 				Recent Reviews
 			</h3>
 			<div>
 				{ratings.map((rating) => {
-					return <div>
-						<Card>
-							<Card.Header style={{}}>
-								<blockquote className="blockquote mb-0">
-									<p style={{ color: "black" }}><u>Movie : </u></p>
-								</blockquote>
-							</Card.Header>
-							<Card.Body>
-								<blockquote className="blockquote mb-0">
-									<p style={{ color: "black" }}>
-										{rating.msg}
-									</p>
-									<p style={{ color: "black" }}>
-										{rating.rating} out of 5
-									</p>
-									<footer className="blockquote-footer">
-										Review by<cite title="Source Title"> {rating.name}</cite>
-									</footer>
-								</blockquote>
-							</Card.Body>
-						</Card>
-						<br></br>
-					</div>
+					return <Card>
+						<Card.Header style={{}}>
+							<blockquote className="blockquote mb-0">
+								<p style={{ color: "black" }}>Movie : <b>{rating.filmName}</b> </p>
+							</blockquote>
+						</Card.Header>
+						<Card.Body>
+							<blockquote className="blockquote mb-0">
+								<p style={{ color: "black" }}>
+									{rating.msg}
+								</p>
+								<p style={{ color: "black" }}>
+									{rating.rating} out of 5
+								</p>
+								<footer className="blockquote-footer">
+									Review by<cite title="Source Title"> {rating.name}</cite>
+								</footer>
+							</blockquote>
+						</Card.Body>
+					</Card>
 				})}<br />
 			</div>
 		</div >
