@@ -16,22 +16,16 @@ const PurchaseManager = () => {
     return ( 
     <div className="text-center">
         {getPage==="TicketSelector" ? (
-        <div>
-            <Cart getCart={getCart} setCart={setCart}/>
             <TicketSelector setPage={setPage} getCart={getCart} setCart={setCart}/>
-        </div>
         ) : (
             getPage==="PaymentSuccess" ? (
                 <h1>Success!</h1>
             ):(
-            <div>
-                <Elements stripe={stripePromise}>
-                    <StripeCheckoutForm setPage={setPage} getCart={getCart} setCart={setCart}/>
-                </Elements>
-                <Cart getCart={getCart} setCart={setCart}/>
-            </div>)
+            <Elements stripe={stripePromise}>
+                <StripeCheckoutForm setPage={setPage} getCart={getCart} setCart={setCart}/>
+            </Elements>)
         )}
-        
+        <br/><Cart getCart={getCart} setCart={setCart}/>
     </div> 
     );
 }

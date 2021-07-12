@@ -40,13 +40,12 @@ const StripeCheckoutForm = (props) => {
             let formData = {};
             for (let i = 0; i < 3; i++) {
                 if (e.target[i].value === ""){
-                    console.log(e.target[i].id)
                     throw new Error("Missing Billing Details")
                 }
                 formData[e.target[i].id] = e.target[i].value;
             }
 
-            payment.createPaymentSecret(getCost).then(async (res) => {
+            payment.createPaymentSecret(getCost()).then(async (res) => {
                 const clientSecret = res.data;
                 const paymentMethodReq = await stripe.createPaymentMethod({
                     type: "card",

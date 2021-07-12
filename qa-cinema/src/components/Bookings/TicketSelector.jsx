@@ -27,7 +27,7 @@ const TicketSelector = (props) => {
 
     const updateForm = (e)=>{
         e.preventDefault();
-        const firstOption = e.target.parentElement.querySelector("#MovieTitle")[0]
+        const firstOption = e.target.parentElement.querySelector("#MovieId")[0]
         if (firstOption.value === "Select A Movie"){
             firstOption.remove()
         }
@@ -59,8 +59,12 @@ const TicketSelector = (props) => {
             formData[e.target[i].id] = e.target[i].value;
             if (i>1){
                 e.target[i].value = "";
+            }else if (i===0){
+                formData["MovieTitle"] = e.target[0][e.target[0].selectedIndex].text
             }
+
         }
+
         formData.price = formData.Adults*10 + formData.Child*5
         setCart(getCart => [...getCart, formData])
     }
@@ -73,7 +77,7 @@ const TicketSelector = (props) => {
         ) : (
             <form onSubmit={handleSubmit}>
 
-                <select id="MovieTitle" onChange={updateForm}>
+                <select id="MovieId" onChange={updateForm}>
                 <option value={null}> Select A Movie </option>
                 {movies.map((m, key) => {
                     return <option key={key} value={String(m._id)}> {m.title} </option>
