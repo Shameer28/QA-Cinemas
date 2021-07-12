@@ -75,20 +75,19 @@ function App() {
 
         <Route path="/contactpage">
           <ContactPage />
-          {/* <Test/> */}
         </Route>
 
+        <Route path="/screens">
+          <Screen/>
+        </Route>
+        
+
         <Route path="/ticketBookings">
-           <Screen/>
            <PurchaseManager/>
          </Route>
 
         <Route path="/movieDetail/:id">
           <MoviePage url="http://localhost:3000/movies/get/" />
-        </Route>
-
-        <Route path="/paymentSuccess">
-           <h2>Payment Successful, thank you!</h2>
         </Route>
 
         <Footer />

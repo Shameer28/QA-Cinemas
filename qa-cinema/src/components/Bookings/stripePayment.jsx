@@ -1,8 +1,9 @@
 import { useState } from "react";
 import { CardElement, useStripe, useElements } from "@stripe/react-stripe-js";
 import { Button } from "react-bootstrap";
+import movieUtils from "./../../utils/movies";
+import payment from "../../utils/payment";
 
-import axios from "axios";
 
 const StripeCheckoutForm = (props) => {
     
@@ -11,66 +12,65 @@ const StripeCheckoutForm = (props) => {
     const [checkoutError, setCheckoutError] = useState();
 
     const stripe = useStripe();
-    const elements = useElements(); //Stripe Thang?
+    const elements = useElements();
 
     const handleCardDetailsChange = event => {
         event.error ? setCheckoutError(event.error.message) : setCheckoutError(); // Card Check on change
     };
 
-    const handleFormSubmit = async ev => {
-        ev.preventDefault();
+    const getCost = () =>{
+        let total = 0;
+        getCart.forEach(x=>total+=x.price)
+        return total;
+    }
+
+    const handleFormSubmit = e => {
+        e.preventDefault();
 
         if (!stripe || !elements) {
             return;
         }
-
-        // TODO: NEED TO SET these from another form
-        const billingDetails = {
-            name: 'Imran Sayed',
-            email: 'andrewmccall@gmail.com',
-            address: {
-                city: 'Pune',
-                line1: 'Address 1',
-                state: 'my state',
-                postal_code: '2200'
-            }
-        };
-
+        
         setProcessingTo(true);
+        
         const cardElement = elements.getElement("card");
 
+
         try {
-            const { data: clientSecret } = await axios.post("http://localhost:3000/stripe/request", { //Backend get client secret
-                amount: getCart.price * 100
-            });
-
-            const paymentMethodReq = await stripe.createPaymentMethod({
-                type: "card",
-                card: cardElement,
-                billing_details: billingDetails
-            });
-
-            if (paymentMethodReq.error) {
-                setCheckoutError(paymentMethodReq.error.message);
-                setProcessingTo(false);
-                return;
+            let formData = {};
+            for (let i = 0; i < 3; i++) {
+                if (e.target[i].value === ""){
+                    throw new Error("Missing Billing Details")
+                }
+                formData[e.target[i].id] = e.target[i].value;
             }
 
-            const { error } = await stripe.confirmCardPayment(clientSecret, {
-                payment_method: paymentMethodReq.paymentMethod.id
-            });
+            payment.createPaymentSecret(getCost()).then(async (res) => {
+                const clientSecret = res.data;
+                const paymentMethodReq = await stripe.createPaymentMethod({
+                    type: "card",
+                    card: cardElement,
+                    billing_details: formData
+                });
 
-            if (error) {
-                setCheckoutError(error.message);
-                setProcessingTo(false);
-                return;
-            }
+                if (paymentMethodReq.error) {
+                    throw paymentMethodReq.error;
+                }
 
-            // TODO: REDIRECT TO BE ADDED
-            window.location.href="/paymentSuccess";
-            
+                const { error } = await stripe.confirmCardPayment(clientSecret, {
+                    payment_method: paymentMethodReq.paymentMethod.id
+                });
+
+                if (error) {
+                    throw error;
+                }
+
+                setPage("PaymentSuccess");
+
+            }); 
         } catch (err) {
             setCheckoutError(err.message);
+            setProcessingTo(false);
         }
     };
 
@@ -79,16 +79,20 @@ const StripeCheckoutForm = (props) => {
             <form onSubmit={handleFormSubmit} className="stripe-form w-308px lg:w-600px border border px-4 lg:px-8 py-6 lg:py-10 m-auto">
                 <h2 className="text-black mb-6 uppercase font-600">Stripe Payment: Pay with card</h2>
                 <div className="mb-4">
-                    <h6 className="text-sm mb-1 text-black">Card Information</h6>
-                    <CardElement
-                        onChange={handleCardDetailsChange}
-                    />
+                    <label htmlFor="name" >Biling Name:</label><br/>
+                    <input type="text" id="name" /><br/>
+                    <label htmlFor="email" >Email:</label><br/>
+                    <input type="text" id="email" /><br/>
+                    <label htmlFor="address" >Address:</label><br/>
+                    <textarea type="text" id="address" /><br/>
+
+                    <h6>Card Information</h6>
+                    <CardElement onChange={handleCardDetailsChange}/>
+
                 </div>
                 {checkoutError ? <div className="text-sm my-4 text-black">{checkoutError}</div> : null}
                 <button onClick={() => {setPage("TicketSelector")}}>Back</button>
-                <button disabled={isProcessing || !stripe}>
-                    {isProcessing ? "Processing..." : `Pay £${getCart.price}`}
-                </button>
+                <button disabled={isProcessing || !stripe}> {isProcessing ? "Processing..." : `Pay £${getCost()}`} </button>
             </form>
         </div>
     );

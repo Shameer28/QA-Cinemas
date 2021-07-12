@@ -1,4 +1,3 @@
-
 import axios from "axios";
 
 const url = "http://5.226.143.166:3000"
@@ -52,7 +51,6 @@ const createRating = (data) => {
 		});
 	})
 }
-
 
 export default {
 	getAll: getAll,

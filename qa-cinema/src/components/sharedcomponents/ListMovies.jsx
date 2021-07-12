@@ -40,7 +40,7 @@ const ListMovies = (  {sort} ) => {
 	}
 
 	return (<div>
-		{data.map(x => <PosterLink image={x.image} _id={x._id} />)}
+		{data.map((x, key) => <PosterLink key={key} image={x.image} _id={x._id} />)}
 	</div>);
 }
 
