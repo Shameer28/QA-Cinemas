@@ -41,6 +41,7 @@ const ListMovies = ({ sort }) => {
 		</p>)
 	}
 
+
 	return (
 		<div>
 			<Row md={4}>
@@ -60,6 +61,7 @@ const ListMovies = ({ sort }) => {
 			<br></br>
 		</div>
 	);
+
 }
 
 export default ListMovies;

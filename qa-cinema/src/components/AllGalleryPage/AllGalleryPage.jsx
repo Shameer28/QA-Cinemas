@@ -5,6 +5,7 @@ import ListMovies from "./../sharedcomponents/ListMovies"
 
 
 const AllGalleryPage = () => {
+
     return (
         <div class="background">
             <Container>
@@ -22,6 +23,7 @@ const AllGalleryPage = () => {
             </Container>
         </div>
     );
+
 }
 
 export default AllGalleryPage;
