@@ -14,7 +14,7 @@ const DiscussionBoard = () => {
 		<div className="background">
 			<Image src={image1} alt="review banner" width="100% fluid" /> <br /><br />
 			<Container >
-				<h1>
+				<h1 style={{ color: "white", fontWeight: "400", fontfamily: "isonormregular, sans-serif", letterSpacing: ".15em", textTransform: "uppercase", lineHeight: "1.1" }}>
 					Welcome to the Discussion Board
 				</h1>
 				<Tabs
