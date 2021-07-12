@@ -1,37 +1,64 @@
 import { Link } from 'react-router-dom';
 import movies from '../../utils/movies';
+import Button from 'react-bootstrap/Button'
+import Card from 'react-bootstrap/Card'
+import './DiscussionPage.css';
 
 
-import {useState, useEffect} from "react"
+
+import { useState, useEffect } from "react"
+import FormImpl from 'react-bootstrap/esm/Form';
 
 const DiscussionRatings = () => {
 
 	const [ratings, setRatings] = useState([]);
 
-	useEffect( ()=> {
-		movies.getRecentReviews().then( (resp) => {
+	// const [film, setFilm] = useState({ title: "Detective Pikachu", _id: "123123123" });
+
+	useEffect(() => {
+		movies.getRecentReviews().then((resp) => {
 			setRatings(resp.data);
 		});
 	}, []);
 
-	return ( 
+	return (
 		<div>
-			<Link to="/reviews">
-				<button type="button">
-					Add a review
-				</button>
+			<Link to="/reviews"><br />
+				<Button type="button" variant="primary">
+					Add a Review
+				</Button>
 			</Link>
-
-			<h4>
+			<br /><br />
+			<h3>
 				Recent Reviews
-			</h4>
+			</h3>
 			<div>
-				{ratings.map( (rating) => {
-					return <p> {rating.name} has given a rating of {rating.rating} to a film!</p>	
-				})}
+				{ratings.map((rating) => {
+					return <Card>
+						<Card.Header style={{}}>
+							<blockquote className="blockquote mb-0">
+								<p style={{ color: "black" }}><u>Movie : </u></p>
+							</blockquote>
+						</Card.Header>
+						<Card.Body>
+							<blockquote className="blockquote mb-0">
+								<p style={{ color: "black" }}>
+									{rating.msg}
+								</p>
+								<p style={{ color: "black" }}>
+									{rating.rating} out of 5
+								</p>
+								<footer className="blockquote-footer">
+									Review by<cite title="Source Title"> {rating.name}</cite>
+								</footer>
+							</blockquote>
+						</Card.Body>
+					</Card>
+
+				})}<br />
 			</div>
-		</div>
+		</div >
 	);
 }
- 
+
 export default DiscussionRatings;

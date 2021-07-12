@@ -8,18 +8,16 @@ import './Classification.css'
 
 const Classification = () => {
     return (
-        <div>
-
-            < Image src={image1} alt="About us photo" width="100%" /> <br />
-
-
+        <div class="background">
+            < Image src={image1} alt="About us photo" width="100%" />
             <Container>
-                <h1>Movie Content Rating System</h1><br />
-
-                <h2>Ratings At A Glance :</h2><br />
+                <br />
+                <h2 style={{ color: "white", fontWeight: "400", fontfamily: "isonormregular, sans-serif", letterSpacing: ".15em", textTransform: "uppercase", lineHeight: "1.1" }}>Movie Content Rating System</h2>
+                <br />
+                <h3 style={{ color: "white", fontWeight: "400", fontfamily: "isonormregular, sans-serif", letterSpacing: ".15em", textTransform: "uppercase", lineHeight: "1.1" }}>Ratings At A Glance :</h3><br />
                 <Accordions />
             </Container>
-
+            <br />
 
         </div>
 
