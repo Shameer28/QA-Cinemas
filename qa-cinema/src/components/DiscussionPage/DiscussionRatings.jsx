@@ -31,10 +31,10 @@ const DiscussionRatings = () => {
 			<br /><br />
 			<h3 style={{ color: "white", fontWeight: "400", fontfamily: "isonormregular, sans-serif", letterSpacing: ".15em", textTransform: "uppercase", lineHeight: "1.1" }}>
 				Recent Reviews
-			</h3>
+			</h3><br />
 			<div>
 				{ratings.map((rating) => {
-					return <Card>
+					return <div><Card>
 						<Card.Header style={{}}>
 							<blockquote className="blockquote mb-0">
 								<p style={{ color: "black" }}>Movie : <b>{rating.filmName}</b> </p>
@@ -54,6 +54,8 @@ const DiscussionRatings = () => {
 							</blockquote>
 						</Card.Body>
 					</Card>
+						<br /><br />
+					</div>
 				})}<br />
 			</div>
 		</div >
