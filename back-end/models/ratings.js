@@ -13,8 +13,8 @@ const reviews = new Schema({
 		// limit it to 1-5
 	},
 	msg: {
-		type: String
-		// max size
+		type: String,
+		maxlength: 300,
 	},
 	filmID: {
 		type: Schema.Types.ObjectId

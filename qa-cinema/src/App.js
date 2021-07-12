@@ -23,6 +23,7 @@ import Screen from './components/Screens/Screen';
 import MoviePage from './components/sharedcomponents/MoviePage';
 import PurchaseManager from './components/Bookings/PurchaseManager';
 import Test from './components/ContactPage/Contact';
+import ThreadPage from './components/DiscussionPage/ThreadPage';
 function App() {
   return (
     <div>
@@ -60,6 +61,9 @@ function App() {
         <Route path="/reviews">
           <ReviewAddPage />
         </Route>
+		<Route path="/forums/:id">
+          <ThreadPage/>
+        </Route>
         <Route path="/discussionboard">
           <DiscussionBoard />
         </Route>
@@ -75,15 +79,16 @@ function App() {
         </Route>
 
         <Route path="/ticketBookings">
-          <Screen />
-        </Route>
+           <Screen/>
+           <PurchaseManager/>
+         </Route>
 
         <Route path="/movieDetail/:id">
           <MoviePage url="http://localhost:3000/movies/get/" />
         </Route>
 
-        <Route path="/ticketbookings">
-          <PurchaseManager />
+        <Route path="/paymentSuccess">
+           <h2>Payment Successful, thank you!</h2>
         </Route>
 
         <Footer />

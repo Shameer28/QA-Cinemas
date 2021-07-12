@@ -1,16 +1,19 @@
 import { Navbar, Nav, Button, NavDropdown, FormControl } from "react-bootstrap";
 import Form from 'react-bootstrap/Form'
 import Logo from '../img/Logo.png';
+import { Image } from "react-bootstrap";
+
 const NavBar = () => {
     return (
         <Navbar className="nav" bg="dark" variant="dark">
 
-            <Navbar.Brand href="/" id="navlogo"> <img
+            <Navbar.Brand href="/" id="navlogo"> <Image
                 src={Logo}
                 width="45%"
                 className="d-inline-block align-top"
                 style={{marginLeft:"60%"}}
                 alt="React Bootstrap logo"
+                rounded
             />
             </Navbar.Brand>
             <Navbar.Toggle aria-controls="basic-navbar-nav" />
