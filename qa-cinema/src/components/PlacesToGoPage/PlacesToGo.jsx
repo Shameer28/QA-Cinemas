@@ -21,7 +21,7 @@ const PlacesToGo = () => {
                 <Image src={image10} alt="About us photo" width="100%" fluid /><br />
                 <Container>
                     <br />
-                    <h2 style={{ color: "white", fontWeight: "400", fontfamily: "isonormregular, sans-serif", letterSpacing: ".15em", textTransform: "uppercase", lineHeight: "1.1" }}><u>Here Are Some Local Venues to Checkout!</u></h2><br />
+                    <h2 style={{ color: "white", fontWeight: "400", fontfamily: "isonormregular, sans-serif", letterSpacing: ".15em", textTransform: "uppercase", lineHeight: "1.1" }}>Here Are Some Local Venues to Checkout!</h2><br />
                     <h3 style={{ color: "white", fontWeight: "400", fontfamily: "isonormregular, sans-serif", letterSpacing: ".15em", textTransform: "uppercase", lineHeight: "1.1" }}>Christophers</h3>
                     <Row>
                         <Col xs={6} md={4}>
@@ -96,7 +96,7 @@ const PlacesToGo = () => {
                     <br />
 
                     <h3 style={{ color: "white", fontWeight: "400", fontfamily: "isonormregular, sans-serif", letterSpacing: ".15em", textTransform: "uppercase", lineHeight: "1.1" }}>Namco Funscape</h3>
-                    
+
                     <Row>
                         <Col xs={6} md={4}>
                             <div style={{ width: "100%", height: "100%", marginRight: "auto", marginLeft: "auto", backgroundColor: "white", border: "solid" }}>
@@ -122,10 +122,10 @@ const PlacesToGo = () => {
                             <div style={{ width: "100%", height: "100%", marginRight: "auto", marginLeft: "auto", backgroundColor: "white", border: "solid" }}>
                                 <Image src={image7} width="750px" height="499px" alt="Photo In Namco Funscape Of Pool Tables" thumbnail />
                                 <p><b>Contact Details:</b><br /></p>
-                                    <ul>
-                                        <li>Phone:  020 7967 1066</li>
-                                        <li>Email: namcofunscape@live.com</li>
-                                    </ul>                               
+                                <ul>
+                                    <li>Phone:  020 7967 1066</li>
+                                    <li>Email: namcofunscape@live.com</li>
+                                </ul>
                             </div>
                         </Col>
                     </Row>

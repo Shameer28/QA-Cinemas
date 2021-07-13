@@ -1,7 +1,7 @@
 
 import { useState, useEffect } from "react"
 import movieUtils from "../../utils/movies";
-import { Container, Button, Image, Card, Row, Col, Modal } from 'react-bootstrap';
+import { Container, Button, Image, Card, Row, Col, Modal, Form } from 'react-bootstrap';
 import image1 from './../img/review2.png';
 import './DiscussionPage.css';
 
@@ -137,7 +137,7 @@ const ReviewAddPage = () => {
 		return (
 			<div className="background">
 				<Container id="revcont"><br />
-					<form action="" className="text-center">
+					<Form action="" className="text-center">
 						<fieldset>
 							<legend style={{ color: "white", fontWeight: "400", fontfamily: "isonormregular, sans-serif", letterSpacing: ".15em", textTransform: "uppercase", lineHeight: "1.1" }}>Details</legend>
 							<input value={name} type="text" placeholder="Name" onChange={(e) => { e.preventDefault(); setName(e.target.value); }} />
@@ -159,7 +159,7 @@ const ReviewAddPage = () => {
 						</p>
 						<Button onClick={submit}> Add Review</Button>
 						<br /><br />
-					</form>
+					</Form>
 				</Container>
 			</div >
 		);
@@ -209,9 +209,6 @@ const ReviewAddPage = () => {
 				</Button>
 			</Modal.Footer>
 		</Modal>
-		<p>
-			Looks like something went wrong, Please refresh the page
-		</p>
 	</div>);
 }
 

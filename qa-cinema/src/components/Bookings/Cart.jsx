@@ -8,6 +8,7 @@ const Cart = ({ getCart, setCart }) => {
     //                     setCart(newCart);}}>
     //         X</button>
 
+
     if (getCart.length === 0) {
         return (<></>);
     } else {
@@ -16,12 +17,18 @@ const Cart = ({ getCart, setCart }) => {
                 <Container>
                     <div style={{ border: "solid", backgroundColor: "white" }}>
                         
-                        <h1>Cart:</h1>
-                        <p>Name | Movie | Adults, Children | Price </p>
-                        {getCart.map((x, key) => (<p key={key}>{x.Name} | {x.MovieTitle} | {x.Adults}, {x.Child} | £{x.price}</p>))}
+                        if (getCart.length===0){
+        return(<></>);
+    }else{
+        return ( 
+            <div>
+                <h1>Cart:</h1>
+                <p>Name | Movie | Adults, Children | Concession | Price </p>
+                {getCart.map((x, key)=>(<p key={key}>{x.Name} | {x.MovieTitle} | {x.Adults}, {x.Child} | {["No Snack","Large Drink","Popcorn","Large Drink & Popcorn"][x.Concessions]} | £{x.price}</p>))}
                         </div>
                     </Container>
                 
+
             </div>);
     }
 
