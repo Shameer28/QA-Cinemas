@@ -126,6 +126,7 @@ const TicketSelector = (props) => {
                             {movies.length === 0 ? (
                                 <h5>Loading Form</h5>
                             ) : (
+
                                 <form onSubmit={handleSubmit}>
 
                                     <select id="MovieId" onChange={updateForm}>
@@ -157,6 +158,7 @@ const TicketSelector = (props) => {
                                     <br /><input type="submit" value="Add To Cart" />
                                     <button onClick={() => { setPage("Checkout") }} disabled={getCart.length === 0}>Checkout</button>
                                 </form>
+
                             )}
                         </Card.Text>
                     </Card.Body>
