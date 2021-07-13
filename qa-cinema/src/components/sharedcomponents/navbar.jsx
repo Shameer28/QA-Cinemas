@@ -28,6 +28,7 @@ const NavBar = () => {
                     <Nav.Link href="/openingtimes">Opening Times</Nav.Link>
                     <Nav.Link href="/classification">Classifications</Nav.Link>
                     <Nav.Link href="/ticketbookings">Bookings</Nav.Link>
+                    <Nav.Link href="/screens">Screens</Nav.Link>
                     <Nav.Link href="/placestogo">Places to Go </Nav.Link>
                     <Nav.Link href="/gettingthere">Getting There</Nav.Link>
                     <Nav.Link href="/discussionboard">Discussion Board</Nav.Link>
