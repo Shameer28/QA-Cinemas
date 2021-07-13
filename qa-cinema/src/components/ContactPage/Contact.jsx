@@ -58,9 +58,7 @@ const Contact = () => {
       <div >
         <Container className="p-3">
           <Container>
-            <Row>
-              
-            </Row>
+            
             <Row>
               <Col>
                 <Jumbotron>

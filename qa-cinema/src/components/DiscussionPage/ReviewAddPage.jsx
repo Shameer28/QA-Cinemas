@@ -1,8 +1,9 @@
 
 import { useState, useEffect } from "react"
 import movieUtils from "../../utils/movies";
-import { Container, Button, Image, Card } from 'react-bootstrap';
+import { Container, Button, Image, Card, Row, Col, Modal, Form } from 'react-bootstrap';
 import image1 from './../img/review2.png';
+import './DiscussionPage.css';
 
 const ReviewAddPage = () => {
 
@@ -19,6 +20,10 @@ const ReviewAddPage = () => {
 	const [name, setName] = useState("");
 
 	const [email, setEmail] = useState("");
+	const [show, setShow] = useState(false);
+
+	const handleClose = () => setShow(false);
+	const handleShow = () => setShow(true);
 
 
 	useEffect(() => {
@@ -50,6 +55,7 @@ const ReviewAddPage = () => {
 
 	const submit = (e) => {
 		e.preventDefault();
+		handleShow();
 
 		// check if the film is valid
 
@@ -64,13 +70,12 @@ const ReviewAddPage = () => {
 
 
 
-
 		const reviewData = {
 			rating: rating,
 			name: name,
 			email: email,
 			msg: msg,
-			filmId: film._id,
+			filmID: film._id,
 		}
 
 		movieUtils.createRating(reviewData).then(() => {
@@ -86,22 +91,34 @@ const ReviewAddPage = () => {
 		return (<div className="background">
 			<Image src={image1} alt="Select Banner" width="100%" fluid />
 			<Container>
+				<br />
 
-				<h1> Select a film to add a review</h1>
+				<h1 id="revh1" style={{ color: "white", fontWeight: "400", fontfamily: "isonormregular, sans-serif", letterSpacing: ".15em", textTransform: "uppercase", lineHeight: "1.1" }}> Select a film to add a review</h1>
 
-				<div>
+				<div id="revcarddiv" style={{ width: "100%", height: "100%", marginRight: "auto", marginLeft: "auto" }}>
+					<br />
+					<Row md={4}>
 
-					{films.map((resp) => (
-						<Button onClick={(e) => { selectFilm(e, resp) }}>
-							{resp.title}
-						</Button>
+						{films.map((resp) => (
+							<Col xs={4}>
+								<div class="text-center">
+									<Card style={{ width: '18rem' }} >
+										<Card.Img variant="top" src="holder.js/100px180" />
+										<Card.Body>
+											<Card.Title>{resp.title}</Card.Title>
+											<Button onClick={(e) => { selectFilm(e, resp) }}>
+												Review
+											</Button>
+										</Card.Body>
+									</Card><br /><br />
+								</div>
+							</Col>
 
-					))}
-
+						))}
+					</Row>
 				</div>
-
 			</Container>
-		</div>
+		</div >
 		);
 
 	} else if (stage === 1) {
@@ -119,15 +136,15 @@ const ReviewAddPage = () => {
 
 		return (
 			<div className="background">
-				<Container id="revcont">
-					<form action="">
+				<Container id="revcont"><br />
+					<Form action="" className="text-center">
 						<fieldset>
-							<legend>Details</legend>
+							<legend style={{ color: "white", fontWeight: "400", fontfamily: "isonormregular, sans-serif", letterSpacing: ".15em", textTransform: "uppercase", lineHeight: "1.1" }}>Details</legend>
 							<input value={name} type="text" placeholder="Name" onChange={(e) => { e.preventDefault(); setName(e.target.value); }} />
 							<input value={email} type="email" placeholder="Email Address" required onChange={(e) => { e.preventDefault(); setEmail(e.target.value) }} />
-						</fieldset>
+						</fieldset><br />
 
-						<h4>
+						<h4 style={{ color: "white", fontWeight: "400", fontfamily: "isonormregular, sans-serif", letterSpacing: ".15em", textTransform: "uppercase", lineHeight: "1.1" }}>
 							How many ratings do you want to give {film.title}?
 						</h4>
 
@@ -135,42 +152,63 @@ const ReviewAddPage = () => {
 
 						<br />
 
-						<textarea value={msg} name="" id="" cols="50" rows="10" onChange={(e) => { msgUpdate(e, e.target.value) }}  ></textarea>
+						<textarea value={msg} name="" id="" cols="48" rows="10" onChange={(e) => { msgUpdate(e, e.target.value) }}  ></textarea>
 
 						<p>
 							{msg.length} / 300
 						</p>
 						<Button onClick={submit}> Add Review</Button>
 						<br /><br />
-					</form>
+					</Form>
 				</Container>
-			</div>
+			</div >
 		);
 	}
 	else if (stage === 2) {
 		return (<div className="background">
-			<Container>
-				<p>
-					Waiting ...
-				</p>
-			</Container>
+			<Modal show={show} onHide={handleClose}>
+				<Modal.Header>
+					<Modal.Title>System Message</Modal.Title>
+				</Modal.Header>
+				<Modal.Body>Your request is processing...</Modal.Body>
+				<Modal.Footer>
+					<Button variant="primary" onClick={handleClose} href="/discussionboard">
+						Close
+					</Button>
+				</Modal.Footer>
+			</Modal>
 		</div>)
 	}
 	else if (stage === 3) {
 		return (<div className="background">
-			<Container>
-				<p>
-					Rating added succesfully
-				</p>
-			</Container>
+
+			<Modal show={show} onHide={handleClose}>
+				<Modal.Header>
+					<Modal.Title>System Message</Modal.Title>
+				</Modal.Header>
+				<Modal.Body>Review added successfully!</Modal.Body>
+				<Modal.Footer>
+					<Button variant="primary" onClick={handleClose} href="/discussionboard">
+						Close
+					</Button>
+				</Modal.Footer>
+			</Modal>
 		</div>)
 	}
 
 
 	return (<div>
-		<p>
-			Looks like something went wrong, Please refresh the page
-		</p>
+		<Modal show={show} onHide={handleClose}>
+			<Modal.Header>
+				<Modal.Title>System Message</Modal.Title>
+			</Modal.Header>
+			<Modal.Body>Looks like something went wrong, please try again</Modal.Body>
+			<Modal.Footer>
+				<Button variant="primary" onClick={handleClose} href="/discussionboard">
+					Close
+				</Button>
+			</Modal.Footer>
+		</Modal>
 	</div>);
 }
 

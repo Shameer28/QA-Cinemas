@@ -4,7 +4,6 @@ import { Button } from "react-bootstrap";
 import movieUtils from "./../../utils/movies";
 import payment from "../../utils/payment";
 
-
 const StripeCheckoutForm = (props) => {
     
     const {setPage, getCart, setCart} = props;
