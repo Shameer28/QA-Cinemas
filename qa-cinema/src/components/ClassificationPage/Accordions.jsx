@@ -13,7 +13,7 @@ import './Classification.css'
 
 const Accordions = () => {
     return (
-        <div>
+        <div >
 
             <Accordion className="accord" defaultActiveKey="0">
                 <Card>
