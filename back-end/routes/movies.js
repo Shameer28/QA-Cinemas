@@ -38,8 +38,7 @@ const tempData = {
 }
 
 router.get("/getAll", async (req, res) => {
-	const data = []
-	await FilmDB.find({}, { "title": true, "image": true}, (err, films) => {
+	await FilmDB.find({}, { "title": true, "image": true, "releaseDate": true}, (err, films) => {
 		if (err) {
 			res.status(505).send(err.message);
 		} else {
@@ -72,6 +71,19 @@ router.post("/create", async (req, res) => {
 		res.send(film);
 	} catch (e) {
 		res.status(404).send(e.name + ': ' + e.message);
+	}
+});
+
+router.delete("/delete/:id", async (req, res)=> {
+	const id = req.params.id;
+
+	try {
+		const success = await FilmDB.deleteOne({_id: id});
+
+		res.send(success.n === 1)
+	}
+	catch (e) {
+		res.status(503).send("Invalid id")
 	}
 });
 
