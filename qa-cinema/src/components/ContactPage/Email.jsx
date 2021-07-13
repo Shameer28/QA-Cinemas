@@ -3,6 +3,7 @@ import "bootstrap/dist/css/bootstrap.min.css";
 import Card from 'react-bootstrap/Card'
 import Container from "react-bootstrap/Container";
 import Form from "react-bootstrap/Form";
+import { Button } from "react-bootstrap";
 
 const Email = () => {
     const [Email, setEmail] = useState('');
@@ -19,7 +20,7 @@ const Email = () => {
 
         const dataToSend = JSON.stringify({ Email, FirstName, LastName, TextArea });
         console.log("data has been sent");
-        console.log(dataToSend);        
+        console.log(dataToSend);
 
         //Setting the states back to ''
         setEmail('');
@@ -70,7 +71,7 @@ const Email = () => {
                                     <Form.Control id="TextArea" as="textarea" className="form-control" required minLength={3} rows={3} value={TextArea} onChange={(e) => { setTextArea(e.target.value) }} />
                                 </Form.Group>
                                 <br />
-                                <button type="submit"> submit</button>
+                                <Button type="submit"> Submit</Button>
                             </Form>
                         </Card.Text>
 

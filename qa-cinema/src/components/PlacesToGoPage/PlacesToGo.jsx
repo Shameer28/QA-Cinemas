@@ -18,7 +18,7 @@ const PlacesToGo = () => {
     return (
         <div class="background">
             <div>
-                <Image src={image10} alt="About us photo" width="100%" fluid /><br />
+                <Image src={image10} alt="places to go banner" width="100%" fluid /><br />
                 <Container>
                     <br />
                     <h2 style={{ color: "white", fontWeight: "400", fontfamily: "isonormregular, sans-serif", letterSpacing: ".15em", textTransform: "uppercase", lineHeight: "1.1" }}>Here Are Some Local Venues to Checkout!</h2><br />
@@ -27,7 +27,7 @@ const PlacesToGo = () => {
                         <Row >
                             <Col xs={6} md={4}>
                                 <div style={{ width: "100%", height: "100%", marginRight: "auto", marginLeft: "auto", backgroundColor: "white", border: "solid" }}>
-                                    <Image src={image1} width="750px" height="499px" alt="Christophers Building Photo" thumbnail />
+                                    <Image className="placesImage" src={image1} width="750px" height="499px" alt="Christophers Building Photo" thumbnail />
                                     <p><b>Open Hours: 11AM - 12AM</b></p>
                                     <p><b>Venue Description:</b><br />
                                         Classic all-day American steakhouse and grill plus martini cocktail bar in high-ceilinged rooms. </p>
