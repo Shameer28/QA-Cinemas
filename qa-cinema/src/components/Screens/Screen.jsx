@@ -78,7 +78,7 @@ const Screen = () => {
                         <Card.Text>
                             <img src={image4} alt="Image of seating plan" width="50%" />
                             <p>
-                                The Criterion Theatre has a capacity of 566 seats, including 406 seats in the Stalls, 124 seats in the Circle and 33 seats in the Box.
+                                The theatre has a capacity of 566 seats, including 406 seats in the Stalls, 124 seats in the Circle and 33 seats in the Box.
 
                             </p>
                         </Card.Text>

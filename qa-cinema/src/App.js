@@ -1,8 +1,7 @@
 import './App.css';
-
 import HomePage from './components/HomePage/HomePage';
 import NavBar from './components/sharedcomponents/navbar';
-import Footer from './components/sharedcomponents/Footer';
+import Footers from './components/sharedcomponents/Footers';
 import { BrowserRouter, Route } from "react-router-dom";
 import AllGalleryPage from './components/AllGalleryPage/AllGalleryPage';
 import OpeningTimesPage from './components/OpeningTimesPage/OpeningTimesPage';
@@ -90,7 +89,7 @@ function App() {
           <MoviePage url="http://localhost:3000/movies/get/" />
         </Route>
 
-        <Footer />
+        <Footers />
       </BrowserRouter>
     </div >
   );
