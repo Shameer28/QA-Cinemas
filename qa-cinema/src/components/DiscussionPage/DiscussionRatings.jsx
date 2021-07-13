@@ -46,7 +46,7 @@ const DiscussionRatings = () => {
 									{rating.msg}
 								</p>
 								<p style={{ color: "black" }}>
-									{rating.rating} out of 5
+									Rating : {rating.rating}/5
 								</p>
 								<footer className="blockquote-footer">
 									Review by<cite title="Source Title"> {rating.name}</cite>
