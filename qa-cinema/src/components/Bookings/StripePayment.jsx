@@ -1,12 +1,19 @@
 import { useState } from "react";
 import { CardElement, useStripe, useElements } from "@stripe/react-stripe-js";
-import { Button } from "react-bootstrap";
+import { Button, Container } from "react-bootstrap";
 import movieUtils from "./../../utils/movies";
 import payment from "../../utils/payment";
 
+import Carousel from 'react-bootstrap/Carousel'
+import './carousel.css'
+import image1 from './img/theatre.jpg'
+import image2 from './img/set.png'
+import image3 from './img/cinemas.jpg'
+import image4 from './img/cinema2.jpg'
+
 const StripeCheckoutForm = (props) => {
-    
-    const {setPage, getCart, setCart} = props;
+
+    const { setPage, getCart, setCart } = props;
     const [isProcessing, setProcessingTo] = useState(false);
     const [checkoutError, setCheckoutError] = useState();
 
@@ -17,9 +24,9 @@ const StripeCheckoutForm = (props) => {
         event.error ? setCheckoutError(event.error.message) : setCheckoutError(); // Card Check on change
     };
 
-    const getCost = () =>{
+    const getCost = () => {
         let total = 0;
-        getCart.forEach(x=>total+=x.price)
+        getCart.forEach(x => total += x.price)
         return total;
     }
 
@@ -29,16 +36,16 @@ const StripeCheckoutForm = (props) => {
         if (!stripe || !elements) {
             return;
         }
-        
+
         setProcessingTo(true);
-        
+
         const cardElement = elements.getElement("card");
 
 
         try {
             let formData = {};
             for (let i = 0; i < 3; i++) {
-                if (e.target[i].value === ""){
+                if (e.target[i].value === "") {
                     throw new Error("Missing Billing Details")
                 }
                 formData[e.target[i].id] = e.target[i].value;
@@ -66,7 +73,7 @@ const StripeCheckoutForm = (props) => {
 
                 setPage("PaymentSuccess");
 
-            }); 
+            });
         } catch (err) {
             setCheckoutError(err.message);
             setProcessingTo(false);
@@ -74,25 +81,66 @@ const StripeCheckoutForm = (props) => {
     };
 
     return (
-        <div className="stripe-form-container">
-            <form onSubmit={handleFormSubmit} className="stripe-form w-308px lg:w-600px border border px-4 lg:px-8 py-6 lg:py-10 m-auto">
-                <h2 className="text-black mb-6 uppercase font-600">Stripe Payment: Pay with card</h2>
-                <div className="mb-4">
-                    <label htmlFor="name" >Biling Name:</label><br/>
-                    <input type="text" id="name" /><br/>
-                    <label htmlFor="email" >Email:</label><br/>
-                    <input type="text" id="email" /><br/>
-                    <label htmlFor="address" >Address:</label><br/>
-                    <textarea type="text" id="address" /><br/>
+        <div class="background">
+             <Carousel controls={false} slide={true} fade={true} pause={false} height="650px">
+                <Carousel.Item interval={3000}>
+                    <img
+                        className="d-block w-100"
+                        src={image1}
+                        alt="First slide"
+                    />
+                </Carousel.Item>
+                <Carousel.Item interval={3000}>
+                    <img
+                        className="d-block w-100"
+                        src={image2}
+                        alt="Second slide"
+                    />
+                </Carousel.Item>
+                <Carousel.Item interval={3000}>
+                    <img
+                        className="d-block w-100"
+                        src={image3}
+                        alt="Third slide"
+                    />
+                </Carousel.Item>
+                <Carousel.Item interval={3000}>
+                    <img
+                        className="d-block w-100"
+                        src={image4}
+                        alt="Third slide"
+                    />
+                </Carousel.Item>
+            </Carousel>
+            <br></br>
+            <Container>
+                <div style={{ border: "solid", backgroundColor:"white"}}>
+                    <div className="stripe-form-container">
+                        <form onSubmit={handleFormSubmit} className="stripe-form w-308px lg:w-600px border border px-4 lg:px-8 py-6 lg:py-10 m-auto">
+                            <h2 className="text-black mb-6 uppercase font-600">Stripe Payment: Pay with card</h2>
+                            <div className="mb-4">
+                                <label htmlFor="name" >Biling Name:</label><br />
+                                <input type="text" id="name" /><br />
+                                <label htmlFor="email" >Email:</label><br />
+                                <input type="text" id="email" /><br />
+                                <label htmlFor="address" >Address:</label><br />
+                                <textarea type="text" id="address" /><br />
 
-                    <h6>Card Information</h6>
-                    <CardElement onChange={handleCardDetailsChange}/>
+                                <h6>Card Information</h6>
+                                <div className="container">
+                                    <div style={{ width: "50%", margin: "auto" }}>
+                                        <CardElement onChange={handleCardDetailsChange} />
+                                    </div>
+                                </div>
 
+                            </div>
+                            {checkoutError ? <div className="text-sm my-4 text-black">{checkoutError}</div> : null}
+                            <button onClick={() => { setPage("TicketSelector") }}>Back</button>
+                            <button disabled={isProcessing || !stripe}> {isProcessing ? "Processing..." : `Pay £${getCost()}`} </button>
+                        </form>
+                    </div>
                 </div>
-                {checkoutError ? <div className="text-sm my-4 text-black">{checkoutError}</div> : null}
-                <button onClick={() => {setPage("TicketSelector")}}>Back</button>
-                <button disabled={isProcessing || !stripe}> {isProcessing ? "Processing..." : `Pay £${getCost()}`} </button>
-            </form>
+            </Container>
         </div>
     );
 };

@@ -25,12 +25,14 @@
     "react-form-with-constraints": "^0.18.0",
     "react-iframe": "^1.8.0",
     "react-native": "^0.64.2",
+    "react-native-elements": "^3.4.2",
     "react-native-google-maps-directions": "^2.1.1",
     "react-native-link": "^4.1.0",
     "react-native-maps-directions": "^1.8.0",
     "react-router-dom": "^5.2.0",
     "react-scripts": "^4.0.3",
     "react-slideshow-image": "^3.5.0",
+    "react-social-icons": "^5.5.1",
     "web-vitals": "^1.1.2"
   },
   "scripts": {
