@@ -18,48 +18,50 @@ const PlacesToGo = () => {
     return (
         <div class="background">
             <div>
-                <Image src={image10} alt="About us photo" width="100%" fluid /><br />
+                <Image src={image10} alt="places to go banner" width="100%" fluid /><br />
                 <Container>
                     <br />
                     <h2 style={{ color: "white", fontWeight: "400", fontfamily: "isonormregular, sans-serif", letterSpacing: ".15em", textTransform: "uppercase", lineHeight: "1.1" }}>Here Are Some Local Venues to Checkout!</h2><br />
                     <h3 style={{ color: "white", fontWeight: "400", fontfamily: "isonormregular, sans-serif", letterSpacing: ".15em", textTransform: "uppercase", lineHeight: "1.1" }}>Christophers</h3>
-                    <Row>
-                        <Col xs={6} md={4}>
-                            <div style={{ width: "100%", height: "100%", marginRight: "auto", marginLeft: "auto", backgroundColor: "white", border: "solid" }}>
-                                <Image src={image1} width="750px" height="499px" alt="Christophers Building Photo" thumbnail />
-                                <p><b>Open Hours: 11AM - 12AM</b></p>
-                                <p><b>Venue Description:</b><br />
-                                    Classic all-day American steakhouse and grill plus martini cocktail bar in high-ceilinged rooms. </p>
-                                <br></br>
-                            </div>
+                    <div>
+                        <Row >
+                            <Col xs={6} md={4}>
+                                <div style={{ width: "100%", height: "100%", marginRight: "auto", marginLeft: "auto", backgroundColor: "white", border: "solid" }}>
+                                    <Image className="placesImage" src={image1} width="750px" height="499px" alt="Christophers Building Photo" thumbnail />
+                                    <p><b>Open Hours: 11AM - 12AM</b></p>
+                                    <p><b>Venue Description:</b><br />
+                                        Classic all-day American steakhouse and grill plus martini cocktail bar in high-ceilinged rooms. </p>
+                                    <br></br>
+                                </div>
 
-                        </Col>
+                            </Col>
 
-                        <Col xs={6} md={4}>
-                            <div style={{ width: "100%", height: "100%", marginRight: "auto", marginLeft: "auto", backgroundColor: "white", border: "solid" }}>
-                                <Image src={image3} width="750px" height="499px" alt="Christophers Food Photo" thumbnail />
+                            <Col xs={6} md={4}>
+                                <div style={{ width: "100%", height: "100%", marginRight: "auto", marginLeft: "auto", backgroundColor: "white", border: "solid" }}>
+                                    <Image src={image3} width="750px" height="499px" alt="Christophers Food Photo" thumbnail />
 
-                                <p><b>Offers:</b><br />
+                                    <p><b>Offers:</b><br />
+                                        <ul>
+                                            <li>Get 25% off with your cinema ticket, if you dine with us</li>
+                                            <li>Buy one get one free cinema ticket, if you leave a review</li>
+                                        </ul> </p>
+                                </div>
+                            </Col>
+                            <Col xs={6} md={4}>
+                                <div style={{ width: "100%", height: "100%", marginRight: "auto", marginLeft: "auto", backgroundColor: "white", border: "solid" }}>
+                                    <Image src={image2} width="750px" height="499px" alt="Christophers Dining Decor" thumbnail />
+
+                                    <p><b>Contact Details:</b></p>
                                     <ul>
-                                        <li>Get 25% off with your cinema ticket, if you dine with us</li>
-                                        <li>Buy one get one free cinema ticket, if you leave a review</li>
-                                    </ul> </p>
-                            </div>
-                        </Col>
-                        <Col xs={6} md={4}>
-                            <div style={{ width: "100%", height: "100%", marginRight: "auto", marginLeft: "auto", backgroundColor: "white", border: "solid" }}>
-                                <Image src={image2} width="750px" height="499px" alt="Christophers Dining Decor" thumbnail />
+                                        <li>Phone:  020 7240 4222</li>
+                                        <li>Email: christophersgrill@live.com</li>
+                                    </ul>
 
-                                <p><b>Contact Details:</b></p>
-                                <ul>
-                                    <li>Phone:  020 7240 4222</li>
-                                    <li>Email: christophersgrill@live.com</li>
-                                </ul>
+                                </div>
+                            </Col>
 
-                            </div>
-                        </Col>
-
-                    </Row>
+                        </Row>
+                    </div>
                     <br />
 
                     <h3 style={{ color: "white", fontWeight: "400", fontfamily: "isonormregular, sans-serif", letterSpacing: ".15em", textTransform: "uppercase", lineHeight: "1.1" }}>The Mirror Bar</h3>
