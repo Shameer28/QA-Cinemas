@@ -1,5 +1,5 @@
 import { Container } from "react-bootstrap";
-
+import './style.css'
 const Cart = ({ getCart, setCart }) => {
 
     // <button 
@@ -13,25 +13,34 @@ const Cart = ({ getCart, setCart }) => {
         return (<></>);
     } else {
         return (
-            <div>                
+            <div>
                 <Container>
                     <div style={{ border: "solid", backgroundColor: "white" }}>
-                        
-                        if (getCart.length===0){
-        return(<></>);
-    }else{
-        return ( 
-            <div>
-                <h1>Cart:</h1>
-                <p>Name | Movie | Adults, Children | Concession | Price </p>
-                {getCart.map((x, key)=>(<p key={key}>{x.Name} | {x.MovieTitle} | {x.Adults}, {x.Child} | {["No Snack","Large Drink","Popcorn","Large Drink & Popcorn"][x.Concessions]} | £{x.price}</p>))}
+                        <div>
+                            <h1><u>Basket:</u></h1><br></br>
+                            {getCart.map((x, key) => (<p key={key}>
+                                <div class="center">                                    
+                                        <h4>
+                                            Name: {x.Name} <br></br>
+                                            Movie Title: {x.MovieTitle} <br></br>
+                                            Adults: {x.Adults}<br></br>
+                                            Childs: {x.Child} <br></br>
+                                            Snacks: {["No Snack", "Large Drink", "Popcorn", "Large Drink & Popcorn"][x.Concessions]} <br></br>
+                                            Total Price: £{x.price}
+                                        </h4>
+                                    
+                                </div>
+
+
+                            </p>))}
                         </div>
-                    </Container>
-                
+                    </div>
+                </Container>
 
-            </div>);
+
+            </div>
+        )
     }
-
 }
 
 export default Cart;
