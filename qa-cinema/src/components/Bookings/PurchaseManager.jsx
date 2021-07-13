@@ -7,7 +7,7 @@ import { Elements } from "@stripe/react-stripe-js";
 import { loadStripe } from '@stripe/stripe-js';
 
 import Carousel from 'react-bootstrap/Carousel'
-import './carousel.css'
+
 import image1 from './img/theatre.jpg'
 import image2 from './img/set.png'
 import image3 from './img/cinemas.jpg'

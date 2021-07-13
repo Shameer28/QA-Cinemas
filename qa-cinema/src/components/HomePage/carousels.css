@@ -1,0 +1,11 @@
+.carousel {
+    width:auto;
+    height:700px;
+    margin: auto;
+    overflow: hidden;
+  }
+  
+  .carouselImage{
+    width:100%;
+    height: 640px;
+  }
