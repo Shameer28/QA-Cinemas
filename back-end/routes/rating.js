@@ -2,8 +2,8 @@ const express = require("express");
 const router = express.Router();
 
 
-const RatingsDB = require("../models/ratings.js");
-
+const RatingsDB = require("../models/ratings");
+const FilmDB = require("../models/films");
 // This is the only object that we can network out, 
 // DONT SEND ANY OTHER DB OBJECT
 const ratingsReader = {
@@ -34,11 +34,32 @@ router.get("/getAll", async (req, res) => {
 	// GET ALL RATINGS
 	const limit = 10;
 	
-	await RatingsDB.find({}, ratingsReader).sort({createdAt: -1}).limit(limit).exec((err, ratings) => {
+	await RatingsDB.find({}, ratingsReader).sort({createdAt: -1}).limit(limit).exec( async(err, ratings) => {
 		if (err) {
 			res.status(505).send(err.message);
 		} else {
-			res.send(ratings);
+			
+			let filmIdToName = {}
+			let newReviews = []
+			
+	 		for (let x in ratings) {
+				// hacky fix
+				let rating = JSON.parse(JSON.stringify( ratings[x]))
+				
+				const id = rating.filmID;
+	
+				if (filmIdToName[id] !== undefined) {
+					rating.filmName = filmIdToName[id];
+				}
+				else {
+					const film = await FilmDB.findById(id);	
+					filmIdToName[id] = film.title;
+					rating.filmName = film.title;
+				}
+				newReviews[x] = rating;
+			}
+
+			res.send(newReviews);
 		}
 	});
 });
@@ -58,6 +79,20 @@ router.get("/getAll/:filmId", async( req, res) => {
 
 });
 
+
+router.delete("/delete/:id", async (req, res)=> {
+	const id = req.params.id;
+
+	try {
+		const success = await RatingsDB.deleteOne({_id: id});
+
+		console.log(success);
+		res.send(success.n === 1)
+	}
+	catch (e) {
+		res.status(503).send("Invalid id")
+	}
+});
 
 
 module.exports = router;

@@ -8,15 +8,14 @@ const Cart = ({ getCart, setCart }) => {
     //                     setCart(newCart);}}>
     //         X</button>
 
+
     if (getCart.length === 0) {
         return (<></>);
     } else {
         return (
             <div>
                 <Container>
-                    <div style={{ border: "solid", backgroundColor: "white" }}>
-
-                     
+                    <div style={{ border: "solid", backgroundColor: "white" }}>                     
                         <div>
                             <h1>Cart:</h1>
                             <p>Name | Movie | Adults, Children | Concession | Price </p>
