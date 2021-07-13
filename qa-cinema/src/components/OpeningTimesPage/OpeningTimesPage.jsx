@@ -11,10 +11,11 @@ const OpeningTimesPage = () => {
 
             <Container>
                 <h2 style={{
-                    color: "white", fontWeight: "400", fontfamily: "isonormregular, sans-serif", letterSpacing: ".15em", textTransform: "uppercase", lineHeight: "1.1", textAlign: "center"}}>QA Cinemas' Opening Hours :</h2>
-                <br/>
+                    color: "white", fontWeight: "400", fontfamily: "isonormregular, sans-serif", letterSpacing: ".15em", textTransform: "uppercase", lineHeight: "1.1"
+                }}>QA Cinemas' Opening Hours :</h2>
+                <br />
                 <Tables />
-                <br/>
+                <br />
             </Container>
         </div>
     );
