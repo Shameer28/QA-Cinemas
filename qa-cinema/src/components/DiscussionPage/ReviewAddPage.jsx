@@ -144,7 +144,7 @@ const ReviewAddPage = () => {
 							<input value={email} type="email" placeholder="Email Address" required onChange={(e) => { e.preventDefault(); setEmail(e.target.value) }} />
 						</fieldset><br />
 
-						<h4 style={{ color: "white", fontWeight: "400", fontfamily: "isonormregular, sans-serif", letterSpacing: ".15em", textTransform: "uppercase", lineHeight: "1.1" }}>
+						<h4 className="text-center" style={{ color: "white", fontWeight: "400", fontfamily: "isonormregular, sans-serif", letterSpacing: ".15em", textTransform: "uppercase", lineHeight: "1.1" }}>
 							How many ratings do you want to give {film.title}?
 						</h4>
 

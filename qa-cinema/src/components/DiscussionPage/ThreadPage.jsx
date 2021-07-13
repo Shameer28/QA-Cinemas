@@ -66,22 +66,23 @@ const ThreadPage = () => {
 
 	if (thread.comments && thread.comments.length > 0) {
 		comments = (
-			thread.comments.map((comment) => (<div>
-				<Card>
-					<Card.Body>
-						<blockquote className="blockquote mb-0">
-							<p>
-								{' '}
-								{comment.msg}{' '}
-							</p>
-							<footer style={{ fontWeight: "400", fontfamily: "isonormregular, sans-serif", letterSpacing: ".15em", lineHeight: "1.1" }} className="blockquote-footer">
-								By <cite title="Source Title">{comment.author}</cite>
-							</footer>
-						</blockquote>
-					</Card.Body>
-				</Card><br />
+			thread.comments.map((comment) => (
+				<div>
+					<Card>
+						<Card.Body>
+							<blockquote className="blockquote mb-0">
+								<p>
+									{' '}
+									{comment.msg}{' '}
+								</p>
+								<footer className="blockquote-footer">
+									By <cite title="Source Title">{comment.author}</cite>
+								</footer>
+							</blockquote>
+						</Card.Body>
+					</Card><br />
 
-			</div>
+				</div>
 			))
 		)
 	}
@@ -91,7 +92,7 @@ const ThreadPage = () => {
 	if (add) {
 		addEle = (<form>
 			<fieldset>
-				<legend style={{ color: "white", fontWeight: "400", fontfamily: "isonormregular, sans-serif", letterSpacing: ".15em", lineHeight: "1.1" }}>Comment Add</legend>
+				<legend style={{ color: "white", fontWeight: "400", fontfamily: "isonormregular, sans-serif", letterSpacing: ".15em", lineHeight: "1.1" }}>Add Comment </legend>
 				<input name="author" placeholder="Your name" value={name} onChange={(e) => { setName(e.target.value) }}></input>
 				<br />
 				<textarea name="msg" id="msg" cols="40" rows="10" value={msg} onChange={(e) => { setMsg(e.target.value) }}></textarea>
@@ -121,7 +122,7 @@ const ThreadPage = () => {
 					<br />
 					<h3 style={{ color: "white", fontWeight: "400", fontfamily: "isonormregular, sans-serif", letterSpacing: ".15em", textTransform: "uppercase", lineHeight: "1.1" }}>Comments</h3>
 					<br />
-					<p style={{ color: "black", fontWeight: "400", fontfamily: "isonormregular, sans-serif", letterSpacing: ".15em", lineHeight: "1.1" }} >
+					<p>
 
 						<p>
 							{comments}
