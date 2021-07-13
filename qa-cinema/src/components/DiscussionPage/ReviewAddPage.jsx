@@ -103,7 +103,7 @@ const ReviewAddPage = () => {
 							<Col xs={4}>
 								<div class="text-center">
 									<Card style={{ width: '18rem' }} >
-										<Card.Img variant="top" src="holder.js/100px180" />
+										<Card.Img variant="top" src={resp.image} height="452px" />
 										<Card.Body>
 											<Card.Title>{resp.title}</Card.Title>
 											<Button onClick={(e) => { selectFilm(e, resp) }}>
