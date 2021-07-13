@@ -19,7 +19,7 @@ const Cart = ({ getCart, setCart }) => {
                         <div>
                             <h1><u>Basket:</u></h1><br></br>
                             {getCart.map((x, key) => (<p key={key}>
-                                <div class="center">                                    
+                                <div class="center1">                                    
                                         <h4>
                                             Name: {x.Name} <br></br>
                                             Movie Title: {x.MovieTitle} <br></br>
