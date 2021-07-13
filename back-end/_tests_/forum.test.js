@@ -100,7 +100,8 @@ describe("Forum Route Test", ()=> {
 		}
 
 	it("Create", (done)=> {
-		api.post("/forums/create", JSON.stringify(create)).end( (err, resp)=> {
+		api.post("/forums/create").set('content-type', 'application/json')
+		.send(create).end( (err, resp)=> {
 			// console.log(resp, err)
 			expect(resp).to.have.status(200)
 			done()
@@ -108,13 +109,13 @@ describe("Forum Route Test", ()=> {
 	});
 
 
-	// it("Create Error", (done) => {
+	it("Create Error", (done) => {
 
-	// 	api.post("/forums/create", {}).end( (err, resp)=> {
-	// 		expect(resp).to.have.status(404)
-	// 		done()
-	// 	})
-	// });
+		api.post("/forums/create").end( (err, resp)=> {
+			expect(resp).to.have.status(404)
+			done()
+		})
+	});
 
 
 })
