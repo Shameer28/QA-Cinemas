@@ -9,11 +9,11 @@ const options = {
 	useNewUrlParser: true, 
 	useUnifiedTopology: true
 }
+const app = express();
+app.use(express.json());
+app.use(cors());
 
 mongoose.connect("mongodb://localhost/films", options).then( () =>{
-	const app = express();
-	app.use(express.json());
-	app.use(cors());
 
 	const server = app.listen(port, () => {
 		console.log(`Server started successfully on port number ${server.address().port}`);
@@ -28,3 +28,6 @@ mongoose.connect("mongodb://localhost/films", options).then( () =>{
 	// Stripe
 	app.use("/stripe", require("./routes/stripe") );
 });
+
+
+module.exports = app;

@@ -1,4 +1,6 @@
 import forumUtils from "../../utils/forumUtils";
+import ForumCreate from "./ForumCreate";
+
 import { Link } from 'react-router-dom';
 import { useState, useEffect } from "react";
 import { Button, Card } from 'react-bootstrap';
@@ -24,7 +26,7 @@ const Forum = () => {
 	return (
 		<div>
 			<br />
-			<Button>Add Thread</Button><br /><br />
+			<ForumCreate/> <br /><br />
 			<h3 style={{ color: "white", fontWeight: "400", fontfamily: "isonormregular, sans-serif", letterSpacing: ".15em", textTransform: "uppercase", lineHeight: "1.1" }}>
 				Forum
 			</h3>
