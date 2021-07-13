@@ -51,7 +51,7 @@ const TicketSelector = (props) => {
         e.preventDefault();
 
         let formData = {};
-        for (let i = 0; i < 5; i++) {
+        for (let i = 0; i < 6; i++) {
             if (e.target[i].value == "Select A Movie" || e.target[i].value == "" || e.target[i].value < 0){
                 alert("Please Fill In All Inputs");
                 return;
@@ -64,8 +64,8 @@ const TicketSelector = (props) => {
             }
 
         }
-
-        formData.price = formData.Adults*10 + formData.Child*5
+        
+        formData.price = (formData.Adults*10) + (formData.Child*5) + [0,3,5,7.5][formData.Concessions]
         setCart(getCart => [...getCart, formData])
     }
 
@@ -95,7 +95,13 @@ const TicketSelector = (props) => {
                 <label htmlFor="Child" >Child (Under 16s) £5:</label><br/>
                 <input type="number" id="Child" /><br/>
 
-                {/* Drop Down For Concessions */}
+                <label htmlFor="Concessions" >Concession:</label><br/>
+                <select id="Concessions">
+                <option value={0}> No Snacks </option>
+                <option value={1}>£3 Large Drink </option>
+                <option value={2}>£5 Popcorn </option>
+                <option value={3}>£7.50 Large Drink & Popcorn </option>
+                </select><br/>
 
                 <br/><input type="submit" value="Add To Cart" />
                 <button onClick={() => {setPage("Checkout")}} disabled={getCart.length===0}>Checkout</button>
