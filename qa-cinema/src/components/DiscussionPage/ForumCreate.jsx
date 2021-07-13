@@ -10,18 +10,18 @@ const ForumCreate = () => {
 	const [body, setBody] = useState("");
 
 
-	const [tags, setTags] = useState( [""])
+	const [tags, setTags] = useState([""])
 
 	const updateTags = (value, id) => {
-		setTags( (x)=> {
+		setTags((x) => {
 			x[id] = value;
 			return [...x];
-		} );
+		});
 	}
 
 
 
-	const activate = (e)=> {
+	const activate = (e) => {
 		e.preventDefault();
 
 		setCreating(true);
@@ -47,29 +47,30 @@ const ForumCreate = () => {
 		return (<div>
 			<form action="">
 				<fieldset>
-					<legend>Your details</legend>
-					<input placeholder="author" value={author} onChange={ (e)=>{setAuthor(e.target.value)} }/>
+					<legend style={{ color: "white", fontWeight: "400", fontfamily: "isonormregular, sans-serif", letterSpacing: ".15em", textTransform: "uppercase", lineHeight: "1.1" }}>Your details</legend>
+					<input placeholder="Author" value={author} onChange={(e) => { setAuthor(e.target.value) }} />
 				</fieldset>
-
+				<br />
 				<fieldset>
-					<legend>Post Information</legend>
-					<input placeholder="Post Title" value={title} onChange={ (e)=>{setTitle(e.target.value)} }/>
-				<br></br>
-					<textarea name="body" id="" cols="30" rows="10" value={body} onChange={ (e)=>{setBody(e.target.value)} }></textarea>
-				<br></br>
-				
-					<label>Tags</label>
-					<VariableList data={tags} defaultVal = "" setFunc = {setTags} updateFunc={updateTags} />
+					<legend style={{ color: "white", fontWeight: "400", fontfamily: "isonormregular, sans-serif", letterSpacing: ".15em", textTransform: "uppercase", lineHeight: "1.1" }}>Post Information</legend>
+					<input placeholder="Post Title" value={title} onChange={(e) => { setTitle(e.target.value) }} />
 
-				</fieldset>
+					<br></br>
+					<textarea name="body" id="" cols="40" rows="10" value={body} onChange={(e) => { setBody(e.target.value) }}></textarea>
+					<br></br>
+
+					<label style={{ color: "white", fontWeight: "400", fontfamily: "isonormregular, sans-serif", letterSpacing: ".15em", textTransform: "uppercase", lineHeight: "1.1" }}>Tags</label>
+					<VariableList data={tags} defaultVal="" setFunc={setTags} updateFunc={updateTags} />
+
+				</fieldset><br />
 				<Button onClick={submit} >Add Post</Button>
-			</form>
+			</form><br />
 			<Button onClick={deactivate} >Cancel</Button>
-		</div>)
+		</div >)
 	}
 	else {
-		return( <Button onClick={activate} >Add Thread</Button>)
+		return (<Button onClick={activate} >Add Thread</Button>)
 	}
 }
- 
-export default ForumCreate; 
+
+export default ForumCreate;
