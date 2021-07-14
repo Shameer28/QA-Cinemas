@@ -33,6 +33,7 @@
     "react-scripts": "^4.0.3",
     "react-slideshow-image": "^3.5.0",
     "react-social-icons": "^5.5.1",
+    "react-test-renderer": "^17.0.2",
     "web-vitals": "^1.1.2"
   },
   "scripts": {
@@ -61,5 +62,14 @@
   },
   "devDependencies": {
     "@babel/preset-react": "^7.14.5"
+  },
+  "jest": {
+    "collectCoverageFrom": [
+      "**/*.{js,jsx}",
+      "!**/node_modules/**",
+      "!**/coverage/**",
+      "!**/serviceWorker.js",
+      "!**/index.js"
+    ]
   }
 }
