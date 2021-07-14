@@ -1,0 +1,308 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Classification page testing Should match the snapshot 1`] = `
+<div
+  class="background"
+>
+  <img
+    alt="About us photo"
+    className=""
+    src="classificationbanner.png"
+    width="100%"
+  />
+  <div
+    className="container"
+  >
+    <br />
+    <h2
+      style={
+        Object {
+          "color": "white",
+          "fontWeight": "400",
+          "fontfamily": "isonormregular, sans-serif",
+          "letterSpacing": ".15em",
+          "lineHeight": "1.1",
+          "textTransform": "uppercase",
+        }
+      }
+    >
+      Movie Content Rating System
+    </h2>
+    <br />
+    <h3
+      style={
+        Object {
+          "color": "white",
+          "fontWeight": "400",
+          "fontfamily": "isonormregular, sans-serif",
+          "letterSpacing": ".15em",
+          "lineHeight": "1.1",
+          "textTransform": "uppercase",
+        }
+      }
+    >
+      Ratings At A Glance :
+    </h3>
+    <br />
+    <div>
+      <div
+        className="accord accordion"
+      >
+        <div
+          className="card"
+          style={
+            Object {
+              "background": "#212529",
+              "color": "white",
+            }
+          }
+        >
+          <div
+            className="card-header"
+            onClick={[Function]}
+          >
+            <b>
+              <u>
+                U Universal - Suitable for all
+              </u>
+            </b>
+            <img
+              alt="U logo"
+              className="accorimg"
+              src="u.png"
+              width="5%"
+            />
+          </div>
+          <div
+            aria-expanded={null}
+            className="collapse"
+          >
+            <div
+              className="card-body"
+            >
+              A U film should be suitable for audiences aged four years and over, although it is impossible to predict what might upset any particular child.
+            </div>
+          </div>
+        </div>
+        <div
+          className="card"
+          style={
+            Object {
+              "background": "#212529",
+              "color": "white",
+            }
+          }
+        >
+          <div
+            className="card-header"
+            onClick={[Function]}
+          >
+            <b>
+              <u>
+                PG Parental Guidance
+              </u>
+            </b>
+            <img
+              alt="PG logo"
+              className="accorimg"
+              src="pg.png"
+              width="5%"
+            />
+          </div>
+          <div
+            aria-expanded={null}
+            className="collapse"
+          >
+            <div
+              className="card-body"
+            >
+              General viewing, but some scenes may be unsuitable for young children. A PG film should not unsettle a child aged around eight or older. Unaccompanied children of any age may watch, but parents are advised to consider whether the content may upset younger, or more sensitive, children.
+            </div>
+          </div>
+        </div>
+        <div
+          className="card"
+          style={
+            Object {
+              "background": "#212529",
+              "color": "white",
+            }
+          }
+        >
+          <div
+            className="card-header"
+            onClick={[Function]}
+          >
+            <b>
+              <u>
+                12A – Suitable for 12 years & over
+              </u>
+            </b>
+            <img
+              alt="PG logo"
+              className="accorimg"
+              src="12A.png"
+              width="5%"
+            />
+          </div>
+          <div
+            aria-expanded={null}
+            className="collapse"
+          >
+            <div
+              className="card-body"
+            >
+              Films classified 12A and video works classified 12 contain material that is not generally suitable for children aged under 12. No one younger than 12 may see a 12A film in a cinema unless accompanied by an adult. Adults planning to take a child under 12 to view a 12A film should consider whether the film is suitable for that child. To help them decide, we recommend that they check the Ratings Info for that film in advance. No one younger than 12 may rent or buy a 12 rated video work. Dangerous behaviour
+            </div>
+          </div>
+        </div>
+        <div
+          className="card"
+          style={
+            Object {
+              "background": "#212529",
+              "color": "white",
+            }
+          }
+        >
+          <div
+            className="card-header"
+            onClick={[Function]}
+          >
+            <b>
+              <u>
+                12 – Suitable for 12 years & over
+              </u>
+            </b>
+            <img
+              alt="PG logo"
+              className="accorimg"
+              src="12.png"
+              width="5%"
+            />
+          </div>
+          <div
+            aria-expanded={null}
+            className="collapse"
+          >
+            <div
+              className="card-body"
+            >
+              Films classified 12A and video works classified 12 contain material that is not generally suitable for children aged under 12. No one younger than 12 may see a 12A film in a cinema unless accompanied by an adult. Adults planning to take a child under 12 to view a 12A film should consider whether the film is suitable for that child. To help them decide, we recommend that they check the Ratings Info for that film in advance. No one younger than 12 may rent or buy a 12 rated video work.
+            </div>
+          </div>
+        </div>
+        <div
+          className="card"
+          style={
+            Object {
+              "background": "#212529",
+              "color": "white",
+            }
+          }
+        >
+          <div
+            className="card-header"
+            onClick={[Function]}
+          >
+            <b>
+              <u>
+                15 – Suitable only for 15 years & over
+              </u>
+            </b>
+            <img
+              alt="PG logo"
+              className="accorimg"
+              src="15.png"
+              width="5%"
+            />
+          </div>
+          <div
+            aria-expanded={null}
+            className="collapse"
+          >
+            <div
+              className="card-body"
+            >
+              No one younger than 15 may see a 15 film in a cinema. No one younger than 15 may rent or buy a 15 rated video work.
+            </div>
+          </div>
+        </div>
+        <div
+          className="card"
+          style={
+            Object {
+              "background": "#212529",
+              "color": "white",
+            }
+          }
+        >
+          <div
+            className="card-header"
+            onClick={[Function]}
+          >
+            <b>
+              <u>
+                18 – Suitable only for adults
+              </u>
+            </b>
+            <img
+              alt="PG logo"
+              className="accorimg"
+              src="18.png"
+              width="5%"
+            />
+          </div>
+          <div
+            aria-expanded={null}
+            className="collapse"
+          >
+            <div
+              className="card-body"
+            >
+              No one younger than 18 may see an 18 film in a cinema. No one younger than 18 may rent or buy an 18 rated video work. Adults should be free to choose their own entertainment.
+            </div>
+          </div>
+        </div>
+        <div
+          className="card"
+          style={
+            Object {
+              "background": "#212529",
+              "color": "white",
+            }
+          }
+        >
+          <div
+            className="card-header"
+            onClick={[Function]}
+          >
+            <b>
+              <u>
+                R18 - To be shown only in specially licensed cinemas, and to adults only
+              </u>
+            </b>
+            <img
+              alt="PG logo"
+              className="accorimg"
+              src="18restrict.png"
+              width="5%"
+            />
+          </div>
+          <div
+            aria-expanded={null}
+            className="collapse"
+          >
+            <div
+              className="card-body"
+            >
+              The R18 category is a special and legally-restricted classification primarily for explicit works of consenting sex or strong fetish material involving adults. Films may only be shown to adults in specially licensed cinemas, and video works may be supplied to adults only. R18 video works may not be supplied by mail order.
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <br />
+</div>
+`;

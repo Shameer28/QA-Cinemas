@@ -1,0 +1,151 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Discussion board testing Should match the snapshot 1`] = `
+<div
+  className="background"
+>
+  <img
+    alt="review banner"
+    className=""
+    src="review.jpg"
+    width="100% fluid"
+  />
+   
+  <br />
+  <br />
+  <div
+    className="container"
+  >
+    <h1
+      style={
+        Object {
+          "color": "white",
+          "fontWeight": "400",
+          "fontfamily": "isonormregular, sans-serif",
+          "letterSpacing": ".15em",
+          "lineHeight": "1.1",
+          "textTransform": "uppercase",
+        }
+      }
+    >
+      Welcome to the Discussion Board
+    </h1>
+    <nav
+      className="nav nav-tabs"
+      onKeyDown={[Function]}
+      role="tablist"
+    >
+      <a
+        aria-controls="controlled-tab-example-tabpane-reviews"
+        aria-selected={true}
+        className="nav-item nav-link active"
+        data-rb-event-key="reviews"
+        href="#"
+        id="controlled-tab-example-tab-reviews"
+        onClick={[Function]}
+        onKeyDown={[Function]}
+        role="tab"
+      >
+        Ratings
+      </a>
+      <a
+        aria-controls="controlled-tab-example-tabpane-forum"
+        aria-selected={false}
+        className="nav-item nav-link"
+        data-rb-event-key="forum"
+        href="#"
+        id="controlled-tab-example-tab-forum"
+        onClick={[Function]}
+        onKeyDown={[Function]}
+        role="tab"
+      >
+        Film Discussion
+      </a>
+    </nav>
+    <div
+      className="tab-content"
+    >
+      <div
+        aria-hidden={false}
+        aria-labelledby="controlled-tab-example-tab-reviews"
+        className="fade tab-pane active show"
+        id="controlled-tab-example-tabpane-reviews"
+        role="tabpanel"
+      >
+        <div>
+          <a
+            href="/reviews"
+            onClick={[Function]}
+          >
+            <br />
+            <button
+              className="btn btn-primary"
+              disabled={false}
+              type="button"
+            >
+              Add a Review
+            </button>
+          </a>
+          <br />
+          <br />
+          <h3
+            style={
+              Object {
+                "color": "white",
+                "fontWeight": "400",
+                "fontfamily": "isonormregular, sans-serif",
+                "letterSpacing": ".15em",
+                "lineHeight": "1.1",
+                "textTransform": "uppercase",
+              }
+            }
+          >
+            Recent Reviews
+          </h3>
+          <br />
+          <div>
+            <br />
+          </div>
+        </div>
+      </div>
+      <div
+        aria-hidden={true}
+        aria-labelledby="controlled-tab-example-tab-forum"
+        className="fade tab-pane"
+        id="controlled-tab-example-tabpane-forum"
+        role="tabpanel"
+      >
+        <div>
+          <br />
+          <button
+            className="btn btn-primary"
+            disabled={false}
+            onClick={[Function]}
+            type="button"
+          >
+            Add Thread
+          </button>
+           
+          <br />
+          <br />
+          <h3
+            style={
+              Object {
+                "color": "white",
+                "fontWeight": "400",
+                "fontfamily": "isonormregular, sans-serif",
+                "letterSpacing": ".15em",
+                "lineHeight": "1.1",
+                "textTransform": "uppercase",
+              }
+            }
+          >
+            Forum
+          </h3>
+          <br />
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+`;
