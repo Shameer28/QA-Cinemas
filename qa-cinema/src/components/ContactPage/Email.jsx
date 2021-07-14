@@ -42,7 +42,7 @@ const Email = () => {
     return (
         <div style={{ width: "100%", backgroundColor: "#212529", color: "white" }}>
             <Container>
-                <Card className="text-center" style={{ backgroundColor: "white", color: "black" }}>
+                <Card className="text-center" style={{ backgroundColor: "#212529", color: "white" }}>
                     <Card.Header>Contact US</Card.Header>
                     <Card.Body>
                         <Card.Title><u>Please fill out the form to submit a request</u></Card.Title>
@@ -64,7 +64,7 @@ const Email = () => {
                                     <Form.Control id="TextArea" as="textarea" className="form-control" required minLength={3} rows={3} value={TextArea} onChange={(e) => { setTextArea(e.target.value) }} />
                                 </Form.Group>
                                 <br />
-                                <Button type="submit"> Submit</Button>
+                                <Button id="submit" type="submit"> Submit</Button>
                             </Form>
                         </Card.Text>
 
