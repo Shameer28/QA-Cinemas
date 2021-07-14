@@ -4,17 +4,20 @@ const Schema = mongoose.Schema;
 const reviews = new Schema({
 	name: {
 		type: String,
+		required: true,
 	},
 	email: {
 		type: String,
 	},
 	rating: {
 		type: Number,
+		required: true,
 		// limit it to 1-5
 	},
 	msg: {
 		type: String,
 		maxlength: 300,
+		required: true,
 	},
 	filmID: {
 		type: Schema.Types.ObjectId

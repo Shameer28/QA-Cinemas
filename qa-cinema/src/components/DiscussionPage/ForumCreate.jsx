@@ -2,6 +2,8 @@ import { useState } from "react"
 import { Button, Card } from 'react-bootstrap';
 import VariableList from "../sharedcomponents/VariableList";
 
+import forumUtils from "../../utils/forumUtils";
+
 const ForumCreate = () => {
 
 	const [isCreating, setCreating] = useState(false);
@@ -41,6 +43,12 @@ const ForumCreate = () => {
 			body: body,
 			name: title,
 		}
+
+		forumUtils.addThread(data).then( (resp) => {
+			// handle response here
+		}).catch( (err) => {
+			// show error
+		});
 	}
 
 	if (isCreating) {
