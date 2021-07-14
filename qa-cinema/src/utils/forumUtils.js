@@ -38,7 +38,7 @@ const addComment = (id, data) => {
 const addThread = (data) => {
 
 	return new Promise( (callback, errorCallback) => {
-		axios.post(url + "create").then( resp => {
+		axios.post(url + "create", data).then( resp => {
 			callback(resp)
 		}).catch( (err) => {
 			errorCallback(err);	
