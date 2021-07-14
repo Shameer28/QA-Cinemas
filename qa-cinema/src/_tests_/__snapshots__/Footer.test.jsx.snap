@@ -17,15 +17,15 @@ exports[`Footer testing Should match the snapshot 1`] = `
           className="col"
         >
           <section
-            class="container"
+            className="container"
           >
             <div
-              class=""
+              className=""
             >
               <h4>
                 QA Cinema
               </h4>
-              <ui
+              <ul
                 className="list-unstyled"
               >
                 <li>
@@ -40,7 +40,7 @@ exports[`Footer testing Should match the snapshot 1`] = `
                 <li>
                   +44 (0)345 074 7995
                 </li>
-              </ui>
+              </ul>
             </div>
           </section>
         </div>
@@ -48,42 +48,42 @@ exports[`Footer testing Should match the snapshot 1`] = `
           className="col"
         >
           <section
-            class="container"
+            className="container"
           >
             <div
-              class=""
+              className=""
             >
               <h4>
                 Links
               </h4>
-              <ui
+              <ul
                 className="list-unstyled"
               >
-                <a
-                  class="link"
-                  href="/"
-                >
-                  <li>
+                <li>
+                  <a
+                    className="link"
+                    href="/"
+                  >
                     Home Page
-                  </li>
-                </a>
-                <a
-                  class="link"
-                  href="/aboutpage"
-                >
-                  <li>
+                  </a>
+                </li>
+                <li>
+                  <a
+                    className="link"
+                    href="/aboutpage"
+                  >
                     About US
-                  </li>
-                </a>
-                <a
-                  class="link"
-                  href="/contactpage"
-                >
-                  <li>
+                  </a>
+                </li>
+                <li>
+                  <a
+                    className="link"
+                    href="/contactpage"
+                  >
                     Contact US
-                  </li>
-                </a>
-              </ui>
+                  </a>
+                </li>
+              </ul>
             </div>
           </section>
         </div>
@@ -91,15 +91,15 @@ exports[`Footer testing Should match the snapshot 1`] = `
           className="col"
         >
           <section
-            class="container"
+            className="container"
           >
             <div
-              class="center"
+              className="center"
             >
               <h4>
                 Legal
               </h4>
-              <ui
+              <ul
                 className="list-unstyled"
               >
                 <li>
@@ -111,7 +111,7 @@ exports[`Footer testing Should match the snapshot 1`] = `
                 <li>
                   Allergens and Nutrition
                 </li>
-              </ui>
+              </ul>
             </div>
           </section>
         </div>
@@ -119,22 +119,22 @@ exports[`Footer testing Should match the snapshot 1`] = `
           className="col"
         >
           <section
-            class="container"
+            className="container"
           >
             <div
-              class="center"
+              className="center"
             >
               <h4>
                 Socials
               </h4>
-              <ui
+              <ul
                 className="list-unstyled"
               >
-                <a
-                  class="link"
-                  href="https://github.com/Shameer28/QA-Cinemas"
-                >
-                  <li>
+                <li>
+                  <a
+                    className="link"
+                    href="https://github.com/Shameer28/QA-Cinemas"
+                  >
                     <a
                       aria-label="github"
                       className="social-icon"
@@ -233,13 +233,13 @@ exports[`Footer testing Should match the snapshot 1`] = `
                       </div>
                     </a>
                     Github
-                  </li>
-                </a>
-                <a
-                  class="link"
-                  href="https://twitter.com/"
-                >
-                  <li>
+                  </a>
+                </li>
+                <li>
+                  <a
+                    className="link"
+                    href="https://twitter.com/"
+                  >
                     <a
                       aria-label="twitter"
                       className="social-icon"
@@ -338,13 +338,13 @@ exports[`Footer testing Should match the snapshot 1`] = `
                       </div>
                     </a>
                      Twitter
-                  </li>
-                </a>
-                <a
-                  class="link"
-                  href="https://www.facebook.com/"
-                >
-                  <li>
+                  </a>
+                </li>
+                <li>
+                  <a
+                    className="link"
+                    href="https://www.facebook.com/"
+                  >
                     <a
                       aria-label="facebook"
                       className="social-icon"
@@ -443,9 +443,9 @@ exports[`Footer testing Should match the snapshot 1`] = `
                       </div>
                     </a>
                     Facebook
-                  </li>
-                </a>
-              </ui>
+                  </a>
+                </li>
+              </ul>
             </div>
           </section>
         </div>
@@ -455,7 +455,7 @@ exports[`Footer testing Should match the snapshot 1`] = `
         className="row"
       >
         <div
-          class="center"
+          className="center"
         >
           <p
             className="col-sm"
