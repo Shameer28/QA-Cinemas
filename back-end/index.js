@@ -27,6 +27,8 @@ mongoose.connect("mongodb://localhost/films", options).then( () =>{
 
 	// Stripe
 	app.use("/stripe", require("./routes/stripe") );
+
+	app.use("/email", require("./routes/email") );
 });
 
 
