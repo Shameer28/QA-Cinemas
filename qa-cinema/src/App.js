@@ -21,8 +21,8 @@ import RecentMoviesPage from './components/RecentMoviePage/RecentMoviePage';
 import Screen from './components/Screens/Screen';
 import MoviePage from './components/sharedcomponents/MoviePage';
 import PurchaseManager from './components/Bookings/PurchaseManager';
-import Test from './components/ContactPage/Contact';
 import ThreadPage from './components/DiscussionPage/ThreadPage';
+
 function App() {
   return (
     <div>

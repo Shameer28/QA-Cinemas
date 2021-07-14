@@ -7,7 +7,6 @@ import './DiscussionPage.css';
 
 
 import { useState, useEffect } from "react"
-import FormImpl from 'react-bootstrap/esm/Form';
 
 const DiscussionRatings = () => {
 
