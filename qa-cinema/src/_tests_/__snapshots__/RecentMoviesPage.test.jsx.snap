@@ -1,0 +1,31 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Recent Movie Page testing Should match the snapshot 1`] = `
+<div
+  class="background"
+>
+  <br />
+  <div
+    className="container"
+  >
+    <h2
+      style={
+        Object {
+          "color": "white",
+          "fontWeight": "400",
+          "fontfamily": "isonormregular, sans-serif",
+          "letterSpacing": ".15em",
+          "lineHeight": "1.1",
+          "textTransform": "uppercase",
+        }
+      }
+    >
+      Recent Movies
+    </h2>
+    <br />
+    <p>
+      Loading
+    </p>
+  </div>
+</div>
+`;

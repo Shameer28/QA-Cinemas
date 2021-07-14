@@ -1,0 +1,220 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Getting There testing Should match the snapshot 1`] = `
+<div
+  class="background"
+>
+  <div>
+    <div
+      className="carousel slide carousel-fade"
+      onKeyDown={[Function]}
+      onMouseOut={[Function]}
+      onMouseOver={[Function]}
+      onTouchEnd={[Function]}
+      onTouchMove={[Function]}
+      onTouchStart={[Function]}
+    >
+      <ol
+        className="carousel-indicators"
+      >
+        <li
+          className="active"
+          onClick={[Function]}
+        />
+        <li
+          onClick={[Function]}
+        />
+        <li
+          onClick={[Function]}
+        />
+        <li
+          onClick={[Function]}
+        />
+      </ol>
+      <div
+        className="carousel-inner"
+      >
+        <div
+          className="active carousel-item"
+          interval={3000}
+        >
+          <img
+            alt="First slide"
+            class="images"
+            src="sony4k.jpg"
+          />
+        </div>
+        <div
+          className="carousel-item"
+          interval={3000}
+        >
+          <img
+            alt="First slide"
+            class="images"
+            src="QACinemaOutside.jpg"
+          />
+        </div>
+        <div
+          className="carousel-item"
+          interval={3000}
+        >
+          <img
+            alt="Second slide"
+            class="images"
+            src="CinemaDesk.jpg"
+          />
+        </div>
+        <div
+          className="carousel-item"
+          interval={3000}
+        >
+          <img
+            alt="Third slide"
+            class="images"
+            src="InsideCinema.jpg"
+          />
+        </div>
+      </div>
+    </div>
+  </div>
+  <div
+    style={
+      Object {
+        "backgroundColor": "white",
+        "border": "solid",
+        "marginLeft": "auto",
+        "marginRight": "auto",
+        "width": "50%",
+      }
+    }
+  >
+    <div>
+      <div
+        className="p-3 container"
+      >
+        <div
+          className="container"
+        >
+          <div
+            className="row"
+          />
+          <div
+            className="row"
+          >
+            <div
+              className="col"
+            >
+              <div
+                className="jumbotron"
+              >
+                <div
+                  style={
+                    Object {
+                      "border": "solid",
+                      "height": "500px",
+                      "width": "100%",
+                    }
+                  }
+                >
+                  <div
+                    style={
+                      Object {
+                        "height": "100%",
+                        "width": "100%",
+                      }
+                    }
+                  >
+                    <iframe
+                      height="100%"
+                      loading="lazy"
+                      src="https://www.google.com/maps/embed/v1/place?key=AIzaSyA-BrSbgrDnbvYCFXP6JyfDJDgCf_O0EfA&q=QA+Ltd+-+Manchester&zoom=15"
+                      style={
+                        Object {
+                          "display": "block",
+                        }
+                      }
+                      width="100%"
+                    />
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div
+              className="row"
+            >
+              <div
+                className="col"
+              >
+                <div
+                  style={
+                    Object {
+                      "margin": "auto",
+                      "width": "100%",
+                    }
+                  }
+                >
+                  <div
+                    style={Object {}}
+                  >
+                    <div
+                      class="text"
+                    >
+                      <h2>
+                        <u>
+                          How to get to QA Cinema:
+                        </u>
+                      </h2>
+                       
+                    </div>
+                    <br />
+                    <div>
+                      <strong>
+                        Location: 
+                      </strong>
+                      8, St James's Bldg, 61-95 Oxford St, Manchester, M1 6FQ
+                    </div>
+                    <br />
+                    <div>
+                      <strong>
+                        Bus: 
+                      </strong>
+                      <a
+                        href="https://www.google.com/maps/dir//8,+QA+Ltd+-+Manchester+(Oxford+Street),+St+James's+Bldg,+61-95+Oxford+St,+Manchester+M1+6FQ/@53.4755006,-2.2436296,17z/data=!4m9!4m8!1m0!1m5!1m1!1s0x487bb1bf943ad609:0x6f54f566e8d28339!2m2!1d-2.2416433!2d53.4754254!3e0"
+                      >
+                        Busses available within the area: 42B, 43, 101, 102, 103, 111, 142, 143, 147
+                      </a>
+                    </div>
+                    <br />
+                    <div>
+                      <strong>
+                        Train: 
+                      </strong>
+                      <a
+                        href="https://www.google.com/maps/dir//8,+QA+Ltd+-+Manchester+(Oxford+Street),+St+James's+Bldg,+61-95+Oxford+St,+Manchester+M1+6FQ/@53.4755006,-2.2436296,17z/data=!4m9!4m8!1m0!1m5!1m1!1s0x487bb1bf943ad609:0x6f54f566e8d28339!2m2!1d-2.2416433!2d53.4754254!3e0"
+                      >
+                        41 CrossingCity
+                      </a>
+                    </div>
+                    <br />
+                    <div>
+                      <strong>
+                        Parking: 
+                      </strong>
+                      <a
+                        href="https://www.google.com/maps/dir//8,+QA+Ltd+-+Manchester+(Oxford+Street),+St+James's+Bldg,+61-95+Oxford+St,+Manchester+M1+6FQ/@53.4755006,-2.2436296,17z/data=!4m9!4m8!1m0!1m5!1m1!1s0x487bb1bf943ad609:0x6f54f566e8d28339!2m2!1d-2.2416433!2d53.4754254!3e0"
+                      >
+                        Pay and Display: All fuel types: £6 per hour (£3 per half hour, £1.50 for 15mins)
+                      </a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <br />
+</div>
+`;
