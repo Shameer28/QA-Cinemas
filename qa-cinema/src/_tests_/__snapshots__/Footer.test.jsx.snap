@@ -232,7 +232,7 @@ exports[`Footer testing Should match the snapshot 1`] = `
                         </svg>
                       </div>
                     </a>
-                    Github
+                     Github
                   </li>
                 </a>
                 <a
@@ -337,7 +337,7 @@ exports[`Footer testing Should match the snapshot 1`] = `
                         </svg>
                       </div>
                     </a>
-                     Twitter
+                     Twitter
                   </li>
                 </a>
                 <a
@@ -442,7 +442,7 @@ exports[`Footer testing Should match the snapshot 1`] = `
                         </svg>
                       </div>
                     </a>
-                    Facebook
+                     Facebook
                   </li>
                 </a>
               </ui>
