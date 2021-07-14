@@ -68,14 +68,14 @@ const ThreadPage = () => {
 		comments = (
 			thread.comments.map((comment) => (
 				<div>
-					<Card>
+					<Card style={{ backgroundColor: "#212529", color: "white" }}>
 						<Card.Body>
 							<blockquote className="blockquote mb-0">
 								<p>
 									{' '}
 									{comment.msg}{' '}
 								</p>
-								<footer className="blockquote-footer">
+								<footer className="blockquote-footer" style={{ color: "white" }}>>
 									By <cite title="Source Title">{comment.author}</cite>
 								</footer>
 							</blockquote>
@@ -124,9 +124,9 @@ const ThreadPage = () => {
 					<br />
 					<p>
 
-						<p>
-							{comments}
-						</p>
+
+						{comments}
+
 
 					</p>
 					<br />

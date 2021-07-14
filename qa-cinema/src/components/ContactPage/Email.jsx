@@ -47,9 +47,9 @@ const Email = () => {
 
     }
     return (
-        <div >
+        <div style={{ width: "100%", backgroundColor: "#212529", color: "white" }}>
             <Container>
-                <Card className="text-center">
+                <Card className="text-center" style={{ backgroundColor: "#212529", color: "white" }}>
                     <Card.Header>Contact US</Card.Header>
                     <Card.Body>
                         <Card.Title><u>Please fill out the form to submit a request</u></Card.Title>

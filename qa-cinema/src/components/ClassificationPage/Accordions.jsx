@@ -16,7 +16,7 @@ const Accordions = () => {
         <div >
 
             <Accordion className="accord" defaultActiveKey="0">
-                <Card>
+                <Card style={{ background: "#212529", color: "white" }}>
                     <Accordion.Toggle as={Card.Header} eventKey="1">
                         <b><u>U Universal - Suitable for all</u></b><img className="accorimg" src={image1} alt="U logo" width="5%" />
                     </Accordion.Toggle>
@@ -25,7 +25,7 @@ const Accordions = () => {
                             although it is impossible to predict what might upset any particular child.</Card.Body>
                     </Accordion.Collapse>
                 </Card>
-                <Card>
+                <Card style={{ background: "#212529", color: "white" }}>
                     <Accordion.Toggle as={Card.Header} eventKey="2">
                         <b><u>PG Parental Guidance</u></b><img className="accorimg" src={image2} alt="PG logo" width="5%" />
                     </Accordion.Toggle>
@@ -36,7 +36,7 @@ const Accordions = () => {
                             children.</Card.Body>
                     </Accordion.Collapse>
                 </Card>
-                <Card>
+                <Card style={{ background: "#212529", color: "white" }}>
                     <Accordion.Toggle as={Card.Header} eventKey="3">
                         <b><u>12A – Suitable for 12 years & over</u></b><img className="accorimg" src={image4} alt="PG logo" width="5%" />
                     </Accordion.Toggle>
@@ -49,7 +49,7 @@ const Accordions = () => {
                             Dangerous behaviour</Card.Body>
                     </Accordion.Collapse>
                 </Card>
-                <Card>
+                <Card style={{ background: "#212529", color: "white" }}>
                     <Accordion.Toggle as={Card.Header} eventKey="4">
                         <b><u>12 – Suitable for 12 years & over</u></b><img className="accorimg" src={image3} alt="PG logo" width="5%" />
                     </Accordion.Toggle>
@@ -61,7 +61,7 @@ const Accordions = () => {
                             No one younger than 12 may rent or buy a 12 rated video work.</Card.Body>
                     </Accordion.Collapse>
                 </Card>
-                <Card>
+                <Card style={{ background: "#212529", color: "white" }}>
                     <Accordion.Toggle as={Card.Header} eventKey="5">
                         <b><u>15 – Suitable only for 15 years & over</u></b><img className="accorimg" src={image5} alt="PG logo" width="5%" />
                     </Accordion.Toggle>
@@ -69,7 +69,7 @@ const Accordions = () => {
                         <Card.Body>No one younger than 15 may see a 15 film in a cinema. No one younger than 15 may rent or buy a 15 rated video work.</Card.Body>
                     </Accordion.Collapse>
                 </Card>
-                <Card>
+                <Card style={{ background: "#212529", color: "white" }}>
                     <Accordion.Toggle as={Card.Header} eventKey="6">
                         <b><u>18 – Suitable only for adults</u></b><img className="accorimg" src={image6} alt="PG logo" width="5%" />
                     </Accordion.Toggle>
@@ -78,7 +78,7 @@ const Accordions = () => {
                             Adults should be free to choose their own entertainment.</Card.Body>
                     </Accordion.Collapse>
                 </Card>
-                <Card>
+                <Card style={{ background: "#212529", color: "white" }}>
                     <Accordion.Toggle as={Card.Header} eventKey="7">
                         <b><u>R18 - To be shown only in specially licensed cinemas, and to adults only</u></b><img className="accorimg" src={image7} alt="PG logo" width="5%" />
                     </Accordion.Toggle>
@@ -91,7 +91,7 @@ const Accordions = () => {
 
             </Accordion>
 
-        </div>
+        </div >
     );
 }
 

@@ -30,12 +30,12 @@ const Footers = () => {
                         <div className="col">
                             <section class="container">
                                 <div class="">
-                                <h4>Links</h4>
+                                    <h4>Links</h4>
                                     <ui className="list-unstyled">
-                                    
+
                                         <a href={"/"} class="link"><li>Home Page</li></a>
-                                        <a href={"/aboutpage"}class="link"><li>About US</li></a>
-                                        <a href={"/contactpage" } class="link"><li>Contact US</li></a>
+                                        <a href={"/aboutpage"} class="link"><li>About US</li></a>
+                                        <a href={"/contactpage"} class="link"><li>Contact US</li></a>
                                     </ui>
                                 </div>
                             </section>
@@ -44,9 +44,9 @@ const Footers = () => {
                         <div className="col">
                             <section class="container">
                                 <div class="center">
-                                    <h4>Legal</h4> 
+                                    <h4>Legal</h4>
                                     <ui className="list-unstyled">
-                                    
+
                                         <li>Terms & conditions</li>
                                         <li>Accessibility</li>
                                         <li>Allergens and Nutrition</li>
@@ -59,10 +59,10 @@ const Footers = () => {
                                 <div class="center">
                                     <h4>Socials</h4>
                                     <ui className="list-unstyled">
-                                    
-                                        <a href="https://github.com/Shameer28/QA-Cinemas" class="link"><li><SocialIcon network="github" bgColor="#808080" />Github</li></a>
-                                        <a href="https://twitter.com/" class="link"><li><SocialIcon network="twitter" bgColor="#0099ff" /> Twitter</li></a>
-                                        <a href="https://www.facebook.com/" class="link"><li><SocialIcon network="facebook" bgColor="#0066ff" />Facebook</li></a>
+
+                                        <a href="https://github.com/Shameer28/QA-Cinemas" class="link"><li><SocialIcon network="github" bgColor="#808080" />&nbsp;Github</li></a>
+                                        <a href="https://twitter.com/" class="link"><li><SocialIcon network="twitter" bgColor="#0099ff" />&nbsp;Twitter</li></a>
+                                        <a href="https://www.facebook.com/" class="link"><li><SocialIcon network="facebook" bgColor="#0066ff" />&nbsp;Facebook</li></a>
                                     </ui>
                                 </div>
                             </section>

@@ -26,7 +26,7 @@ const Forum = () => {
 	return (
 		<div>
 			<br />
-			<ForumCreate/> <br /><br />
+			<ForumCreate /> <br /><br />
 			<h3 style={{ color: "white", fontWeight: "400", fontfamily: "isonormregular, sans-serif", letterSpacing: ".15em", textTransform: "uppercase", lineHeight: "1.1" }}>
 				Forum
 			</h3>
@@ -34,16 +34,16 @@ const Forum = () => {
 			{forums.map((forum) => (
 				<div key={forum._id}>
 					<Link id="forumlink" to={"/forums/" + forum._id}>
-						<Card>
+						<Card style={{ backgroundColor: "#212529", color: "white" }}>
 							<Card.Body>
 								<blockquote className="blockquote mb-0">
-									<p style={{ color: "black" }}>
+									<p>
 										Topic : <b>{forum.name}</b>
 									</p>
-									<p style={{ color: "black" }}>
+									<p>
 										Comments
 									</p>
-									<footer className="blockquote-footer">
+									<footer className="blockquote-footer" style={{ color: "white" }}>
 										By<cite title="Source Title"> {forum.author}</cite>
 									</footer>
 								</blockquote>

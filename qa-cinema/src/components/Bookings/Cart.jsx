@@ -15,22 +15,22 @@ const Cart = ({ getCart, setCart }) => {
         return (
             <div>
                 <Container>
-                    <div style={{ border: "solid", backgroundColor: "white" }}>
+                    <div style={{ backgroundColor: "#212529", color: "white", border: "solid", borderColor: "black" }}>
                         <div>
                             <h1><u>Basket:</u></h1><br></br>
                             {getCart.map((x, key) => (<p key={key}>
-                                <div class="center1">                                    
-                                        <h4>
-                                            Name: {x.Name} <br></br>
-                                            Movie Title: {x.MovieTitle} <br></br>
-                                            Adults: {x.Adults}<br></br>
-                                            Childs: {x.Child} <br></br>
-                                            Snacks: {["No Snack", "Large Drink", "Popcorn", "Large Drink & Popcorn"][x.Concessions]} <br></br>
-                                            Total Price: £{x.price}
-                                        </h4>
-                                    
-                                </div>
+                                <div class="center1" >
+                                    <h4>
+                                        Name: {x.Name} <br></br>
+                                        Movie Title: {x.MovieTitle} <br></br>
+                                        Adults: {x.Adults}<br></br>
+                                        Childs: {x.Child} <br></br>
+                                        Snacks: {["No Snack", "Large Drink", "Popcorn", "Large Drink & Popcorn"][x.Concessions]} <br></br>
+                                        Total Price: £{x.price}
+                                    </h4>
 
+                                </div>
+                                <br />
 
                             </p>))}
                         </div>
@@ -38,7 +38,7 @@ const Cart = ({ getCart, setCart }) => {
                 </Container>
 
 
-            </div>
+            </div >
         )
     }
 }
