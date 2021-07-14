@@ -20,11 +20,11 @@ const AboutPage = () => {
                 <Container className="p-3">
                     <Container>
                         <h2 style={{ color: "white", fontWeight: "400", fontfamily: "isonormregular, sans-serif", letterSpacing: ".15em", textTransform: "uppercase", lineHeight: "1.1" }}>Meet our developers</h2><br />
-                        <div style={{ width: "100%", marginRight: "auto", marginLeft: "auto", backgroundColor: "white", border: "solid" }}>
+                        <div style={{ width: "80%", marginRight: "auto", marginLeft: "auto", backgroundColor: "#212529", color: "white", border: "solid", borderColor: "black" }}>
                             <Row>
 
-                                <Col>
-                                    <Image src={image4} width="100%" alt="Shameer's Photo" thumbnail />
+                                <Col border="solid" borderColor="black" >
+                                    <Image src={image4} width="100%" alt="Shameer's Photo" fluid border="solid" borderColor="black" />
                                 </Col>
                                 <Col style={{ margin: "auto", width: "50%" }}>
                                     <h4><b>Name</b> : Shameer Dar</h4>
@@ -41,10 +41,10 @@ const AboutPage = () => {
                             </Row>
                         </div >
                         <br></br>
-                        <div style={{ width: "100%", marginRight: "auto", marginLeft: "auto", backgroundColor: "white", border: "solid" }}>
+                        <div style={{ width: "80%", marginRight: "auto", marginLeft: "auto", backgroundColor: "#212529", color: "white", border: "solid", borderColor: "black" }}>
                             <Row>
                                 <Col>
-                                    <Image src={image3} width="100%" height="100%" alt="Haaris's Photo" thumbnail />
+                                    <Image src={image3} width="100%" height="100%" alt="Haaris's Photo" fluid border="solid" borderColor="black" />
                                 </Col>
                                 <Col style={{ margin: "auto", width: "50%" }}>
                                     <h4><b>Name</b> : Haaris Moghal <br /></h4>
@@ -61,10 +61,10 @@ const AboutPage = () => {
                             </Row>
                         </div >
                         <br></br>
-                        <div style={{ width: "100%", marginRight: "auto", marginLeft: "auto", backgroundColor: "white", border: "solid" }}>
+                        <div style={{ width: "80%", marginRight: "auto", marginLeft: "auto", backgroundColor: "#212529", color: "white", border: "solid", borderColor: "black" }}>
                             <Row>
                                 <Col>
-                                    <Image src={image7} width="100%" height="100%" alt="Andrew's Photo" thumbnail />
+                                    <Image src={image7} width="100%" height="100%" alt="Andrew's Photo" fluid border="solid" borderColor="black" />
                                 </Col>
                                 <Col style={{ margin: "auto", width: "50%" }}>
                                     <h4><b>Name</b> : Andrew McCall <br /></h4>
@@ -82,10 +82,10 @@ const AboutPage = () => {
                             </Row>
                         </div >
                         <br></br>
-                        <div style={{ width: "100%", marginRight: "auto", marginLeft: "auto", backgroundColor: "white", border: "solid" }}>
+                        <div style={{ width: "80%", marginRight: "auto", marginLeft: "auto", backgroundColor: "#212529", color: "white", border: "solid", borderColor: "black" }}>
                             <Row>
                                 <Col>
-                                    <Image src={image2} width="100%" height="100%" alt="Oliver's Photo" thumbnail />
+                                    <Image src={image2} width="100%" height="100%" alt="Oliver's Photo" fluid border="solid" borderColor="black" />
                                 </Col>
 
                                 <Col style={{ margin: "auto", width: "50%" }}>

@@ -10,6 +10,7 @@ import image3 from './img/cinemas.jpg'
 import image4 from './img/cinema2.jpg'
 import Card from 'react-bootstrap/Card'
 
+
 const TicketSelector = (props) => {
 
     // Get All .select only showingTimes & title
@@ -116,7 +117,7 @@ const TicketSelector = (props) => {
             <br></br>
 
             <Container>
-                <Card className="text-center">
+                <Card className="text-center" style={{ backgroundColor: "#212529", color: "white", border: "solid", borderColor: "black" }}>
                     <Card.Header>Ticket Select</Card.Header>
                     <Card.Body>
                         <Card.Title><u>Please fill out the form to book tickets</u></Card.Title>
@@ -154,8 +155,8 @@ const TicketSelector = (props) => {
                                         <option value={3}>£7.50 Large Drink & Popcorn </option>
                                     </select><br />
 
-                                    <br /><input type="submit" value="Add To Cart" />
-                                    <button onClick={() => { setPage("Checkout") }} disabled={getCart.length === 0}>Checkout</button>
+                                    <br /><Button type="submit" value="Add To Cart"> Add to Cart</Button> &nbsp;
+                                    <Button onClick={() => { setPage("Checkout") }} disabled={getCart.length === 0}>Checkout</Button>
                                 </form>
 
                             )}
