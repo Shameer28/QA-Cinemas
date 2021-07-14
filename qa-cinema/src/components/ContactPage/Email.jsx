@@ -70,7 +70,7 @@ const Email = () => {
                                     <Form.Control id="TextArea" as="textarea" className="form-control" required minLength={3} rows={3} value={TextArea} onChange={(e) => { setTextArea(e.target.value) }} />
                                 </Form.Group>
                                 <br />
-                                <button type="submit"> submit</button>
+                                <button id="submit" type="submit"> submit</button>
                             </Form>
                         </Card.Text>
 
