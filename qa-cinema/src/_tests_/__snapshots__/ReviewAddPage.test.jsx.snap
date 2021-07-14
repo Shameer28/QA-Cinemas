@@ -1,0 +1,50 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Review Add Page testing Should match the snapshot 1`] = `
+<div
+  className="background"
+>
+  <img
+    alt="Select Banner"
+    className="img-fluid"
+    src="review2.png"
+    width="100%"
+  />
+  <div
+    className="container"
+  >
+    <br />
+    <h1
+      id="revh1"
+      style={
+        Object {
+          "color": "white",
+          "fontWeight": "400",
+          "fontfamily": "isonormregular, sans-serif",
+          "letterSpacing": ".15em",
+          "lineHeight": "1.1",
+          "textTransform": "uppercase",
+        }
+      }
+    >
+       Select a film to add a review
+    </h1>
+    <div
+      id="revcarddiv"
+      style={
+        Object {
+          "height": "100%",
+          "marginLeft": "auto",
+          "marginRight": "auto",
+          "width": "100%",
+        }
+      }
+    >
+      <br />
+      <div
+        className="row row-cols-md-4"
+      />
+    </div>
+  </div>
+</div>
+`;

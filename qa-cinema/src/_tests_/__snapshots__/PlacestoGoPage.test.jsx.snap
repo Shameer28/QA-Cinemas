@@ -1,0 +1,471 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Places to go page testing Should match the snapshot 1`] = `
+<div
+  class="background"
+>
+  <div>
+    <img
+      alt="places to go banner"
+      className="img-fluid"
+      src="placestogo.jpg"
+      width="100%"
+    />
+    <br />
+    <div
+      className="container"
+    >
+      <br />
+      <h2
+        style={
+          Object {
+            "color": "white",
+            "fontWeight": "400",
+            "fontfamily": "isonormregular, sans-serif",
+            "letterSpacing": ".15em",
+            "lineHeight": "1.1",
+            "textTransform": "uppercase",
+          }
+        }
+      >
+        Here Are Some Local Venues to Checkout!
+      </h2>
+      <br />
+      <h3
+        style={
+          Object {
+            "color": "white",
+            "fontWeight": "400",
+            "fontfamily": "isonormregular, sans-serif",
+            "letterSpacing": ".15em",
+            "lineHeight": "1.1",
+            "textTransform": "uppercase",
+          }
+        }
+      >
+        Christophers
+      </h3>
+      <div>
+        <div
+          className="row"
+        >
+          <div
+            className="col-md-4 col-6"
+          >
+            <div
+              style={
+                Object {
+                  "backgroundColor": "#212529",
+                  "border": "solid",
+                  "borderColor": "black",
+                  "color": "white",
+                  "height": "100%",
+                  "marginLeft": "auto",
+                  "marginRight": "auto",
+                  "width": "100%",
+                }
+              }
+            >
+              <img
+                alt="Christophers Building Photo"
+                border="solid"
+                borderColor="black"
+                className="placesImage img-fluid"
+                height="499px"
+                src="christopher2.jpg"
+                width="750px"
+              />
+              <p>
+                <b>
+                  Open Hours: 11AM - 12AM
+                </b>
+              </p>
+              <p>
+                <b>
+                  Venue Description:
+                </b>
+                <br />
+                Classic all-day American steakhouse and grill plus martini cocktail bar in high-ceilinged rooms. 
+              </p>
+              <br />
+            </div>
+          </div>
+          <div
+            className="col-md-4 col-6"
+          >
+            <div
+              style={
+                Object {
+                  "backgroundColor": "#212529",
+                  "border": "solid",
+                  "borderColor": "black",
+                  "color": "white",
+                  "height": "100%",
+                  "marginLeft": "auto",
+                  "marginRight": "auto",
+                  "width": "100%",
+                }
+              }
+            >
+              <img
+                alt="Christophers Building Photo"
+                border="solid"
+                borderColor="black"
+                className="img-fluid"
+                height="499px"
+                src="christophers3.jpg"
+                width="750px"
+              />
+              <p>
+                <b>
+                  Offers:
+                </b>
+                <br />
+                <ul>
+                  <li>
+                    Get 25% off with your cinema ticket, if you dine with us
+                  </li>
+                  <li>
+                    Buy one get one free cinema ticket, if you leave a review
+                  </li>
+                </ul>
+                 
+              </p>
+            </div>
+          </div>
+          <div
+            className="col-md-4 col-6"
+          >
+            <div
+              style={
+                Object {
+                  "backgroundColor": "#212529",
+                  "border": "solid",
+                  "borderColor": "black",
+                  "color": "white",
+                  "height": "100%",
+                  "marginLeft": "auto",
+                  "marginRight": "auto",
+                  "width": "100%",
+                }
+              }
+            >
+              <img
+                alt="Christophers Building Photo"
+                border="solid"
+                borderColor="black"
+                className="img-fluid"
+                height="499px"
+                src="christophers.jpg"
+                width="750px"
+              />
+              <p>
+                <b>
+                  Contact Details:
+                </b>
+              </p>
+              <ul>
+                <li>
+                  Phone:  020 7240 4222
+                </li>
+                <li>
+                  Email: christophersgrill@live.com
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+      <br />
+      <h3
+        style={
+          Object {
+            "color": "white",
+            "fontWeight": "400",
+            "fontfamily": "isonormregular, sans-serif",
+            "letterSpacing": ".15em",
+            "lineHeight": "1.1",
+            "textTransform": "uppercase",
+          }
+        }
+      >
+        The Mirror Bar
+      </h3>
+      <div
+        className="row"
+      >
+        <div
+          className="col-md-4 col-6"
+        >
+          <div
+            style={
+              Object {
+                "backgroundColor": "#212529",
+                "border": "solid",
+                "borderColor": "black",
+                "color": "white",
+                "height": "100%",
+                "marginLeft": "auto",
+                "marginRight": "auto",
+                "width": "100%",
+              }
+            }
+          >
+            <img
+              alt="The Mirror Bar Building Photo"
+              border="solid"
+              borderColor="black"
+              className="img-fluid"
+              height="499px"
+              src="MirrorBar3.jpg"
+              width="750px"
+            />
+            <p>
+              <b>
+                Open Hours: 5PM - 12AM
+              </b>
+            </p>
+            <p>
+              <b>
+                Venue Description:
+              </b>
+              <br />
+              Elegant cocktail lounge bar with decorative mirrors, in a refined hotel setting. 
+            </p>
+          </div>
+        </div>
+        <div
+          className="col-md-4 col-6"
+        >
+          <div
+            style={
+              Object {
+                "backgroundColor": "#212529",
+                "border": "solid",
+                "borderColor": "black",
+                "color": "white",
+                "height": "100%",
+                "marginLeft": "auto",
+                "marginRight": "auto",
+                "width": "100%",
+              }
+            }
+          >
+            <img
+              alt="Photo of Bar in The Mirror Bar"
+              border="solid"
+              borderColor="black"
+              className="img-fluid"
+              height="499px"
+              src="MirrorBar.jpg"
+              width="750px"
+            />
+            <p>
+              <b>
+                Offers:
+              </b>
+              <br />
+              <ul>
+                <li>
+                  Get 30% off with your cinema ticket, when you spend £35 or more
+                </li>
+                <li>
+                  Buy one get one free cinema ticket, if you leave a review
+                </li>
+              </ul>
+               
+            </p>
+          </div>
+        </div>
+        <div
+          className="col-md-4 col-6"
+        >
+          <div
+            style={
+              Object {
+                "backgroundColor": "#212529",
+                "border": "solid",
+                "borderColor": "black",
+                "color": "white",
+                "height": "100%",
+                "marginLeft": "auto",
+                "marginRight": "auto",
+                "width": "100%",
+              }
+            }
+          >
+            <img
+              alt="MIrror Roof Decor Photo"
+              border="solid"
+              borderColor="black"
+              className="img-fluid"
+              height="499px"
+              src="MirrorBar2.jpg"
+              width="750px"
+            />
+            <p>
+              <b>
+                Contact Details:
+              </b>
+              <br />
+            </p>
+            <ul>
+              <li>
+                Phone:  020 7631 8000
+              </li>
+              <li>
+                Email: themirrorbar@live.com
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <br />
+      <h3
+        style={
+          Object {
+            "color": "white",
+            "fontWeight": "400",
+            "fontfamily": "isonormregular, sans-serif",
+            "letterSpacing": ".15em",
+            "lineHeight": "1.1",
+            "textTransform": "uppercase",
+          }
+        }
+      >
+        Namco Funscape
+      </h3>
+      <div
+        className="row"
+      >
+        <div
+          className="col-md-4 col-6"
+        >
+          <div
+            style={
+              Object {
+                "backgroundColor": "#212529",
+                "border": "solid",
+                "borderColor": "black",
+                "color": "white",
+                "height": "100%",
+                "marginLeft": "auto",
+                "marginRight": "auto",
+                "width": "100%",
+              }
+            }
+          >
+            <img
+              alt="Namco Funscape Building Photo"
+              border="solid"
+              borderColor="black"
+              className="img-fluid"
+              height="499px"
+              src="Namco3.jpg"
+              width="750px"
+            />
+            <p>
+              <b>
+                Open Hours: 12PM - 11PM
+              </b>
+            </p>
+            <p>
+              <b>
+                Venue Description:
+              </b>
+              <br />
+              At Namco Funscape you can choose from more high-tech entertainment than any other London venue – including 150 of the latest interactive video games, Pool Hall & six lanes of techno-bowling.
+            </p>
+          </div>
+        </div>
+        <div
+          className="col-md-4 col-6"
+        >
+          <div
+            style={
+              Object {
+                "backgroundColor": "#212529",
+                "border": "solid",
+                "borderColor": "black",
+                "color": "white",
+                "height": "100%",
+                "marginLeft": "auto",
+                "marginRight": "auto",
+                "width": "100%",
+              }
+            }
+          >
+            <img
+              alt="Photo In Namco Funscape Of Two People Playing Dance Game"
+              border="solid"
+              borderColor="black"
+              className="img-fluid"
+              height="499px"
+              src="Namco2.jpg"
+              width="750px"
+            />
+            <p>
+              <b>
+                Offers:
+              </b>
+              <br />
+              <ul>
+                <li>
+                  Get 20% off with your cinema ticket, when you spend £20 or more on games
+                </li>
+                <li>
+                  Buy one get one free cinema ticket, if you leave a review
+                </li>
+              </ul>
+               
+            </p>
+          </div>
+        </div>
+        <div
+          className="col-md-4 col-6"
+        >
+          <div
+            style={
+              Object {
+                "backgroundColor": "#212529",
+                "border": "solid",
+                "borderColor": "black",
+                "color": "white",
+                "height": "100%",
+                "marginLeft": "auto",
+                "marginRight": "auto",
+                "width": "100%",
+              }
+            }
+          >
+            <img
+              alt="Photo In Namco Funscape Of Pool Tables"
+              border="solid"
+              borderColor="black"
+              className="img-fluid"
+              height="499px"
+              src="Namco.jpg"
+              width="750px"
+            />
+            <p>
+              <b>
+                Contact Details:
+              </b>
+              <br />
+            </p>
+            <ul>
+              <li>
+                Phone:  020 7967 1066
+              </li>
+              <li>
+                Email: namcofunscape@live.com
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <br />
+    </div>
+  </div>
+</div>
+`;
