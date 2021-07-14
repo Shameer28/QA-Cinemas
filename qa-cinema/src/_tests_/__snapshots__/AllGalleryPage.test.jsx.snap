@@ -1,0 +1,36 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`All Gallery Page testing Should match the snapshot 1`] = `
+<div
+  class="background"
+>
+  <div
+    className="container"
+  >
+    <br />
+    <h2
+      style={
+        Object {
+          "color": "white",
+          "fontWeight": "400",
+          "fontfamily": "isonormregular, sans-serif",
+          "letterSpacing": ".15em",
+          "lineHeight": "1.1",
+          "textTransform": "uppercase",
+        }
+      }
+    >
+      Best Movies Of All Time
+    </h2>
+    <br />
+    <div>
+      <row>
+        <p>
+          Loading
+        </p>
+      </row>
+    </div>
+    <br />
+  </div>
+</div>
+`;

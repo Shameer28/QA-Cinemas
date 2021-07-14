@@ -20,7 +20,7 @@ const Email = () => {
 
         const dataToSend = JSON.stringify({ Email, FirstName, LastName, TextArea });
         console.log("data has been sent");
-        console.log(dataToSend);
+            
 
         //Setting the states back to ''
         setEmail('');
@@ -49,7 +49,7 @@ const Email = () => {
     return (
         <div style={{ width: "100%", backgroundColor: "#212529", color: "white" }}>
             <Container>
-                <Card className="text-center" style={{ backgroundColor: "#212529", color: "white" }}>
+                <Card className="text-center" style={{ backgroundColor: "white", color: "black" }}>
                     <Card.Header>Contact US</Card.Header>
                     <Card.Body>
                         <Card.Title><u>Please fill out the form to submit a request</u></Card.Title>
