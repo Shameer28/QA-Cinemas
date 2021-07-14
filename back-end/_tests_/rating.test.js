@@ -18,7 +18,6 @@ describe("Ratings Route Test", ()=> {
 			expect(resp).to.have.status(200);
 
 			done();
-			console.log("Ahoy")
 		});
 	}).timeout(5000);
 
