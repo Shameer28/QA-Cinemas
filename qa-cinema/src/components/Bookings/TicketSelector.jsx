@@ -43,7 +43,8 @@ const TicketSelector = (props) => {
                 const timming = e.target.parentElement.querySelector("#MovieTimings");
                 timming.innerHTML = "";
                 res.data.showTimes.map((t) => {
-                    timming.innerHTML += `<option>${t}</option>`
+                    const time = new Date(t*1000)
+                    timming.innerHTML += `<option>${time.toLocaleDateString()+" - "+time.getHours()+":"+time.getMinutes()}</option>`
                 })
             } else {
                 throw new Error("No body on responce")
@@ -72,8 +73,6 @@ const TicketSelector = (props) => {
             }
 
         }
-
-
         formData.price = (formData.Adults * 10) + (formData.Child * 5) + [0, 3, 5, 7.5][formData.Concessions]
         setCart(getCart => [...getCart, formData])
     }

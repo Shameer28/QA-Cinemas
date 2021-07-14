@@ -3,4 +3,4 @@ import App from './App';
 
 test('App Intergration Test', () => {
   render(<App />);
-});
+})
