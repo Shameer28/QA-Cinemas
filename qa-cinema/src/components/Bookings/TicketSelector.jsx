@@ -156,7 +156,7 @@ const TicketSelector = (props) => {
                                         <option value={3}>£7.50 Large Drink & Popcorn </option>
                                     </select><br />
 
-                                    <br /><Button type="submit" value="Add To Cart"> Add to Cart</Button> &nbsp;
+                                    <br /><Button id="submit" type="submit" value="Add To Cart"> Add to Cart</Button> &nbsp;
                                     <Button onClick={() => { setPage("Checkout") }} disabled={getCart.length === 0}>Checkout</Button>
                                 </form>
 

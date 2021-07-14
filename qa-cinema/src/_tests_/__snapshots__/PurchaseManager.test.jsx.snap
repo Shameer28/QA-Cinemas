@@ -100,6 +100,14 @@ exports[`PurchaseManager testing Should match the snapshot 1`] = `
     >
       <div
         className="text-center card"
+        style={
+          Object {
+            "backgroundColor": "#212529",
+            "border": "solid",
+            "borderColor": "black",
+            "color": "white",
+          }
+        }
       >
         <div
           className="card-header"
