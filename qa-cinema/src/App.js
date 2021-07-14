@@ -1,6 +1,6 @@
 import './App.css';
 import HomePage from './components/HomePage/HomePage';
-import NavBar from './components/sharedcomponents/navbar';
+import NavBar from './components/sharedcomponents/Navbar';
 import Footers from './components/sharedcomponents/Footers';
 import { BrowserRouter, Route } from "react-router-dom";
 import AllGalleryPage from './components/AllGalleryPage/AllGalleryPage';
@@ -60,13 +60,14 @@ function App() {
         <Route path="/reviews">
           <ReviewAddPage />
         </Route>
-		<Route path="/forums/:id">
-          <ThreadPage/>
+
+        <Route path="/forums/:id">
+          <ThreadPage />
         </Route>
+
         <Route path="/discussionboard">
           <DiscussionBoard />
         </Route>
-
 
         <Route path="/aboutpage">
           <AboutPage />
@@ -77,13 +78,12 @@ function App() {
         </Route>
 
         <Route path="/screens">
-          <Screen/>
+          <Screen />
         </Route>
-        
 
         <Route path="/ticketBookings">
-           <PurchaseManager/>
-         </Route>
+          <PurchaseManager />
+        </Route>
 
         <Route path="/movieDetail/:id">
           <MoviePage url="http://localhost:3000/movies/get/" />
