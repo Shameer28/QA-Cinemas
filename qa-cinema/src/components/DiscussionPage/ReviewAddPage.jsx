@@ -102,8 +102,8 @@ const ReviewAddPage = () => {
 						{films.map((resp) => (
 							<Col xs={4}>
 								<div class="text-center">
-									<Card style={{ width: '18rem' }} >
-										<Card.Img variant="top" src="holder.js/100px180" />
+									<Card style={{ width: "89%", height: "100%", backgroundColor: "#212529", color: "white", border: "solid", borderColor: "black" }}>
+										<Card.Img variant="top" src={resp.image} height="452px" />
 										<Card.Body>
 											<Card.Title>{resp.title}</Card.Title>
 											<Button onClick={(e) => { selectFilm(e, resp) }}>
@@ -144,7 +144,7 @@ const ReviewAddPage = () => {
 							<input value={email} type="email" placeholder="Email Address" required onChange={(e) => { e.preventDefault(); setEmail(e.target.value) }} />
 						</fieldset><br />
 
-						<h4 style={{ color: "white", fontWeight: "400", fontfamily: "isonormregular, sans-serif", letterSpacing: ".15em", textTransform: "uppercase", lineHeight: "1.1" }}>
+						<h4 className="text-center" style={{ color: "white", fontWeight: "400", fontfamily: "isonormregular, sans-serif", letterSpacing: ".15em", textTransform: "uppercase", lineHeight: "1.1" }}>
 							How many ratings do you want to give {film.title}?
 						</h4>
 

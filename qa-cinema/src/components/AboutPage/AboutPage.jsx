@@ -19,16 +19,16 @@ const AboutPage = () => {
             <div >
                 <Container className="p-3">
                     <Container>
-                        <h2 style={{ color: "white", fontWeight: "400", fontfamily: "isonormregular, sans-serif", letterSpacing: ".15em", textTransform: "uppercase", lineHeight: "1.1"}}>Meet our developers</h2><br />
-                        <div style={{ width: "100%", marginRight: "auto", marginLeft: "auto", backgroundColor: "white", border: "solid" }}>
+                        <h2 style={{ color: "white", fontWeight: "400", fontfamily: "isonormregular, sans-serif", letterSpacing: ".15em", textTransform: "uppercase", lineHeight: "1.1" }}>Meet our developers</h2><br />
+                        <div style={{ width: "80%", marginRight: "auto", marginLeft: "auto", backgroundColor: "#212529", color: "white", border: "solid", borderColor: "black" }}>
                             <Row>
 
-                                <Col>
-                                    <Image src={image4} width="100%" alt="Shameer's Photo" thumbnail />
+                                <Col border="solid" borderColor="black" >
+                                    <Image src={image4} width="100%" alt="Shameer's Photo" fluid border="solid" borderColor="black" />
                                 </Col>
                                 <Col style={{ margin: "auto", width: "50%" }}>
-                                    <p><b>Name</b> : Shameer Dar<br /></p>
-                                    <b>Role</b> : Front-End Developer<br />
+                                    <h4><b>Name</b> : Shameer Dar</h4>
+                                    <h4><b>Role</b> : Front-End Developer</h4><br />
                                     <Row>
                                         <Col class="col-sm">
                                             <a href="https://www.linkedin.com/in/shameer-dar-91b120a5/" target="_blank"><Image src={image6} width="73%" height="100%" alt="LinkedIn" thumbnail /></a>
@@ -41,14 +41,14 @@ const AboutPage = () => {
                             </Row>
                         </div >
                         <br></br>
-                        <div style={{ width: "100%", marginRight: "auto", marginLeft: "auto", backgroundColor: "white", border: "solid" }}>
+                        <div style={{ width: "80%", marginRight: "auto", marginLeft: "auto", backgroundColor: "#212529", color: "white", border: "solid", borderColor: "black" }}>
                             <Row>
                                 <Col>
-                                    <Image src={image3} width="100%" height="100%" alt="Haaris's Photo" thumbnail />
+                                    <Image src={image3} width="100%" height="100%" alt="Haaris's Photo" fluid border="solid" borderColor="black" />
                                 </Col>
                                 <Col style={{ margin: "auto", width: "50%" }}>
-                                    <p><b>Name</b> : Haaris Moghal <br /></p>
-                                    <p><b>Role</b> : Front-End Developer<br /></p>
+                                    <h4><b>Name</b> : Haaris Moghal <br /></h4>
+                                    <h4><b>Role</b> : Front-End Developer</h4><br />
                                     <Row>
                                         <Col>
                                             <a href="https://www.linkedin.com/in/haaris-moghal-60b8b0159/" target="_blank"><Image src={image6} width="73%" height="100%" alt="LinkedIn" thumbnail /></a>
@@ -61,15 +61,14 @@ const AboutPage = () => {
                             </Row>
                         </div >
                         <br></br>
-                        <div style={{ width: "100%", marginRight: "auto", marginLeft: "auto", backgroundColor: "white", border: "solid" }}>
+                        <div style={{ width: "80%", marginRight: "auto", marginLeft: "auto", backgroundColor: "#212529", color: "white", border: "solid", borderColor: "black" }}>
                             <Row>
                                 <Col>
-                                    <Image src={image7} width="100%" height="100%" alt="Andrew's Photo" thumbnail />
+                                    <Image src={image7} width="100%" height="100%" alt="Andrew's Photo" fluid border="solid" borderColor="black" />
                                 </Col>
                                 <Col style={{ margin: "auto", width: "50%" }}>
-                                    <p><b>Name</b> : Andrew McCall <br /></p>
-                                    <p><b>Role</b> : Back-End Developer<br /></p>
-                                    <p><b>Social Media:</b><br /></p>
+                                    <h4><b>Name</b> : Andrew McCall <br /></h4>
+                                    <h4><b>Role</b> : Back-End Developer</h4><br />
                                     <Row>
 
                                         <Col>
@@ -83,16 +82,15 @@ const AboutPage = () => {
                             </Row>
                         </div >
                         <br></br>
-                        <div style={{ width: "100%", marginRight: "auto", marginLeft: "auto", backgroundColor: "white", border: "solid" }}>
+                        <div style={{ width: "80%", marginRight: "auto", marginLeft: "auto", backgroundColor: "#212529", color: "white", border: "solid", borderColor: "black" }}>
                             <Row>
                                 <Col>
-                                    <Image src={image2} width="100%" height="100%" alt="Oliver's Photo" thumbnail />
+                                    <Image src={image2} width="100%" height="100%" alt="Oliver's Photo" fluid border="solid" borderColor="black" />
                                 </Col>
 
                                 <Col style={{ margin: "auto", width: "50%" }}>
-                                    <p><b>Name</b> : Oliver Dillion <br /></p>
-                                    <p><b>Role</b> : Back-End Developer<br /></p>
-                                    <p><b>Social Media:</b><br /></p>
+                                    <h4><b>Name</b> : Oliver Dillion <br /></h4>
+                                    <h4><b>Role</b> : Back-End Developer</h4><br />
                                     <Row>
                                         <Col>
                                             <a href="https://www.linkedin.com/in/oliverdillon" target="_blank"><Image src={image6} width="73%" height="100%" alt="LinkedIn" thumbnail /></a>

@@ -4,7 +4,7 @@ import './OpeningTimesPage.css';
 const Tables = () => {
     return (
         <div>
-            <Table striped bordered hover size="sm" variant="dark">
+            <Table striped bordered hover size="sm" variant="dark" style={{ backgroundColor: "#212529", color: "white", border: "solid", borderColor: "black" }}>
                 <thead>
                     <tr>
                         <th><u>Days</u></th>

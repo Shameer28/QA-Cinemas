@@ -2,24 +2,6 @@ const express = require("express");
 
 const router = express.Router();
 
-/*
-	Movies 
-
-	{
-		title: "Detective Pikachu",
-		image: "icon"
-		actors: [
-
-		],
-		director: "Rob Letterman"
-		showingTimes : [
-
-		],
-		plot: "Some info"
-	}
-
-*/
-
 const FilmDB = require("./../models/films")
 
 const tempData = {

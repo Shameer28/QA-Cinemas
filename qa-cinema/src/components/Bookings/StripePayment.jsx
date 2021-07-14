@@ -82,7 +82,7 @@ const StripeCheckoutForm = (props) => {
 
     return (
         <div class="background">
-             <Carousel controls={false} slide={true} fade={true} pause={false} height="650px">
+            <Carousel controls={false} slide={true} fade={true} pause={false} height="650px">
                 <Carousel.Item interval={3000}>
                     <img
                         className="d-block w-100"
@@ -114,9 +114,9 @@ const StripeCheckoutForm = (props) => {
             </Carousel>
             <br></br>
             <Container>
-                <div style={{ border: "solid", backgroundColor:"white"}}>
+                <div style={{ backgroundColor: "#212529", color: "white", border: "solid", borderColor: "black" }}>
                     <div className="stripe-form-container">
-                        <form onSubmit={handleFormSubmit} className="stripe-form w-308px lg:w-600px border border px-4 lg:px-8 py-6 lg:py-10 m-auto">
+                        <form onSubmit={handleFormSubmit} className="stripe-form w-308px lg:w-600px lg:px-8 py-6 lg:py-10 m-auto">
                             <h2 className="text-black mb-6 uppercase font-600">Stripe Payment: Pay with card</h2>
                             <div className="mb-4">
                                 <label htmlFor="name" >Biling Name:</label><br />
@@ -127,7 +127,7 @@ const StripeCheckoutForm = (props) => {
                                 <textarea type="text" id="address" /><br />
 
                                 <h6>Card Information</h6>
-                                <div className="container">
+                                <div className="container" style={{ color: "white" }} >
                                     <div style={{ width: "50%", margin: "auto" }}>
                                         <CardElement onChange={handleCardDetailsChange} />
                                     </div>
@@ -135,9 +135,9 @@ const StripeCheckoutForm = (props) => {
 
                             </div>
                             {checkoutError ? <div className="text-sm my-4 text-black">{checkoutError}</div> : null}
-                            <button onClick={() => { setPage("TicketSelector") }}>Back</button>
-                            <button disabled={isProcessing || !stripe}> {isProcessing ? "Processing..." : `Pay £${getCost()}`} </button>
-                        </form>
+                            <Button onClick={() => { setPage("TicketSelector") }}>Back</Button> &nbsp;
+                            <Button type="submit" disabled={isProcessing || !stripe}> {isProcessing ? "Processing..." : `Pay £${getCost()}`} </Button>
+                        </form><br />
                     </div>
                 </div>
             </Container>

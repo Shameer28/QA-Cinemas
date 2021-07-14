@@ -3,6 +3,7 @@ import "bootstrap/dist/css/bootstrap.min.css";
 import Card from 'react-bootstrap/Card'
 import Container from "react-bootstrap/Container";
 import Form from "react-bootstrap/Form";
+import { Button } from "react-bootstrap";
 
 const Email = () => {
     const [Email, setEmail] = useState('');
@@ -19,7 +20,11 @@ const Email = () => {
 
         const dataToSend = JSON.stringify({ Email, FirstName, LastName, TextArea });
         console.log("data has been sent");
+<<<<<<< HEAD
             
+=======
+        console.log(dataToSend);
+>>>>>>> d4a9d6a4aa741d05495f4cc6d6f9cfdb9eebb583
 
         //Setting the states back to ''
         setEmail('');
@@ -46,9 +51,9 @@ const Email = () => {
 
     }
     return (
-        <div >
+        <div style={{ width: "100%", backgroundColor: "#212529", color: "white" }}>
             <Container>
-                <Card className="text-center">
+                <Card className="text-center" style={{ backgroundColor: "#212529", color: "white" }}>
                     <Card.Header>Contact US</Card.Header>
                     <Card.Body>
                         <Card.Title><u>Please fill out the form to submit a request</u></Card.Title>
@@ -70,7 +75,7 @@ const Email = () => {
                                     <Form.Control id="TextArea" as="textarea" className="form-control" required minLength={3} rows={3} value={TextArea} onChange={(e) => { setTextArea(e.target.value) }} />
                                 </Form.Group>
                                 <br />
-                                <button id="submit" type="submit"> submit</button>
+                                <Button type="submit"> Submit</Button>
                             </Form>
                         </Card.Text>
 

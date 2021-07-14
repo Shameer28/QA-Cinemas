@@ -11,7 +11,7 @@ const GettingThere = () => {
     return (
         <div class="background">
             <Carousels />
-            <div style={{ width: "50%", marginRight: "auto", marginLeft: "auto", backgroundColor: "white", border: "solid" }}>
+            <div style={{ width: "50%", height: "100%", marginRight: "auto", marginLeft: "auto", backgroundColor: "#212529", color: "white", border: "solid", borderColor: "black" }}>
                 <div >
                     <Container className="p-3">
                         <Container>
@@ -20,7 +20,12 @@ const GettingThere = () => {
                             <Row>
                                 <Col>
                                     <Jumbotron>
+<<<<<<< HEAD
                                         <div style={{ border: "solid", height: "500px", width: "100%" }}>                                        
+=======
+                                        <div style={{ border: "solid", height: "500px", width: "100%", borderColor: "black" }}>
+                                            {/* <GoogleMaps /> */}
+>>>>>>> d4a9d6a4aa741d05495f4cc6d6f9cfdb9eebb583
                                             <GoogleMapsDirections />
                                         </div>
                                     </Jumbotron>
