@@ -20,10 +20,12 @@ const forumSchema = new Schema({
 	comments: [
 		{
 			author: {
-				type: String
+				type: String,
+				required: true,
 			},
 			msg: {
 				type: String,
+				required:true,
 			},
 		}
 	],

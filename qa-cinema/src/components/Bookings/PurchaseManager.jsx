@@ -28,7 +28,7 @@ const PurchaseManager = () => {
             ) : (
                 getPage === "PaymentSuccess" ? (
                     <div class="background">
-                        
+
                         <Carousel controls={false} slide={true} fade={true} pause={false} height="650px">
                             <Carousel.Item interval={3000}>
                                 <img
@@ -59,10 +59,10 @@ const PurchaseManager = () => {
                                 />
                             </Carousel.Item>
 
-                            </Carousel>
-                            <br></br>
-                        <Container>
-                            <div style={{ border: "solid", backgroundColor: "white" }}>
+                        </Carousel>
+                        <br></br>
+                        <Container >
+                            <div style={{ backgroundColor: "#212529", color: "white", border: "solid", borderColor: "black" }}>
 
                                 <h1>Payment Success!</h1>
 

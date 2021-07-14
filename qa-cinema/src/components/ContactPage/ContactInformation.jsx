@@ -13,7 +13,7 @@ const ContactInformation = () => {
                         8, St James's Bldg, 61-95 Oxford St, Manchester, M1 6FQ
                     </li>
                     <li>
-                        
+
                         <strong>Call Center: </strong>
                         <a href="tel:+44 (0)345 074 7995">+44 (0)345 074 7995</a>
                     </li>

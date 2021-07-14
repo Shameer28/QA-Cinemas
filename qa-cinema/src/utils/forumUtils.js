@@ -35,11 +35,23 @@ const addComment = (id, data) => {
 };
 
 
+const addThread = (data) => {
+
+	return new Promise( (callback, errorCallback) => {
+		axios.post(url + "create").then( resp => {
+			callback(resp)
+		}).catch( (err) => {
+			errorCallback(err);	
+		});
+	})
+}
+
 
 
 
 export default {
 	getAll: getAll,
 	get: get,
-	addComment
+	addComment: addComment,
+	addThread: addThread
 }

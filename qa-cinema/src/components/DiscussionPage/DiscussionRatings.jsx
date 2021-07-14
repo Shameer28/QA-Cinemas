@@ -34,21 +34,21 @@ const DiscussionRatings = () => {
 			</h3><br />
 			<div>
 				{ratings.map((rating) => {
-					return <div><Card>
+					return <div><Card style={{ backgroundColor: "#212529", color: "white", borderColor: "black" }}>
 						<Card.Header style={{}}>
 							<blockquote className="blockquote mb-0">
-								<p style={{ color: "black" }}>Movie : <b>{rating.filmName}</b> </p>
+								<p>Movie : <b>{rating.filmName}</b> </p>
 							</blockquote>
 						</Card.Header>
 						<Card.Body>
 							<blockquote className="blockquote mb-0">
-								<p style={{ color: "black" }}>
+								<p>
 									{rating.msg}
 								</p>
-								<p style={{ color: "black" }}>
-									{rating.rating} out of 5
+								<p>
+									Rating : {rating.rating}/5
 								</p>
-								<footer className="blockquote-footer">
+								<footer className="blockquote-footer" style={{ color: "white" }}>
 									Review by<cite title="Source Title"> {rating.name}</cite>
 								</footer>
 							</blockquote>

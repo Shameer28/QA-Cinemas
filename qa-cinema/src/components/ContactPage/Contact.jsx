@@ -54,15 +54,15 @@ const Contact = () => {
   }
 
   return (
-    <div>
+    <div style={{ backgroundColor: "#212529", color: "white" }}>
       <div >
         <Container className="p-3">
           <Container>
-            
+
             <Row>
               <Col>
                 <Jumbotron>
-                  <div style={{ border: "solid" }}>
+                  <div style={{ border: "solid", borderColor: "black" }}>
                     <GoogleMaps />
                   </div>
                 </Jumbotron>
@@ -70,7 +70,7 @@ const Contact = () => {
 
               <Col style={{ margin: "auto", width: "50%" }}>
                 <div style={{ margin: "auto" }}>
-                  <div class="text"><h2><u>Feel free to get in contact with us:</u></h2> </div>
+                  <div class="text" ><h2><u>Feel free to get in contact with us:</u></h2> </div>
                   <br></br>
                   <div>
                     <strong>Location: </strong>
