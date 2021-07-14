@@ -79,20 +79,16 @@ router.get("/getAll/:filmId", async( req, res) => {
 
 });
 
-
 router.delete("/delete/:id", async (req, res)=> {
 	const id = req.params.id;
 
 	try {
 		const success = await RatingsDB.deleteOne({_id: id});
-
-		console.log(success);
 		res.send(success.n === 1)
 	}
 	catch (e) {
 		res.status(503).send("Invalid id")
 	}
 });
-
 
 module.exports = router;
