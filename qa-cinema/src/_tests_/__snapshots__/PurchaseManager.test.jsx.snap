@@ -1,0 +1,140 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`PurchaseManager testing Should match the snapshot 1`] = `
+<div
+  className="text-center"
+>
+  <div
+    class="background"
+  >
+    <div
+      className="carousel slide carousel-fade"
+      height="650px"
+      onKeyDown={[Function]}
+      onMouseOut={[Function]}
+      onMouseOver={[Function]}
+      onTouchEnd={[Function]}
+      onTouchMove={[Function]}
+      onTouchStart={[Function]}
+    >
+      <ol
+        className="carousel-indicators"
+      >
+        <li
+          className="active"
+          onClick={[Function]}
+        />
+        <li
+          onClick={[Function]}
+        />
+        <li
+          onClick={[Function]}
+        />
+        <li
+          onClick={[Function]}
+        />
+      </ol>
+      <div
+        className="carousel-inner"
+      >
+        <div
+          className="active carousel-item"
+          interval={3000}
+        >
+          <img
+            alt="First slide"
+            className="d-block w-100"
+            src="theatre.jpg"
+          />
+        </div>
+        <div
+          className="carousel-item"
+          interval={3000}
+        >
+          <img
+            alt="Second slide"
+            className="d-block w-100"
+            src="set.png"
+          />
+        </div>
+        <div
+          className="carousel-item"
+          interval={3000}
+        >
+          <img
+            alt="Third slide"
+            className="d-block w-100"
+            src="cinemas.jpg"
+          />
+        </div>
+        <div
+          className="carousel-item"
+          interval={3000}
+        >
+          <img
+            alt="Third slide"
+            className="d-block w-100"
+            src="cinema2.jpg"
+          />
+        </div>
+      </div>
+    </div>
+    <br />
+    <h2
+      style={
+        Object {
+          "color": "white",
+          "fontWeight": "400",
+          "fontfamily": "isonormregular, sans-serif",
+          "letterSpacing": ".15em",
+          "lineHeight": "1.1",
+          "textTransform": "uppercase",
+        }
+      }
+    >
+      Book your tickets 
+    </h2>
+    <br />
+    <div
+      className="container"
+    >
+      <div
+        className="text-center card"
+      >
+        <div
+          className="card-header"
+        >
+          Ticket Select
+        </div>
+        <div
+          className="card-body"
+        >
+          <div
+            className="card-title h5"
+          >
+            <u>
+              Please fill out the form to book tickets
+            </u>
+          </div>
+          <p
+            className="card-text"
+          >
+            <h5>
+              Loading Form
+            </h5>
+          </p>
+        </div>
+        <div
+          className="text-muted card-footer"
+        />
+      </div>
+    </div>
+  </div>
+  <div
+    class="background"
+  >
+    <br />
+    <br />
+  </div>
+</div>
+`;

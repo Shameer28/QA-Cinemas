@@ -1,6 +1,5 @@
 import Container from 'react-bootstrap/Container';
 import Carousels from './Carousels';
-import GoogleMaps from './GoogleMaps';
 import Row from "react-bootstrap/Row";
 import Col from "react-bootstrap/Col";
 import Jumbotron from "react-bootstrap/Jumbotron";
@@ -21,8 +20,7 @@ const GettingThere = () => {
                             <Row>
                                 <Col>
                                     <Jumbotron>
-                                        <div style={{ border: "solid", height: "500px", width: "100%" }}>
-                                            {/* <GoogleMaps /> */}
+                                        <div style={{ border: "solid", height: "500px", width: "100%" }}>                                        
                                             <GoogleMapsDirections />
                                         </div>
                                     </Jumbotron>

@@ -19,7 +19,7 @@ const Email = () => {
 
         const dataToSend = JSON.stringify({ Email, FirstName, LastName, TextArea });
         console.log("data has been sent");
-        console.log(dataToSend);        
+            
 
         //Setting the states back to ''
         setEmail('');
