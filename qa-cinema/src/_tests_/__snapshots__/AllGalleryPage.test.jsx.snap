@@ -1,0 +1,38 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`All Gallery Page Testing Snapshot Check 1`] = `
+<div
+  className="background"
+>
+  <div
+    className="container"
+  >
+    <br />
+    <h2
+      style={
+        Object {
+          "color": "white",
+          "fontWeight": "400",
+          "fontfamily": "isonormregular, sans-serif",
+          "letterSpacing": ".15em",
+          "lineHeight": "1.1",
+          "textTransform": "uppercase",
+        }
+      }
+    >
+      Now Showing
+    </h2>
+    <br />
+    <div>
+      <div
+        className="row"
+      >
+        <p>
+          Loading
+        </p>
+      </div>
+    </div>
+    <br />
+  </div>
+</div>
+`;

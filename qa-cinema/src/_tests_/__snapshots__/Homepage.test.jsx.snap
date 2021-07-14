@@ -89,11 +89,11 @@ exports[`Homepage testing Should match the snapshot 1`] = `
         className="col-4"
       >
         <div
-          class="image"
+          className="image"
         >
           <img
             alt="BlackWidow"
-            class="movie"
+            className="movie"
             height="100%"
             src="BlackWidowPortrait.jpg"
             width="100%"
@@ -123,11 +123,11 @@ exports[`Homepage testing Should match the snapshot 1`] = `
         className="col-4"
       >
         <div
-          class="image"
+          className="image"
         >
           <img
             alt="Fast9"
-            class="movie"
+            className="movie"
             height="100%"
             src="Fast9.jpg"
             width="100%"
@@ -155,11 +155,11 @@ exports[`Homepage testing Should match the snapshot 1`] = `
         className="col"
       >
         <div
-          class="image"
+          className="image"
         >
           <img
             alt="JamesBond"
-            class="movie"
+            className="movie"
             height="100%"
             src="JamesBond.jpg"
             width="100%"
@@ -191,11 +191,11 @@ exports[`Homepage testing Should match the snapshot 1`] = `
         className="col-4"
       >
         <div
-          class="image"
+          className="image"
         >
           <img
             alt="AQuietPlace2"
-            class="movie"
+            className="movie"
             height="100%"
             src="AQuietPlace2.jpg"
             width="100%"
@@ -224,11 +224,11 @@ exports[`Homepage testing Should match the snapshot 1`] = `
         className="col-4"
       >
         <div
-          class="image"
+          className="image"
         >
           <img
             alt="Conjuring"
-            class="movie"
+            className="movie"
             height="100%"
             src="Conjuring.jpg"
             width="100%"
@@ -256,11 +256,11 @@ exports[`Homepage testing Should match the snapshot 1`] = `
         className="col"
       >
         <div
-          class="image"
+          className="image"
         >
           <img
             alt="Nobody"
-            class="movie"
+            className="movie"
             height="100%"
             src="Nobody.jpg"
             width="100%"
