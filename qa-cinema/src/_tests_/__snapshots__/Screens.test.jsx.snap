@@ -121,6 +121,14 @@ exports[`Screens testing Should match the snapshot 1`] = `
     <br />
     <div
       className="text-center card"
+      style={
+        Object {
+          "backgroundColor": "#212529",
+          "border": "solid",
+          "borderColor": "black",
+          "color": "white",
+        }
+      }
     >
       <div
         className="card-header"
@@ -143,6 +151,8 @@ exports[`Screens testing Should match the snapshot 1`] = `
             src="SeatingPlan.jpg"
             width="50%"
           />
+          <br />
+          <br />
           <p>
             The theatre has a capacity of 566 seats, including 406 seats in the Stalls, 124 seats in the Circle and 33 seats in the Box.
           </p>
@@ -155,6 +165,14 @@ exports[`Screens testing Should match the snapshot 1`] = `
     <br />
     <div
       className="text-center card"
+      style={
+        Object {
+          "backgroundColor": "#212529",
+          "border": "solid",
+          "borderColor": "black",
+          "color": "white",
+        }
+      }
     >
       <div
         className="card-header"
@@ -175,6 +193,8 @@ exports[`Screens testing Should match the snapshot 1`] = `
             src="TheatreSeats.jpg"
             width="45%"
           />
+          <br />
+          <br />
           <p>
             Seats in a theater with a thrust stage are arranged around the stage on three sides and raked so that the audience can see the action. In an arena theater with a circular stage, the seats ring the stage and the stage itself is raised for audience visibility. Black box theaters have no fixed seating and no fixed stage--they are adapted for each show.
           </p>
@@ -187,6 +207,14 @@ exports[`Screens testing Should match the snapshot 1`] = `
     <br />
     <div
       className="text-center card"
+      style={
+        Object {
+          "backgroundColor": "#212529",
+          "border": "solid",
+          "borderColor": "black",
+          "color": "white",
+        }
+      }
     >
       <div
         className="card-header"
@@ -207,6 +235,8 @@ exports[`Screens testing Should match the snapshot 1`] = `
             src="deluxeBox.jpg"
             width="45%"
           />
+          <br />
+          <br />
           <p>
             Box seats ring around the screen, one level up. Boxes are divided by walls or curtains and the private compartments each have a few to half-a-dozen chairs arranged in rows. Sometimes, the back row of chairs is on a raised platform so that everyone in the box has an unobstructed view of the stage.
           </p>

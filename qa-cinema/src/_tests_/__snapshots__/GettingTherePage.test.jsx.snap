@@ -80,8 +80,11 @@ exports[`Getting There testing Should match the snapshot 1`] = `
   <div
     style={
       Object {
-        "backgroundColor": "white",
+        "backgroundColor": "#212529",
         "border": "solid",
+        "borderColor": "black",
+        "color": "white",
+        "height": "100%",
         "marginLeft": "auto",
         "marginRight": "auto",
         "width": "50%",
