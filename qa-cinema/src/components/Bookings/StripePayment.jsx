@@ -113,7 +113,7 @@ const StripeCheckoutForm = (props) => {
                 </Carousel.Item>
             </Carousel>
             <br></br>
-            <Container style={{ color: "white" }}>
+            <Container>
                 <div style={{ backgroundColor: "#212529", color: "white", border: "solid", borderColor: "black" }}>
                     <div className="stripe-form-container">
                         <form onSubmit={handleFormSubmit} className="stripe-form w-308px lg:w-600px lg:px-8 py-6 lg:py-10 m-auto">
@@ -127,17 +127,17 @@ const StripeCheckoutForm = (props) => {
                                 <textarea type="text" id="address" /><br />
 
                                 <h6>Card Information</h6>
-                                <div className="container">
-                                    <div style={{ width: "50%", margin: "auto", }}>
-                                        <CardElement onChange={handleCardDetailsChange} style={{ color: "white" }} />
+                                <div className="container" style={{ color: "white" }} >
+                                    <div style={{ width: "50%", margin: "auto" }}>
+                                        <CardElement onChange={handleCardDetailsChange} />
                                     </div>
                                 </div>
 
                             </div>
                             {checkoutError ? <div className="text-sm my-4 text-black">{checkoutError}</div> : null}
-                            <button onClick={() => { setPage("TicketSelector") }}>Back</button>
-                            <button disabled={isProcessing || !stripe}> {isProcessing ? "Processing..." : `Pay £${getCost()}`} </button>
-                        </form>
+                            <Button onClick={() => { setPage("TicketSelector") }}>Back</Button> &nbsp;
+                            <Button type="submit" disabled={isProcessing || !stripe}> {isProcessing ? "Processing..." : `Pay £${getCost()}`} </Button>
+                        </form><br />
                     </div>
                 </div>
             </Container>
