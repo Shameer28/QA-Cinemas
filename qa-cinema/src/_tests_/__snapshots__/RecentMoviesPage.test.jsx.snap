@@ -1,13 +1,13 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`All Gallery Page Testing Snapshot Check 1`] = `
+exports[`Recent Movie Page testing Should match the snapshot 1`] = `
 <div
-  className="background"
+  class="background"
 >
+  <br />
   <div
     className="container"
   >
-    <br />
     <h2
       style={
         Object {
@@ -20,19 +20,12 @@ exports[`All Gallery Page Testing Snapshot Check 1`] = `
         }
       }
     >
-      Now Showing
+      Recent Movies
     </h2>
     <br />
-    <div>
-      <div
-        className="row"
-      >
-        <p>
-          Loading
-        </p>
-      </div>
-    </div>
-    <br />
+    <p>
+      Loading
+    </p>
   </div>
 </div>
 `;
