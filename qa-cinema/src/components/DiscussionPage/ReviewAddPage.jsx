@@ -102,7 +102,7 @@ const ReviewAddPage = () => {
 						{films.map((resp) => (
 							<Col xs={4}>
 								<div class="text-center">
-									<Card style={{ width: '18rem' }} >
+									<Card style={{ width: "89%", height: "100%", backgroundColor: "#212529", color: "white", border: "solid", borderColor: "black" }}>
 										<Card.Img variant="top" src={resp.image} height="452px" />
 										<Card.Body>
 											<Card.Title>{resp.title}</Card.Title>

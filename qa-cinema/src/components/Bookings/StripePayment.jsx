@@ -82,7 +82,7 @@ const StripeCheckoutForm = (props) => {
 
     return (
         <div class="background">
-             <Carousel controls={false} slide={true} fade={true} pause={false} height="650px">
+            <Carousel controls={false} slide={true} fade={true} pause={false} height="650px">
                 <Carousel.Item interval={3000}>
                     <img
                         className="d-block w-100"
@@ -113,10 +113,10 @@ const StripeCheckoutForm = (props) => {
                 </Carousel.Item>
             </Carousel>
             <br></br>
-            <Container>
-                <div style={{ border: "solid", backgroundColor:"white"}}>
+            <Container style={{ color: "white" }}>
+                <div style={{ backgroundColor: "#212529", color: "white", border: "solid", borderColor: "black" }}>
                     <div className="stripe-form-container">
-                        <form onSubmit={handleFormSubmit} className="stripe-form w-308px lg:w-600px border border px-4 lg:px-8 py-6 lg:py-10 m-auto">
+                        <form onSubmit={handleFormSubmit} className="stripe-form w-308px lg:w-600px lg:px-8 py-6 lg:py-10 m-auto">
                             <h2 className="text-black mb-6 uppercase font-600">Stripe Payment: Pay with card</h2>
                             <div className="mb-4">
                                 <label htmlFor="name" >Biling Name:</label><br />
@@ -128,8 +128,8 @@ const StripeCheckoutForm = (props) => {
 
                                 <h6>Card Information</h6>
                                 <div className="container">
-                                    <div style={{ width: "50%", margin: "auto" }}>
-                                        <CardElement onChange={handleCardDetailsChange} />
+                                    <div style={{ width: "50%", margin: "auto", }}>
+                                        <CardElement onChange={handleCardDetailsChange} style={{ color: "white" }} />
                                     </div>
                                 </div>
 
