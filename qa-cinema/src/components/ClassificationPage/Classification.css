@@ -4,5 +4,7 @@
 .accord{
    
     cursor: pointer;
-
+}
+.accordp{
+    float: right;
 }

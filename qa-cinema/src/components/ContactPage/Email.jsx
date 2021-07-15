@@ -17,13 +17,13 @@ const Email = () => {
 
 
 
-    const handleSubmit = function(e) {
+    const handleSubmit = function (e) {
         //Preventing the page from refreshing
         e.preventDefault();
 
         const dataToSend = { Email, FirstName, LastName, TextArea };
         console.log("data has been sent");
-            
+
 
         //Setting the states back to ''
         setEmail('');
@@ -31,12 +31,12 @@ const Email = () => {
         setLastName('');
         setTextArea('');
 
-		axios.post( "http://localhost:3000/email/send", dataToSend ).then((response) => {
-			if (response.data.status === 'success') {
-				alert("Message Sent.");
-			} else if (response.data.status === 'fail') {
-				alert("Message failed to send.")
-			}
+        axios.post("http://localhost:3000/email/send", dataToSend).then((response) => {
+            if (response.data.status === 'success') {
+                alert("Message Sent.");
+            } else if (response.data.status === 'fail') {
+                alert("Message failed to send.")
+            }
         });
     }
     return (
