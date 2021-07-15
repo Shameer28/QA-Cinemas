@@ -40,9 +40,9 @@ const Forum = () => {
 									<p>
 										Topic : <b>{forum.name}</b>
 									</p>
-									<p>
+									{/* <p>
 										Comments
-									</p>
+									</p> */}
 									<footer className="blockquote-footer" style={{ color: "white" }}>
 										By<cite title="Source Title"> {forum.author}</cite>
 									</footer>

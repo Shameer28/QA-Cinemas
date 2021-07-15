@@ -62,7 +62,7 @@ const ThreadPage = () => {
 		);
 	}
 
-	let comments = (<p> No comments</p>)
+	let comments = (<p style={{ color: "white", fontWeight: "400", fontfamily: "isonormregular, sans-serif", letterSpacing: ".15em", textTransform: "uppercase", lineHeight: "1.1" }}> No comments</p>)
 
 	if (thread.comments && thread.comments.length > 0) {
 		comments = (
@@ -75,7 +75,7 @@ const ThreadPage = () => {
 									{' '}
 									{comment.msg}{' '}
 								</p>
-								<footer className="blockquote-footer" style={{ color: "white" }}>>
+								<footer className="blockquote-footer" style={{ color: "white" }}>
 									By <cite title="Source Title">{comment.author}</cite>
 								</footer>
 							</blockquote>
