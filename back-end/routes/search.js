@@ -16,7 +16,6 @@ router.get("/:desc", (req, res, next)=> {
 	const searchRgx = rgx(search);
 
 
-	console.log(search);
 	// if (desc === "asdasdasd sdfsdf") {
 		let response = [
 		];

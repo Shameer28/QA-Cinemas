@@ -5,7 +5,7 @@ const router = express.Router();
 
 const ForumDB = require("../models/forum.js");
 
-const words = require("../badwords.json")
+const words = require("../badwords.json");
 
 const isSafe = (msg) => {
 
@@ -25,10 +25,10 @@ const isSafe = (msg) => {
 				continue
 			}
 
-			return true
+			return false
 		}
 	}
-	return false
+	return true
 
 }
 
@@ -102,6 +102,22 @@ router.patch("/comment/add/:id", async( req, res) => {
 	} catch(err) { 
 		console.log(err)
 		res.status(500).send(err.message);
+	}
+});
+
+router.put("/update/:id", async (req, res) => {
+	
+	let data = req.body;
+	data._id = req.params.id
+
+	try {
+		const thread = new FilmDB(data);
+
+		await thread.save();
+
+		res.send(thread);
+	} catch (e) {
+		res.status(404).send(e.name + ': ' + e.message);
 	}
 });
 
