@@ -1,13 +1,12 @@
 import { Container } from "react-bootstrap";
 import './style.css'
-const Cart = ({ getCart, setCart }) => {
+const Cart = ({ getCart }) => {
 
     // <button 
     //             onClick={x=>{let newCart = getCart;
     //                     newCart.splice(key, 1);
     //                     setCart(newCart);}}>
     //         X</button>
-
 
     if (getCart.length === 0) {
         return (<></>);

@@ -117,14 +117,17 @@ exports[`Discussion board testing Should match the snapshot 1`] = `
       >
         <div>
           <br />
-          <button
-            className="btn btn-primary"
-            disabled={false}
-            onClick={[Function]}
-            type="button"
-          >
-            Add Thread
-          </button>
+          <div>
+            <div />
+            <button
+              className="btn btn-primary"
+              disabled={false}
+              onClick={[Function]}
+              type="button"
+            >
+              Add Thread
+            </button>
+          </div>
            
           <br />
           <br />
