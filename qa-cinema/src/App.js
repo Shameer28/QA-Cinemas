@@ -11,6 +11,8 @@ import PlacesToGo from './components/PlacesToGoPage/PlacesToGo';
 import DiscussionBoard from './components/DiscussionPage/DiscussionBoard';
 import ReviewAddPage from './components/DiscussionPage/ReviewAddPage';
 
+import SearchPage from "./components/Search/SearchPage" 
+
 
 import AboutPage from './components/AboutPage/AboutPage';
 import ContactPage from './components/ContactPage/ContactPage';
@@ -87,6 +89,10 @@ function App() {
 
         <Route path="/movieDetail/:id">
           <MoviePage url="http://localhost:3000/movies/get/" />
+        </Route>
+
+        <Route path="/search/:desc">
+        	<SearchPage/>
         </Route>
 
         <Footers />

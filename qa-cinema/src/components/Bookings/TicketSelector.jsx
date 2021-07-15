@@ -74,7 +74,6 @@ const TicketSelector = (props) => {
 
         }
 
-
         formData.price = (formData.Adults * 10) + (formData.Child * 5) + [0, 3, 5, 7.5][formData.Concessions]
         setCart(getCart => [...getCart, formData])
     }
