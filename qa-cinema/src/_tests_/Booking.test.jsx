@@ -7,19 +7,22 @@ import { useState } from 'react';
 
 describe(`All Gallery Page testing`, () => {
 
-    // beforeAll(() => {
-    //     const [getCart, setCart] = useState([]);
-    //     const [getPage, setPage] = useState("TicketSelector");
-    // })
-
     it('Should match the snapshot', () => {
         const instance = create(<PurchaseManager/>).toJSON();
         expect(instance).toMatchSnapshot();
     })
 
-    it('Add item to cart',  async() =>{
+    it('Error Form Alert',async() => {
+        render(<PurchaseManager/>)
+        await waitFor(() => screen.getAllByRole("button"))
+        userEvent.click(screen.getByText("Add to Cart"));
+        
+        expect(screen.toJSON()).toMatchSnapshot();
+    })
 
-        render(<PurchaseManager/>);
+    it('Fill In Form',  async() =>{
+
+        render(<PurchaseManager/>)
 
         expect(screen.findByText("Loading Form")).toBeTruthy();
 
@@ -45,10 +48,17 @@ describe(`All Gallery Page testing`, () => {
         expect(textInput2.value).toEqual("3");
         expect(dropInput.value).toEqual("2");
 
-        const dropInput1 = screen.getByDisplayValue("Select A Movie")
-        expect(dropInput1.value).toEqual("0");
-        userEvent.selectOptions(dropInput, "2")
-    })
 
+        const dropInput1 = screen.getByDisplayValue("Select A Movie")
+        expect(dropInput1.value).toEqual("Select A Movie");
+        userEvent.selectOptions(dropInput1, "60ec614b2506fc7c20193ce6")
+        expect(dropInput1.value).toEqual("60ec614b2506fc7c20193ce6");
+
+        await waitFor(() => screen.getByDisplayValue("25/07/2021 - 9:15"))
+
+        const dropInput2 = screen.getByDisplayValue("25/07/2021 - 9:15")
+        expect(dropInput2.value).toEqual("25/07/2021 - 9:15");
+
+    })
 
 })
