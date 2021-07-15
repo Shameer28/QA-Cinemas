@@ -1,7 +1,6 @@
 import { useState } from "react";
 import { CardElement, useStripe, useElements } from "@stripe/react-stripe-js";
 import { Button, Container } from "react-bootstrap";
-import movieUtils from "./../../utils/movies";
 import payment from "../../utils/payment";
 
 import Carousel from 'react-bootstrap/Carousel'
@@ -13,7 +12,7 @@ import image4 from './img/cinema2.jpg'
 
 const StripeCheckoutForm = (props) => {
 
-    const { setPage, getCart, setCart } = props;
+    const { setPage, getCart } = props;
     const [isProcessing, setProcessingTo] = useState(false);
     const [checkoutError, setCheckoutError] = useState();
 

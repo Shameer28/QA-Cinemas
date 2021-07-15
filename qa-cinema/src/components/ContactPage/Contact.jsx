@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React from "react";
 import "bootstrap/dist/css/bootstrap.min.css";
 
 import Container from "react-bootstrap/Container";
@@ -10,49 +10,6 @@ import GoogleMaps from "../GettingTherePage/GoogleMaps";
 
 
 const Contact = () => {
-
-  const [showMessage, setShowMessage] = useState(false);
-
-  const [Email, setEmail] = useState('');
-  const [FirstName, setFirstName] = useState('');
-  const [LastName, setLastName] = useState('');
-  const [TextArea, setTextArea] = useState('');
-
-
-
-  const handleSubmit = (e) => {
-    //Preventing the page from refreshing
-    e.preventDefault();
-
-    const dataToSend = JSON.stringify({ Email, FirstName, LastName, TextArea });
-    console.log("data has been sent");
-    console.log(dataToSend);
-
-
-    //Setting the states back to ''
-    setEmail('');
-    setFirstName('');
-    setLastName('');
-    setTextArea('');
-
-
-    // const handleSubmits = (e) => {
-    //     e.preventDefault();
-    //     axios({
-    //         method: "POST",
-    //         url: "http://localhost:3000/send",
-    //         data: this.data
-    //     }).then((response) => {
-    //         if (response.data.status === 'success') {
-    //             alert("Message Sent.");
-    //             this.resetForm()
-    //         } else if (response.data.status === 'fail') {
-    //             alert("Message failed to send.")
-    //         }
-    //     });
-    // };
-  }
-
   return (
     <div style={{ backgroundColor: "#212529", color: "white" }}>
       <div >

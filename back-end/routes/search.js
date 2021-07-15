@@ -35,9 +35,6 @@ router.get("/:desc", (req, res, next)=> {
 				]
 			}).catch(next);
 
-			// console.log(films);
-
-
 			films.forEach( (film) => {
 				response.push({
 					type: "Movie",
@@ -61,8 +58,6 @@ router.get("/:desc", (req, res, next)=> {
 			}).catch(  ()=> {
 				count++;	
 			});
-
-			console.log(threads)
 
 			threads.forEach( (thread) => {
 				response.push({

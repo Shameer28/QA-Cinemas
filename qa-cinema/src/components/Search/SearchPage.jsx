@@ -4,9 +4,6 @@ import { useEffect, useState } from "react"
 
 import axios from "axios";
 
-
-
-
 const SearchPage = () => {
 	const { desc } = useParams();
 	const [details, setDetails] = useState([]);
@@ -17,10 +14,9 @@ const SearchPage = () => {
 			setDetails(resp.data);
 
 			setLoading(false);
-		})
+		});
 
-		// talk to api for all the details that match my request;
-
+		// eslint-disable-next-line
 	}, []);
 
 	
@@ -31,7 +27,6 @@ const SearchPage = () => {
 			</div>
 		)
 	}
-
 
 	let content
 
@@ -45,25 +40,31 @@ const SearchPage = () => {
 		content = (
 			<div>
 				{details.map( (data) => {
-
-					// const clickFunc = ()
-
+					const clickFunc = (e, url)=> {
+						e.preventDefault();
+						window.location.href = url
+					}
+					const id = data.id;
 
 					if (data.type === "Movie") {
-						const id = data.id;
 						const {image, title} = data.data;
+						const url = "/movieDetail/" + id;
 
-						return (<button>
+						return (<button onClick = {  (e) => {  clickFunc(e, url)} } >
 							Movie
 						</button>)
 					}else if (data.type === "Thread") {
-						const id = data.id;
 						const {name, author} = data;
-						
-						return ( <button> 
+						const url = "/forums/" + id;
+
+						return ( <button onClick = {  (e) => {  clickFunc(e, url) } }> 
 							Thread
-						</button>	)
+						</button>)
 					}
+
+					// SOMETHING HAS GONE WRONG IF WE HAVE GOTTEN HERE
+
+					return (<div>  </div> )
 				}  )}
 			</div>
 		)

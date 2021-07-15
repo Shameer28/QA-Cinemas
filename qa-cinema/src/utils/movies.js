@@ -1,11 +1,10 @@
+
 import axios from "axios";
 
 const url = "http://5.226.143.166:3000"
 
 const getAll = () => {
-	
 	return new Promise( (callback, errorCallback) => {
-		
 		axios.get(url + "/movies/getAll").then( (resp) => {
 			callback(resp);
 		}).catch( (err) => {
@@ -21,7 +20,6 @@ const get = (id) => {
 		}).catch( (err) => {
 			errorCallback(err);
 		});
-
 	});
 }
 
@@ -34,27 +32,23 @@ const getRecentReviews = ()=> {
 			errorCallback(err);
 		});
 	});
-
 }
-
 
 const createRating = (data) => {
 	return new Promise( (callback, errorCallback) => {
 		axios.post(url + "/ratings/create", data).then( (resp)=> {
-			// tell them they did good
-
 			callback();
-			// redirect
 		}).catch( (err) => {
-			// error
 			errorCallback(err);
 		});
 	})
 }
 
-export default {
+const moviesObj = {
 	getAll: getAll,
 	get: get,
 	getRecentReviews: getRecentReviews,
 	createRating: createRating
 }
+
+export default moviesObj

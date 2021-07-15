@@ -1,5 +1,5 @@
 import { useState } from "react"
-import { Button, Card } from 'react-bootstrap';
+import { Button } from 'react-bootstrap';
 import VariableList from "../sharedcomponents/VariableList";
 
 import forumUtils from "../../utils/forumUtils";

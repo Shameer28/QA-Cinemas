@@ -1,10 +1,8 @@
 import { Container } from "react-bootstrap";
 import React from 'react';
 import Carousel from 'react-bootstrap/Carousel'
-import { Slide } from 'react-slideshow-image';
 import 'react-slideshow-image/dist/styles.css'
 import Card from 'react-bootstrap/Card'
-import { Arrows } from 'react-slideshow-image';
 import image1 from './img/4k.jpg'
 import image2 from './img/CinemaPov1.jpg'
 import image3 from './img/CinemaPov2.jpg'
@@ -16,11 +14,6 @@ import image6 from './img/deluxeBox.jpg'
 
 
 const Screen = () => {
-
-    const title = '';
-    const setTitle = title;
-
-
 
     return (
         <div class="background">
@@ -76,7 +69,7 @@ const Screen = () => {
                     <Card.Body>
                         <Card.Title>Choose your seats</Card.Title>
                         <Card.Text>
-                            <img src={image4} alt="Image of seating plan" width="50%" /><br /><br />
+                            <img src={image4} alt="of seating plan" width="50%" /><br /><br />
                             <p>
                                 The theatre has a capacity of 566 seats, including 406 seats in the Stalls, 124 seats in the Circle and 33 seats in the Box.
 
@@ -92,7 +85,7 @@ const Screen = () => {
                     <Card.Body>
                         <Card.Title></Card.Title>
                         <Card.Text>
-                            <img src={image5} alt="Image of seating plan" width="45%" /><br /><br />
+                            <img src={image5} alt="of seating plan" width="45%" /><br /><br />
                             <p>
                                 Seats in a theater with a thrust stage are arranged around the stage on three sides and raked so that the audience can see the action.
                                 In an arena theater with a circular stage, the seats ring the stage and the stage itself is raised for audience visibility.
@@ -109,7 +102,7 @@ const Screen = () => {
                     <Card.Body>
                         <Card.Title></Card.Title>
                         <Card.Text>
-                            <img src={image6} alt="Image of seating plan" width="45%" /><br /><br />
+                            <img src={image6} alt="of seating plan" width="45%" /><br /><br />
                             <p>
                                 Box seats ring around the screen, one level up.
                                 Boxes are divided by walls or curtains and the private compartments each have a few to half-a-dozen chairs arranged in rows.

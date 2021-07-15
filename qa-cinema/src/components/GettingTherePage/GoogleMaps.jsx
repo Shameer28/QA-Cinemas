@@ -1,5 +1,4 @@
 import GoogleMapReact from 'google-map-react';
-import Directions from 'google-map-react';
 import Marker from './Marker'
 import ApiKey from '../../api.json'
 const GoogleMaps = () => {
