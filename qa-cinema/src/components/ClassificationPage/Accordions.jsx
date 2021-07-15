@@ -22,7 +22,9 @@ const Accordions = () => {
                     </Accordion.Toggle>
                     <Accordion.Collapse eventKey="1">
                         <Card.Body>A U film should be suitable for audiences aged four years and over,
-                            although it is impossible to predict what might upset any particular child.</Card.Body>
+                            although it is impossible to predict what might upset any particular child. <br />
+                            <p> < a href="https://www.bbfc.co.uk/rating/u" target="_blank">Read more...</a> </p>
+                        </Card.Body>
                     </Accordion.Collapse>
                 </Card>
                 <Card style={{ background: "#212529", color: "white" }}>
@@ -33,7 +35,9 @@ const Accordions = () => {
                         <Card.Body>General viewing, but some scenes may be unsuitable for young children.
                             A PG film should not unsettle a child aged around eight or older. Unaccompanied children of any age may watch,
                             but parents are advised to consider whether the content may upset younger, or more sensitive,
-                            children.</Card.Body>
+                            children.
+                            <br />
+                            <p> < a href="https://www.bbfc.co.uk/rating/pg" target="_blank">Read more...</a> </p></Card.Body>
                     </Accordion.Collapse>
                 </Card>
                 <Card style={{ background: "#212529", color: "white" }}>
@@ -46,7 +50,9 @@ const Accordions = () => {
                             Adults planning to take a child under 12 to view a 12A film should consider whether the film is suitable for that child.
                             To help them decide, we recommend that they check the Ratings Info for that film in advance.
                             No one younger than 12 may rent or buy a 12 rated video work.
-                            Dangerous behaviour</Card.Body>
+                            Dangerous behaviour
+                            <br />
+                            <p> < a href="https://www.bbfc.co.uk/rating/12" target="_blank">Read more...</a> </p></Card.Body>
                     </Accordion.Collapse>
                 </Card>
                 <Card style={{ background: "#212529", color: "white" }}>
@@ -58,7 +64,10 @@ const Accordions = () => {
                             No one younger than 12 may see a 12A film in a cinema unless accompanied by an adult.
                             Adults planning to take a child under 12 to view a 12A film should consider whether the film is suitable for that child.
                             To help them decide, we recommend that they check the Ratings Info for that film in advance.
-                            No one younger than 12 may rent or buy a 12 rated video work.</Card.Body>
+                            No one younger than 12 may rent or buy a 12 rated video work.
+                            <br />
+                            <p> < a href="https://www.bbfc.co.uk/rating/12" target="_blank">Read more...</a> </p>
+                        </Card.Body>
                     </Accordion.Collapse>
                 </Card>
                 <Card style={{ background: "#212529", color: "white" }}>
@@ -66,7 +75,10 @@ const Accordions = () => {
                         <b><u>15 – Suitable only for 15 years & over</u></b><img className="accorimg" src={image5} alt="PG logo" width="5%" />
                     </Accordion.Toggle>
                     <Accordion.Collapse eventKey="5">
-                        <Card.Body>No one younger than 15 may see a 15 film in a cinema. No one younger than 15 may rent or buy a 15 rated video work.</Card.Body>
+                        <Card.Body>No one younger than 15 may see a 15 film in a cinema. No one younger than 15 may rent or buy a 15 rated video work.
+                            <br />
+                            <p> < a href="https://www.bbfc.co.uk/rating/15" target="_blank">Read more...</a> </p>
+                        </Card.Body>
                     </Accordion.Collapse>
                 </Card>
                 <Card style={{ background: "#212529", color: "white" }}>
@@ -75,7 +87,9 @@ const Accordions = () => {
                     </Accordion.Toggle>
                     <Accordion.Collapse eventKey="6">
                         <Card.Body>No one younger than 18 may see an 18 film in a cinema. No one younger than 18 may rent or buy an 18 rated video work.
-                            Adults should be free to choose their own entertainment.</Card.Body>
+                            Adults should be free to choose their own entertainment.
+                            <br />
+                            <p> < a href="https://www.bbfc.co.uk/rating/18" target="_blank">Read more...</a> </p></Card.Body>
                     </Accordion.Collapse>
                 </Card>
                 <Card style={{ background: "#212529", color: "white" }}>
@@ -85,7 +99,9 @@ const Accordions = () => {
                     <Accordion.Collapse eventKey="7">
                         <Card.Body>The R18 category is a special and legally-restricted classification primarily for explicit works of consenting sex or strong fetish material involving adults.
                             Films may only be shown to adults in specially licensed cinemas, and video works may be supplied to adults only.
-                            R18 video works may not be supplied by mail order.</Card.Body>
+                            R18 video works may not be supplied by mail order.
+                            <br />
+                            <p> < a href="https://www.bbfc.co.uk/rating/r18" target="_blank">Read more...</a> </p></Card.Body>
                     </Accordion.Collapse>
                 </Card>
 
