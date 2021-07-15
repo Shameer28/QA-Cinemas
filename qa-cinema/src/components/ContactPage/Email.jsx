@@ -5,6 +5,9 @@ import Container from "react-bootstrap/Container";
 import Form from "react-bootstrap/Form";
 import { Button } from "react-bootstrap";
 
+import axios from "axios"
+
+
 const Email = () => {
     const [Email, setEmail] = useState('');
     const [FirstName, setFirstName] = useState('');
@@ -14,11 +17,11 @@ const Email = () => {
 
 
 
-    const handleSubmit = (e) => {
+    const handleSubmit = function(e) {
         //Preventing the page from refreshing
         e.preventDefault();
 
-        const dataToSend = JSON.stringify({ Email, FirstName, LastName, TextArea });
+        const dataToSend = { Email, FirstName, LastName, TextArea };
         console.log("data has been sent");
             
 
@@ -28,28 +31,18 @@ const Email = () => {
         setLastName('');
         setTextArea('');
 
-
-        // const handleSubmits = (e) => {
-        //     e.preventDefault();
-        //     axios({
-        //         method: "POST",
-        //         url: "http://localhost:3000/send",
-        //         data: this.data
-        //     }).then((response) => {
-        //         if (response.data.status === 'success') {
-        //             alert("Message Sent.");
-        //             this.resetForm()
-        //         } else if (response.data.status === 'fail') {
-        //             alert("Message failed to send.")
-        //         }
-        //     });
-        // };
-
+		axios.post( "http://localhost:3000/email/send", dataToSend ).then((response) => {
+			if (response.data.status === 'success') {
+				alert("Message Sent.");
+			} else if (response.data.status === 'fail') {
+				alert("Message failed to send.")
+			}
+        });
     }
     return (
         <div style={{ width: "100%", backgroundColor: "#212529", color: "white" }}>
             <Container>
-                <Card className="text-center" style={{ backgroundColor: "white", color: "black" }}>
+                <Card className="text-center" style={{ backgroundColor: "#212529", color: "white" }}>
                     <Card.Header>Contact US</Card.Header>
                     <Card.Body>
                         <Card.Title><u>Please fill out the form to submit a request</u></Card.Title>
@@ -71,7 +64,7 @@ const Email = () => {
                                     <Form.Control id="TextArea" as="textarea" className="form-control" required minLength={3} rows={3} value={TextArea} onChange={(e) => { setTextArea(e.target.value) }} />
                                 </Form.Group>
                                 <br />
-                                <Button type="submit"> Submit</Button>
+                                <Button id="submit" type="submit"> Submit</Button>
                             </Form>
                         </Card.Text>
 

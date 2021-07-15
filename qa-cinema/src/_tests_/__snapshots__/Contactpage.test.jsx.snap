@@ -358,6 +358,10 @@ exports[`Contact Page testing Should match the snapshot 1`] = `
                 <button
                   className="btn btn-primary"
                   disabled={false}
+<<<<<<< HEAD
+=======
+                  id="submit"
+>>>>>>> 536f0aa650161d56821d1ab74d31dd8c9485b4ac
                   type="submit"
                 >
                    Submit
