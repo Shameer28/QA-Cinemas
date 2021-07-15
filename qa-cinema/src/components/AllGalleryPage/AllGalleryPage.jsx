@@ -14,7 +14,7 @@ const AllGalleryPage = () => {
                 <br></br>
                 <div>
                     <Row>
-                        <ListMovies url="http://localhost:3000/movies/getAll" />
+                        <ListMovies />
                     </Row>
                 </div>
 

@@ -10,7 +10,7 @@ const SearchPage = () => {
 	const [loading, setLoading] = useState(true);
 
 	useEffect( ()=> {
-		axios.get("http://localhost:3000/search/" + encodeURIComponent(desc) ).then( (resp)=> {
+		axios.get("http://5.226.143.166:3000/search/" + encodeURIComponent(desc) ).then( (resp)=> {
 			setDetails(resp.data);
 
 			setLoading(false);
