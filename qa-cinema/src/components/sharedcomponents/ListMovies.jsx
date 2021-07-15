@@ -47,7 +47,7 @@ const ListMovies = ({ sort }) => {
 				{data.map(x =>
 					<div key = {x._id}>
 						<Col xs={4}>
-							<div class="image">
+							<div className="image">
 								<PosterLink image={x.image} _id={x._id} title={x.title}/>
 								<br></br>
 							</div>							

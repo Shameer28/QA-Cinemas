@@ -1,11 +1,11 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`PurchaseManager testing Should match the snapshot 1`] = `
+exports[`All Gallery Page testing Should match the snapshot 1`] = `
 <div
   className="text-center"
 >
   <div
-    class="background"
+    className="background"
   >
     <div
       className="carousel slide carousel-fade"
@@ -139,7 +139,7 @@ exports[`PurchaseManager testing Should match the snapshot 1`] = `
     </div>
   </div>
   <div
-    class="background"
+    className="background"
   >
     <br />
     <br />

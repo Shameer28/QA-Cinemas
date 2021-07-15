@@ -24,6 +24,7 @@ import Screen from './components/Screens/Screen';
 import MoviePage from './components/sharedcomponents/MoviePage';
 import PurchaseManager from './components/Bookings/PurchaseManager';
 import ThreadPage from './components/DiscussionPage/ThreadPage';
+
 function App() {
   return (
     <div>

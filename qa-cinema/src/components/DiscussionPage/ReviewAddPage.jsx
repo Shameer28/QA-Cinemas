@@ -136,8 +136,8 @@ const ReviewAddPage = () => {
 
 		return (
 			<div className="background">
-				<Container id="revcont"><br />
-					<Form action="" className="text-center">
+				<Container id="revcont"><br /><br />
+					<Form action="" className="text-center" style={{ backgroundColor: "#212529", color: "white", border: "solid", borderColor: "black" }}>
 						<fieldset>
 							<legend style={{ color: "white", fontWeight: "400", fontfamily: "isonormregular, sans-serif", letterSpacing: ".15em", textTransform: "uppercase", lineHeight: "1.1" }}>Details</legend>
 							<input value={name} type="text" placeholder="Name" onChange={(e) => { e.preventDefault(); setName(e.target.value); }} />
@@ -161,6 +161,7 @@ const ReviewAddPage = () => {
 						<br /><br />
 					</Form>
 				</Container>
+				<br /><br />
 			</div >
 		);
 	}

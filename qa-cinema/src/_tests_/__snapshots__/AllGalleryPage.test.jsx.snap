@@ -2,7 +2,7 @@
 
 exports[`All Gallery Page testing Should match the snapshot 1`] = `
 <div
-  class="background"
+  className="background"
 >
   <div
     className="container"
@@ -24,11 +24,13 @@ exports[`All Gallery Page testing Should match the snapshot 1`] = `
     </h2>
     <br />
     <div>
-      <row>
+      <div
+        className="row"
+      >
         <p>
           Loading
         </p>
-      </row>
+      </div>
     </div>
     <br />
   </div>

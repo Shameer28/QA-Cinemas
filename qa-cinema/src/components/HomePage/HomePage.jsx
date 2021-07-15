@@ -21,43 +21,43 @@ const HomePage = () => {
                 <br></br>
                 <Row md={4}>
                     <Col xs={4}>
-                        <div class="image">
-                            <img class="movie" src={image1} alt="BlackWidow" width="100%" height="100%" />
+                        <div className="image">
+                            <img className="movie" src={image1} alt="BlackWidow" width="100%" height="100%" />
                             <br></br>                            
                         </div>
                         <div style={{color: "white", fontWeight: "400", fontfamily: "isonormregular, sans-serif", letterSpacing: ".15em", textTransform: "uppercase",lineHeight: "1.1", textAlign: "center", width: "75%"}}><br></br>Black Widow</div>
                         <br></br>
                     </Col>
                     <Col xs={4}>
-                        <div class="image">
-                            <img class="movie" src={image2} alt="Fast9" width="100%" height="100%" />                            
+                        <div className="image">
+                            <img className="movie" src={image2} alt="Fast9" width="100%" height="100%" />                            
                         </div>                        
                         <div style={{color: "white", fontWeight: "400", fontfamily: "isonormregular, sans-serif", letterSpacing: ".15em", textTransform: "uppercase",lineHeight: "1.1", textAlign: "center", width: "75%"}}><br></br>Fast and Furious 9</div>
                     </Col>
                     <Col>
-                        <div class="image">
-                            <img class="movie" src={image3} alt="JamesBond" width="100%" height="100%" />
+                        <div className="image">
+                            <img className="movie" src={image3} alt="JamesBond" width="100%" height="100%" />
                         </div>
                         <div style={{color: "white", fontWeight: "400", fontfamily: "isonormregular, sans-serif", letterSpacing: ".15em", textTransform: "uppercase",lineHeight: "1.1",textAlign: "center", width: "100%"}}><br></br>James Bond No Time To Die</div>
                     </Col>
                 </Row>
                 <Row md={4}>
                     <Col xs={4}>
-                        <div class="image">
-                            <img class="movie" src={image4} alt="AQuietPlace2" width="100%" height="100%" />
+                        <div className="image">
+                            <img className="movie" src={image4} alt="AQuietPlace2" width="100%" height="100%" />
                         </div>
                         <div style={{color: "white", fontWeight: "400", fontfamily: "isonormregular, sans-serif", letterSpacing: ".15em", textTransform: "uppercase",lineHeight: "1.1", textAlign: "center", width: "75%"}}><br></br>A Quiet Place II</div>
                         <br></br>
                     </Col>
                     <Col xs={4}>
-                        <div class="image">
-                            <img class="movie" src={image5} alt="Conjuring" width="100%" height="100%" />
+                        <div className="image">
+                            <img className="movie" src={image5} alt="Conjuring" width="100%" height="100%" />
                         </div>
                         <div style={{color: "white", fontWeight: "400", fontfamily: "isonormregular, sans-serif", letterSpacing: ".15em", textTransform: "uppercase",lineHeight: "1.1", textAlign: "center", width: "75%"}}><br></br>Conjuring: Devil made me do it</div>
                     </Col>
                     <Col>
-                        <div class="image">
-                            <img class="movie" src={image6} alt="Nobody" width="100%" height="100%" />
+                        <div className="image">
+                            <img className="movie" src={image6} alt="Nobody" width="100%" height="100%" />
                         </div>
                         <div style={{color: "white", fontWeight: "400", fontfamily: "isonormregular, sans-serif", letterSpacing: ".15em", textTransform: "uppercase",lineHeight: "1.1", textAlign: "center", width: "100%"}}><br></br>Nobody</div>
                     </Col>

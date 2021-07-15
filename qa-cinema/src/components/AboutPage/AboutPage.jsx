@@ -2,6 +2,7 @@ import './AboutPage.css'
 import Image from 'react-bootstrap/Image'
 import Row from 'react-bootstrap/Row'
 import Col from 'react-bootstrap/Col'
+import { Button } from 'react-bootstrap'
 import image1 from './../img/aboutus.png'
 import image2 from './../img/oliver.jpg'
 import image3 from './../img/haaris.jpg'
@@ -27,14 +28,20 @@ const AboutPage = () => {
                                 </Col>
                                 <Col style={{ margin: "auto", width: "50%" }}>
                                     <h4><b>Name</b> : Shameer Dar</h4>
-                                    <h4><b>Role</b> : Front-End Developer</h4><br />
+                                    <h4><b>Role</b> : Product Owner/Front-End Developer</h4><br />
                                     <Row>
                                         <Col class="col-sm">
                                             <a href="https://www.linkedin.com/in/shameer-dar-91b120a5/" target="_blank" rel="noreferrer"><Image src={image6} width="73%" height="100%" alt="LinkedIn" thumbnail /></a>
                                         </Col>
                                         <Col class="col-sm">
                                             <a href="https://github.com/Shameer28" target="_blank" rel="noreferrer"><Image src={image8} width="95%" height="100%" alt="Github" thumbnail /></a>
+                                            <br /><br />
                                         </Col>
+                                        <h5 className="text-center"> Contact me via LinkedIn <br />
+                                            or <br />
+                                            via Contact Us Page <br /><br />
+                                            <Button href="/contactpage">Contact Us</Button>
+                                        </h5>
                                     </Row>
                                 </Col>
                             </Row>
@@ -54,7 +61,13 @@ const AboutPage = () => {
                                         </Col>
                                         <Col>
                                             <a href="https://github.com/HaarismoghalQA" target="_blank" rel="noreferrer"><Image src={image8} width="95%" height="100%" alt="Github" thumbnail /></a>
+                                            <br /><br />
                                         </Col>
+                                        <h5 className="text-center"> Contact me via LinkedIn <br />
+                                            or <br />
+                                            via Contact Us Page <br /><br />
+                                            <Button href="/contactpage">Contact Us</Button>
+                                        </h5>
                                     </Row>
                                 </Col>
                             </Row>
@@ -75,7 +88,13 @@ const AboutPage = () => {
                                         </Col>
                                         <Col>
                                             <a href="https://github.com/Andrew-McCall" target="_blank" rel="noreferrer"><Image src={image8} width="95%" height="100%" alt="Github" thumbnail /></a>
+                                            <br /><br />
                                         </Col>
+                                        <h5 className="text-center"> Contact me via LinkedIn <br />
+                                            or <br />
+                                            via Contact Us Page <br /><br />
+                                            <Button href="/contactpage">Contact Us</Button>
+                                        </h5>
                                     </Row>
                                 </Col>
                             </Row>
@@ -88,15 +107,21 @@ const AboutPage = () => {
                                 </Col>
 
                                 <Col style={{ margin: "auto", width: "50%" }}>
-                                    <h4><b>Name</b> : Oliver Dillion <br /></h4>
-                                    <h4><b>Role</b> : Back-End Developer</h4><br />
+                                    <h4><b>Name</b> : Oliver Dillon <br /></h4>
+                                    <h4><b>Role</b> : Scrum Master/Back-End Developer</h4><br />
                                     <Row>
                                         <Col>
                                             <a href="https://www.linkedin.com/in/oliverdillon" target="_blank" rel="noreferrer"><Image src={image6} width="73%" height="100%" alt="LinkedIn" thumbnail /></a>
                                         </Col>
                                         <Col>
                                             <a href="https://github.com/StarLight-Oliver" target="_blank" rel="noreferrer"><Image src={image8} width="95%" height="100%" alt="Github" thumbnail /></a>
+                                            <br /><br />
                                         </Col>
+                                        <h5 className="text-center"> Contact me via LinkedIn <br />
+                                            or <br />
+                                            via Contact Us Page <br /><br />
+                                            <Button href="/contactpage">Contact Us</Button>
+                                        </h5>
                                     </Row>
                                 </Col>
                             </Row>

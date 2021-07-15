@@ -1,5 +1,4 @@
 import Carousel from 'react-bootstrap/Carousel'
-
 import image1 from '../img/MovieThumbnails/BlackWidow.jpg'
 import image2 from '../img/MovieThumbnails/F9Landscape.jpg'
 import image3 from '../img/MovieThumbnails/JamesBondLandscape.jpg'
