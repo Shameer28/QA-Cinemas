@@ -75,9 +75,9 @@ const PurchaseManager = () => {
                     </Elements>)
             )}
 
-            <div class="background">
+            <div className="background">
                 <br></br>
-                <Cart getCart={getCart} setCart={setCart} />
+                    <Cart getCart={getCart} setCart={setCart} />
                 <br></br>
             </div>
         </div>
