@@ -90,29 +90,30 @@ const ForumCreate = () => {
 
 
 	if (isCreating) {
-		return (<div>
+		return (<div className="text-center" style={{ backgroundColor: "#212529", color: "white", border: "solid", borderColor: "black" }}>
 			{modal}
 			<form action="">
-				<fieldset>
-					<legend style={{ color: "white", fontWeight: "400", fontfamily: "isonormregular, sans-serif", letterSpacing: ".15em", textTransform: "uppercase", lineHeight: "1.1" }}>Your details</legend>
+				<fieldset><br />
+					<legend style={{ color: "white", fontWeight: "400", fontfamily: "isonormregular, sans-serif", letterSpacing: ".15em", textTransform: "uppercase", lineHeight: "1.1" }}>Your details</legend><br />
 					<input placeholder="Author" value={author} onChange={(e) => { setAuthor(e.target.value) }} />
 				</fieldset>
 				<br />
 				<fieldset>
 					<legend style={{ color: "white", fontWeight: "400", fontfamily: "isonormregular, sans-serif", letterSpacing: ".15em", textTransform: "uppercase", lineHeight: "1.1" }}>Post Information</legend>
-					<input placeholder="Post Title" value={title} onChange={(e) => { setTitle(e.target.value) }} />
+					<input placeholder="Post Title" value={title} onChange={(e) => { setTitle(e.target.value) }} /> <br />
 
 					<br></br>
 					<textarea name="body" id="" cols="40" rows="10" value={body} onChange={(e) => { setBody(e.target.value) }}></textarea>
 					<br></br>
 
-					<label style={{ color: "white", fontWeight: "400", fontfamily: "isonormregular, sans-serif", letterSpacing: ".15em", textTransform: "uppercase", lineHeight: "1.1" }}>Tags</label>
+					<label style={{ color: "white", fontWeight: "400", fontfamily: "isonormregular, sans-serif", letterSpacing: ".15em", textTransform: "uppercase", lineHeight: "1.1" }}>Tags</label><br />
 					<VariableList data={tags} defaultVal="" setFunc={setTags} updateFunc={updateTags} />
 
 				</fieldset><br />
 				<Button onClick={submit} >Add Post</Button>
 			</form><br />
 			<Button onClick={deactivate} >Cancel</Button>
+			<br /><br />
 		</div >)
 	}
 	else {
