@@ -5,11 +5,41 @@ const router = express.Router();
 
 const ForumDB = require("../models/forum.js");
 
+const words = require("../badwords.json")
+
+const isSafe = (msg) => {
+
+	msg = " " + msg.toLowerCase() + " "
+
+	for(var i=0; i<words.length; i++){
+		let index = msg.indexOf(words[i])
+		if(index != -1) {
+			let code = msg.charCodeAt(index-1)
+			if ((code >= 65 && code < 91) || (code >= 97 && code < 123 )) {
+				continue
+			}
+			code = msg.charCodeAt(index+words[i].length)
+			console.log(code)
+
+			if ((code >= 65 && code < 91) || (code >= 97 && code < 123 )) {
+				continue
+			}
+
+			return true
+		}
+	}
+	return false
+
+}
+
+
+
 router.post("/create", async (req, res) => {
 
 	const data = req.body;
 
-	console.log(data)
+	// validate
+
 
 	try {
 		const post = new ForumDB(data);
@@ -36,11 +66,7 @@ router.get("/getAll", async (req, res) => {
 });
 
 router.get("/get/:id", async (req, res) => {
-
-
-
 	try {
-		// get rid of email address?
 		const forum = await ForumDB.findById(req.params.id);
 		res.send(forum);
 	} catch (e) {
@@ -60,6 +86,10 @@ router.patch("/comment/add/:id", async( req, res) => {
 	}
 	
 	try {
+		if (!isSafe(data.author) || !isSafe(data.msg) ) {
+			res.status(500).send("Not safe words")
+			return
+		}
 		// get rid of email address?
 		const forum = await ForumDB.findById(req.params.id);
 

@@ -9,11 +9,6 @@ const Forum = () => {
 
 	const [forums, setForums] = useState([])
 
-	// const numcomms = (forums) => {
-	// 	let count = 0;
-	// 	for (let i = 0; i < forum.length; i++) {
-	// 		count++
-	// 	}
 	useEffect(() => {
 		forumUtils.getAll().then((resp) => {
 			console.log(resp.data);
