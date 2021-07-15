@@ -27,7 +27,7 @@ const PurchaseManager = () => {
                 <TicketSelector setPage={setPage} getCart={getCart} setCart={setCart} />
             ) : (
                 getPage === "PaymentSuccess" ? (
-                    <div class="background">
+                    <div className="background">
 
                         <Carousel controls={false} slide={true} fade={true} pause={false} height="650px">
                             <Carousel.Item interval={3000}>
@@ -75,9 +75,9 @@ const PurchaseManager = () => {
                     </Elements>)
             )}
 
-            <div class="background">
+            <div className="background">
                 <br></br>
-                <Cart getCart={getCart} setCart={setCart} />
+                    <Cart getCart={getCart} setCart={setCart} />
                 <br></br>
             </div>
         </div>

@@ -1,7 +1,6 @@
 import Iframe from 'react-iframe'
 import React from 'react';
 
-
 const GoogleMapsDirections = () => {
     return (
         <div style={{ height: '100%', width: '100%' }}>

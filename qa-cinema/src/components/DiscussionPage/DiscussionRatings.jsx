@@ -8,7 +8,6 @@ import './DiscussionPage.css';
 
 import { useState, useEffect } from "react"
 
-
 const DiscussionRatings = () => {
 
 	const [ratings, setRatings] = useState([]);

@@ -9,3 +9,4 @@ describe(`All Gallery Page testing`, () => {
         expect(instance).toMatchSnapshot();
     })
 })
+
