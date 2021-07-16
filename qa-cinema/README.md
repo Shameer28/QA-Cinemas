@@ -29,7 +29,7 @@ Checks all sub-folder for tests before executing them. The `--coverage` flag can
 
 ##  Authors
 
-### Shameer Dar - Front-End & Project Owner
-### Harris Moghal - Front-End
-### Oliver - Back-End & Scrum Master
-### Andrew McCall - Back-end
+#### Shameer Dar - Front-End & Project Owner
+#### Harris Moghal - Front-End
+#### Oliver - Back-End & Scrum Master
+#### Andrew McCall - Back-end
