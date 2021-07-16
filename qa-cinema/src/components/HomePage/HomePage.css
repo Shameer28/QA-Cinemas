@@ -1,0 +1,36 @@
+.image {
+    transition: transform .2s;
+    width: 300px;
+    transform:scale(.98);
+  }
+  
+  .image:hover {
+    -ms-transform: scale(1.5); /* IE 9 */
+    -webkit-transform: scale(1.5); /* Safari 3-8 */
+    transform: scale(1); 
+    opacity: 1!important;
+  }
+
+.MovieText{
+    color: white; 
+    font-Weight: 400;
+    font-Family: "isonormregular, sans-serif"; 
+    letter-spacing: ".15em"; 
+    text-Transform: "uppercase"; 
+    line-Height: "1.1";
+    text-align: center;
+    margin: auto;
+    width: 100%;
+}
+h3.MovieText{
+    color: white; 
+    font-Weight: 400;
+    font-family: "isonormregular, sans-serif"; 
+    letter-Spacing: ".15em"; 
+    text-Transform: "uppercase"; 
+    line-Height: "1.1";
+}
+
+img.movie{  
+  filter: drop-shadow(0rem 0rem 0.6rem  rgba(245, 245, 245, 0.8));
+}

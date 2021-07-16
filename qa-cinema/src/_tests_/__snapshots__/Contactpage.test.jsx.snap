@@ -1,0 +1,378 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Contact Page testing Should match the snapshot 1`] = `
+<div
+  class="background"
+>
+  <img
+    alt="ContactUS"
+    fluid={true}
+    src="contact-us-banner.png"
+    width="100%"
+  />
+  <br />
+  <br />
+  <div
+    style={
+      Object {
+        "backgroundColor": "#212529",
+        "border": "solid",
+        "marginLeft": "auto",
+        "marginRight": "auto",
+        "width": "50%",
+      }
+    }
+  >
+    <div
+      style={
+        Object {
+          "backgroundColor": "#212529",
+          "color": "white",
+        }
+      }
+    >
+      <div>
+        <div
+          className="p-3 container"
+        >
+          <div
+            className="container"
+          >
+            <div
+              className="row"
+            >
+              <div
+                className="col"
+              >
+                <div
+                  className="jumbotron"
+                >
+                  <div
+                    style={
+                      Object {
+                        "border": "solid",
+                        "borderColor": "black",
+                      }
+                    }
+                  >
+                    <div
+                      style={
+                        Object {
+                          "height": "600px",
+                          "width": "100%",
+                        }
+                      }
+                    >
+                      <div
+                        onClick={[Function]}
+                        onMouseDownCapture={[Function]}
+                        onMouseMove={[Function]}
+                        style={
+                          Object {
+                            "height": "100%",
+                            "margin": 0,
+                            "padding": 0,
+                            "position": "relative",
+                            "width": "100%",
+                          }
+                        }
+                      >
+                        <div
+                          style={
+                            Object {
+                              "height": "100%",
+                              "left": 0,
+                              "margin": 0,
+                              "padding": 0,
+                              "position": "absolute",
+                              "top": 0,
+                              "width": "100%",
+                            }
+                          }
+                        />
+                        <div
+                          style={
+                            Object {
+                              "height": "50%",
+                              "left": "50%",
+                              "margin": 0,
+                              "padding": 0,
+                              "position": "absolute",
+                              "top": "50%",
+                              "width": "50%",
+                            }
+                          }
+                        >
+                          <div
+                            style={
+                              Object {
+                                "height": "100%",
+                                "left": 0,
+                                "margin": 0,
+                                "padding": 0,
+                                "position": "absolute",
+                                "top": 0,
+                                "width": "100%",
+                              }
+                            }
+                          >
+                            <div
+                              style={
+                                Object {
+                                  "backgroundColor": "transparent",
+                                  "height": 0,
+                                  "left": 0,
+                                  "position": "absolute",
+                                  "top": 0,
+                                  "width": 0,
+                                }
+                              }
+                            >
+                              <div>
+                                <div
+                                  className="pin bounce"
+                                  style={
+                                    Object {
+                                      "backgroundColor": "red",
+                                      "cursor": "pointer",
+                                    }
+                                  }
+                                  title="QA Training Building 1"
+                                />
+                                <div
+                                  className="pulse"
+                                />
+                              </div>
+                            </div>
+                            <div
+                              style={
+                                Object {
+                                  "backgroundColor": "transparent",
+                                  "height": 0,
+                                  "left": -4140.112093161792,
+                                  "position": "absolute",
+                                  "top": 124.22172901593149,
+                                  "width": 0,
+                                }
+                              }
+                            >
+                              <div>
+                                <div
+                                  className="pin bounce"
+                                  style={
+                                    Object {
+                                      "backgroundColor": "red",
+                                      "cursor": "pointer",
+                                    }
+                                  }
+                                  title="QA Training Building 2"
+                                />
+                                <div
+                                  className="pulse"
+                                />
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div
+                className="col"
+                style={
+                  Object {
+                    "margin": "auto",
+                    "width": "50%",
+                  }
+                }
+              >
+                <div
+                  style={
+                    Object {
+                      "margin": "auto",
+                    }
+                  }
+                >
+                  <div
+                    class="text"
+                  >
+                    <h2>
+                      <u>
+                        Feel free to get in contact with us:
+                      </u>
+                    </h2>
+                     
+                  </div>
+                  <br />
+                  <div>
+                    <strong>
+                      Location: 
+                    </strong>
+                    8, St James's Bldg, 61-95 Oxford St, Manchester, M1 6FQ
+                  </div>
+                  <br />
+                  <div>
+                    <strong>
+                      Call Center: 
+                    </strong>
+                    <a
+                      href="tel:+44 (0)345 074 7995"
+                    >
+                      +44 (0)345 074 7995
+                    </a>
+                  </div>
+                  <br />
+                  <div>
+                    <strong>
+                      Email Us: 
+                    </strong>
+                    <a
+                      href="mailto:SDar@qa.com"
+                    >
+                      SDar@qa.com
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div
+      style={
+        Object {
+          "backgroundColor": "#212529",
+          "color": "white",
+          "width": "100%",
+        }
+      }
+    >
+      <div
+        className="container"
+      >
+        <div
+          className="text-center card"
+          style={
+            Object {
+              "backgroundColor": "#212529",
+              "color": "white",
+            }
+          }
+        >
+          <div
+            className="card-header"
+          >
+            Contact US
+          </div>
+          <div
+            className="card-body"
+          >
+            <div
+              className="card-title h5"
+            >
+              <u>
+                Please fill out the form to submit a request
+              </u>
+            </div>
+            <p
+              className="card-text"
+            >
+              <form
+                className=""
+                onSubmit={[Function]}
+              >
+                <div
+                  className="form-group"
+                >
+                  <label
+                    className="form-label"
+                  >
+                    Email address
+                  </label>
+                  <input
+                    className="form-control form-control"
+                    id="Email"
+                    onChange={[Function]}
+                    placeholder="name@example.com"
+                    required={true}
+                    type="email"
+                    value=""
+                  />
+                </div>
+                <div
+                  className="form-group"
+                >
+                  <label
+                    className="form-label"
+                  >
+                    First Name
+                  </label>
+                  <input
+                    className="form-control form-control"
+                    id="FirstName"
+                    minLength={3}
+                    onChange={[Function]}
+                    placeholder="First Name"
+                    required={true}
+                    type="text"
+                    value=""
+                  />
+                  <label
+                    className="form-label"
+                  >
+                    Last Name
+                  </label>
+                  <input
+                    className="form-control form-control"
+                    id="LastName"
+                    minLength={3}
+                    onChange={[Function]}
+                    placeholder="Last Name"
+                    required={true}
+                    type="text"
+                    value=""
+                  />
+                </div>
+                <div
+                  className="form-group"
+                >
+                  <label
+                    className="form-label"
+                  >
+                    Message
+                  </label>
+                  <textarea
+                    className="form-control form-control"
+                    id="TextArea"
+                    minLength={3}
+                    onChange={[Function]}
+                    required={true}
+                    rows={3}
+                    value=""
+                  />
+                </div>
+                <br />
+                <button
+                  className="btn btn-primary"
+                  disabled={false}
+                  id="submit"
+                  type="submit"
+                >
+                   Submit
+                </button>
+              </form>
+            </p>
+          </div>
+          <div
+            className="text-muted card-footer"
+          />
+        </div>
+      </div>
+    </div>
+  </div>
+  <br />
+</div>
+`;

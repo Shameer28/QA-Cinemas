@@ -1,0 +1,495 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`About Page testing Should match the snapshot 1`] = `
+<div
+  class="background"
+>
+  <img
+    alt="About us photo"
+    fluid={true}
+    src="aboutus.png"
+    width="100%"
+  />
+  <br />
+  <br />
+  <div>
+    <div
+      className="p-3 container"
+    >
+      <div
+        className="container"
+      >
+        <h2
+          style={
+            Object {
+              "color": "white",
+              "fontWeight": "400",
+              "fontfamily": "isonormregular, sans-serif",
+              "letterSpacing": ".15em",
+              "lineHeight": "1.1",
+              "textTransform": "uppercase",
+            }
+          }
+        >
+          Meet our developers
+        </h2>
+        <br />
+        <div
+          style={
+            Object {
+              "backgroundColor": "#212529",
+              "border": "solid",
+              "borderColor": "black",
+              "color": "white",
+              "marginLeft": "auto",
+              "marginRight": "auto",
+              "width": "80%",
+            }
+          }
+        >
+          <div
+            className="row"
+          >
+            <div
+              border="solid"
+              borderColor="black"
+              className="col"
+            >
+              <img
+                alt="Shameer's Photo"
+                border="solid"
+                borderColor="black"
+                className="img-fluid"
+                src="shameer.jpg"
+                width="100%"
+              />
+            </div>
+            <div
+              className="col"
+              style={
+                Object {
+                  "margin": "auto",
+                  "width": "50%",
+                }
+              }
+            >
+              <h4>
+                <b>
+                  Name
+                </b>
+                 : Shameer Dar
+              </h4>
+              <h4>
+                <b>
+                  Role
+                </b>
+                 : Product Owner/Front-End Developer
+              </h4>
+              <br />
+              <div
+                className="row"
+              >
+                <div
+                  class="col-sm"
+                  className="col"
+                >
+                  <a
+                    href="https://www.linkedin.com/in/shameer-dar-91b120a5/"
+                    target="_blank"
+                  >
+                    <img
+                      alt="LinkedIn"
+                      className="img-thumbnail"
+                      height="100%"
+                      src="linkedin.jpg"
+                      width="73%"
+                    />
+                  </a>
+                </div>
+                <div
+                  class="col-sm"
+                  className="col"
+                >
+                  <a
+                    href="https://github.com/Shameer28"
+                    target="_blank"
+                  >
+                    <img
+                      alt="Github"
+                      className="img-thumbnail"
+                      height="100%"
+                      src="Github.png"
+                      width="95%"
+                    />
+                  </a>
+                  <br />
+                  <br />
+                </div>
+                <h5
+                  className="text-center"
+                >
+                   Contact me via LinkedIn 
+                  <br />
+                  or 
+                  <br />
+                  via Contact Us Page 
+                  <br />
+                  <br />
+                  <a
+                    className="btn btn-primary"
+                    href="/contactpage"
+                    onClick={[Function]}
+                    onKeyDown={[Function]}
+                  >
+                    Contact Us
+                  </a>
+                </h5>
+              </div>
+            </div>
+          </div>
+        </div>
+        <br />
+        <div
+          style={
+            Object {
+              "backgroundColor": "#212529",
+              "border": "solid",
+              "borderColor": "black",
+              "color": "white",
+              "marginLeft": "auto",
+              "marginRight": "auto",
+              "width": "80%",
+            }
+          }
+        >
+          <div
+            className="row"
+          >
+            <div
+              className="col"
+            >
+              <img
+                alt="Haaris's Photo"
+                border="solid"
+                borderColor="black"
+                className="img-fluid"
+                height="100%"
+                src="haaris.jpg"
+                width="100%"
+              />
+            </div>
+            <div
+              className="col"
+              style={
+                Object {
+                  "margin": "auto",
+                  "width": "50%",
+                }
+              }
+            >
+              <h4>
+                <b>
+                  Name
+                </b>
+                 : Haaris Moghal 
+                <br />
+              </h4>
+              <h4>
+                <b>
+                  Role
+                </b>
+                 : Front-End Developer
+              </h4>
+              <br />
+              <div
+                className="row"
+              >
+                <div
+                  className="col"
+                >
+                  <a
+                    href="https://www.linkedin.com/in/haaris-moghal-60b8b0159/"
+                    target="_blank"
+                  >
+                    <img
+                      alt="LinkedIn"
+                      className="img-thumbnail"
+                      height="100%"
+                      src="linkedin.jpg"
+                      width="73%"
+                    />
+                  </a>
+                </div>
+                <div
+                  className="col"
+                >
+                  <a
+                    href="https://github.com/HaarismoghalQA"
+                    target="_blank"
+                  >
+                    <img
+                      alt="Github"
+                      className="img-thumbnail"
+                      height="100%"
+                      src="Github.png"
+                      width="95%"
+                    />
+                  </a>
+                  <br />
+                  <br />
+                </div>
+                <h5
+                  className="text-center"
+                >
+                   Contact me via LinkedIn 
+                  <br />
+                  or 
+                  <br />
+                  via Contact Us Page 
+                  <br />
+                  <br />
+                  <a
+                    className="btn btn-primary"
+                    href="/contactpage"
+                    onClick={[Function]}
+                    onKeyDown={[Function]}
+                  >
+                    Contact Us
+                  </a>
+                </h5>
+              </div>
+            </div>
+          </div>
+        </div>
+        <br />
+        <div
+          style={
+            Object {
+              "backgroundColor": "#212529",
+              "border": "solid",
+              "borderColor": "black",
+              "color": "white",
+              "marginLeft": "auto",
+              "marginRight": "auto",
+              "width": "80%",
+            }
+          }
+        >
+          <div
+            className="row"
+          >
+            <div
+              className="col"
+            >
+              <img
+                alt="Andrew's Photo"
+                border="solid"
+                borderColor="black"
+                className="img-fluid"
+                height="100%"
+                src="andrew.jpg"
+                width="100%"
+              />
+            </div>
+            <div
+              className="col"
+              style={
+                Object {
+                  "margin": "auto",
+                  "width": "50%",
+                }
+              }
+            >
+              <h4>
+                <b>
+                  Name
+                </b>
+                 : Andrew McCall 
+                <br />
+              </h4>
+              <h4>
+                <b>
+                  Role
+                </b>
+                 : Back-End Developer
+              </h4>
+              <br />
+              <div
+                className="row"
+              >
+                <div
+                  className="col"
+                >
+                  <a
+                    href="https://www.linkedin.com/in/shameer-dar-91b120a5/"
+                    target="_blank"
+                  >
+                    <img
+                      alt="LinkedIn"
+                      className="img-thumbnail"
+                      height="100%"
+                      src="linkedin.jpg"
+                      width="73%"
+                    />
+                  </a>
+                </div>
+                <div
+                  className="col"
+                >
+                  <a
+                    href="https://github.com/Andrew-McCall"
+                    target="_blank"
+                  >
+                    <img
+                      alt="Github"
+                      className="img-thumbnail"
+                      height="100%"
+                      src="Github.png"
+                      width="95%"
+                    />
+                  </a>
+                  <br />
+                  <br />
+                </div>
+                <h5
+                  className="text-center"
+                >
+                   Contact me via LinkedIn 
+                  <br />
+                  or 
+                  <br />
+                  via Contact Us Page 
+                  <br />
+                  <br />
+                  <a
+                    className="btn btn-primary"
+                    href="/contactpage"
+                    onClick={[Function]}
+                    onKeyDown={[Function]}
+                  >
+                    Contact Us
+                  </a>
+                </h5>
+              </div>
+            </div>
+          </div>
+        </div>
+        <br />
+        <div
+          style={
+            Object {
+              "backgroundColor": "#212529",
+              "border": "solid",
+              "borderColor": "black",
+              "color": "white",
+              "marginLeft": "auto",
+              "marginRight": "auto",
+              "width": "80%",
+            }
+          }
+        >
+          <div
+            className="row"
+          >
+            <div
+              className="col"
+            >
+              <img
+                alt="Oliver's Photo"
+                border="solid"
+                borderColor="black"
+                className="img-fluid"
+                height="100%"
+                src="oliver.jpg"
+                width="100%"
+              />
+            </div>
+            <div
+              className="col"
+              style={
+                Object {
+                  "margin": "auto",
+                  "width": "50%",
+                }
+              }
+            >
+              <h4>
+                <b>
+                  Name
+                </b>
+                 : Oliver Dillon 
+                <br />
+              </h4>
+              <h4>
+                <b>
+                  Role
+                </b>
+                 : Scrum Master/Back-End Developer
+              </h4>
+              <br />
+              <div
+                className="row"
+              >
+                <div
+                  className="col"
+                >
+                  <a
+                    href="https://www.linkedin.com/in/oliverdillon"
+                    target="_blank"
+                  >
+                    <img
+                      alt="LinkedIn"
+                      className="img-thumbnail"
+                      height="100%"
+                      src="linkedin.jpg"
+                      width="73%"
+                    />
+                  </a>
+                </div>
+                <div
+                  className="col"
+                >
+                  <a
+                    href="https://github.com/StarLight-Oliver"
+                    target="_blank"
+                  >
+                    <img
+                      alt="Github"
+                      className="img-thumbnail"
+                      height="100%"
+                      src="Github.png"
+                      width="95%"
+                    />
+                  </a>
+                  <br />
+                  <br />
+                </div>
+                <h5
+                  className="text-center"
+                >
+                   Contact me via LinkedIn 
+                  <br />
+                  or 
+                  <br />
+                  via Contact Us Page 
+                  <br />
+                  <br />
+                  <a
+                    className="btn btn-primary"
+                    href="/contactpage"
+                    onClick={[Function]}
+                    onKeyDown={[Function]}
+                  >
+                    Contact Us
+                  </a>
+                </h5>
+              </div>
+            </div>
+          </div>
+        </div>
+        <br />
+      </div>
+    </div>
+  </div>
+</div>
+`;

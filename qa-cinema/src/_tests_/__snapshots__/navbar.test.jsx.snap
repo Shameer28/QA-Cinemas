@@ -1,0 +1,164 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Navbar testing Should match the snapshot 1`] = `
+<nav
+  className="nav navbar navbar-expand navbar-dark bg-dark"
+>
+  <a
+    className="navbar-brand"
+    href="/"
+    id="navlogo"
+  >
+     
+    <img
+      alt="React Bootstrap logo"
+      className="d-inline-block align-top rounded"
+      src="Logo.png"
+      style={
+        Object {
+          "marginLeft": "60%",
+        }
+      }
+      width="45%"
+    />
+  </a>
+  <button
+    aria-controls="basic-navbar-nav"
+    aria-label="Toggle navigation"
+    className="navbar-toggler collapsed"
+    onClick={[Function]}
+    type="button"
+  >
+    <span
+      className="navbar-toggler-icon"
+    />
+  </button>
+  <div
+    aria-expanded={null}
+    className="navbar-collapse collapse"
+    id="basic-navbar-nav"
+  >
+    <div
+      className="me-auto navbar-nav"
+      onKeyDown={[Function]}
+    >
+      <div
+        className="nav-item dropdown"
+      >
+        <a
+          aria-expanded={false}
+          aria-haspopup={true}
+          className="dropdown-toggle nav-link"
+          data-rb-event-key={null}
+          href="#"
+          id="basic-nav-dropdown"
+          onClick={[Function]}
+          onKeyDown={[Function]}
+          role="button"
+        >
+          Movies
+        </a>
+      </div>
+      <a
+        className="nav-link"
+        data-rb-event-key="/openingtimes"
+        href="/openingtimes"
+        onClick={[Function]}
+        onKeyDown={[Function]}
+      >
+        Opening Times
+      </a>
+      <a
+        className="nav-link"
+        data-rb-event-key="/classification"
+        href="/classification"
+        onClick={[Function]}
+        onKeyDown={[Function]}
+      >
+        Classifications
+      </a>
+      <a
+        className="nav-link"
+        data-rb-event-key="/ticketbookings"
+        href="/ticketbookings"
+        onClick={[Function]}
+        onKeyDown={[Function]}
+      >
+        Bookings
+      </a>
+      <a
+        className="nav-link"
+        data-rb-event-key="/screens"
+        href="/screens"
+        onClick={[Function]}
+        onKeyDown={[Function]}
+      >
+        Screens
+      </a>
+      <a
+        className="nav-link"
+        data-rb-event-key="/placestogo"
+        href="/placestogo"
+        onClick={[Function]}
+        onKeyDown={[Function]}
+      >
+        Places to Go 
+      </a>
+      <a
+        className="nav-link"
+        data-rb-event-key="/gettingthere"
+        href="/gettingthere"
+        onClick={[Function]}
+        onKeyDown={[Function]}
+      >
+        Getting There
+      </a>
+      <a
+        className="nav-link"
+        data-rb-event-key="/discussionboard"
+        href="/discussionboard"
+        onClick={[Function]}
+        onKeyDown={[Function]}
+      >
+        Discussion Board
+      </a>
+      <a
+        className="nav-link"
+        data-rb-event-key="/aboutpage"
+        href="/aboutpage"
+        onClick={[Function]}
+        onKeyDown={[Function]}
+      >
+        About Us
+      </a>
+      <a
+        className="nav-link"
+        data-rb-event-key="/contactpage"
+        href="/contactpage"
+        onClick={[Function]}
+        onKeyDown={[Function]}
+      >
+        Contact Us
+      </a>
+    </div>
+    <form
+      className="d-flex"
+      id="navsearch"
+    >
+      <input
+        aria-label="Search"
+        className="mr-2 form-control"
+        placeholder="Search"
+        type="search"
+      />
+      <button
+        className="btn btn-outline-success"
+        disabled={false}
+        type="button"
+      >
+        Search
+      </button>
+    </form>
+  </div>
+</nav>
+`;

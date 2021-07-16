@@ -36,3 +36,35 @@
     transform: rotate(360deg);
   }
 }
+
+.background{  
+  background: rgb(83,3,3);
+  background: radial-gradient(circle, rgba(83,3,3,1) 0%, rgba(1,1,13,1) 70%);
+} 
+
+.centerText{
+  display: table;
+  margin: auto;
+}
+.MoviePageImage{
+  display:block;
+    margin:auto;
+  width: 60%;
+  height: 50%;
+  filter: drop-shadow(0rem 0rem 0.6rem  rgba(245, 245, 245, 0.8));
+}
+
+
+#navsearch{
+  padding-right: 20px;
+}
+
+#navlogo{
+  padding-left: 20px;
+}
+
+img.movie{  
+  width: 294px;
+  height: 436px;
+  filter: drop-shadow(0rem 0rem 0.6rem  rgba(245, 245, 245, 0.8));
+}

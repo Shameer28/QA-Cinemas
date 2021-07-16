@@ -1,0 +1,252 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Screens testing Should match the snapshot 1`] = `
+<div
+  class="background"
+>
+  <div
+    className="carousel slide carousel-fade"
+    onKeyDown={[Function]}
+    onMouseOut={[Function]}
+    onMouseOver={[Function]}
+    onTouchEnd={[Function]}
+    onTouchMove={[Function]}
+    onTouchStart={[Function]}
+  >
+    <ol
+      className="carousel-indicators"
+    >
+      <li
+        className="active"
+        onClick={[Function]}
+      />
+      <li
+        onClick={[Function]}
+      />
+      <li
+        onClick={[Function]}
+      />
+      <li
+        onClick={[Function]}
+      />
+      <li
+        onClick={[Function]}
+      />
+      <li
+        onClick={[Function]}
+      />
+    </ol>
+    <div
+      className="carousel-inner"
+    >
+      <div
+        className="active carousel-item"
+        interval={3000}
+      >
+        <img
+          alt="First slide"
+          class="carouselImage"
+          src="4k.jpg"
+        />
+      </div>
+      <div
+        className="carousel-item"
+        interval={3000}
+      >
+        <img
+          alt="Second slide"
+          class="carouselImage"
+          src="CinemaPov1.jpg"
+        />
+      </div>
+      <div
+        className="carousel-item"
+        interval={3000}
+      >
+        <img
+          alt="Third slide"
+          class="carouselImage"
+          src="CinemaPov2.jpg"
+        />
+      </div>
+      <div
+        className="carousel-item"
+        interval={3000}
+      >
+        <img
+          alt="Third slide"
+          class="carouselImage"
+          src="SeatingPlan.jpg"
+        />
+      </div>
+      <div
+        className="carousel-item"
+        interval={3000}
+      >
+        <img
+          alt="Third slide"
+          class="carouselImage"
+          src="TheatreSeats.jpg"
+        />
+      </div>
+      <div
+        className="carousel-item"
+        interval={3000}
+      >
+        <img
+          alt="Third slide"
+          class="carouselImage"
+          src="deluxeBox.jpg"
+        />
+      </div>
+    </div>
+  </div>
+  <div
+    className="container"
+  >
+    <h2
+      style={
+        Object {
+          "color": "white",
+          "fontWeight": "400",
+          "fontfamily": "isonormregular, sans-serif",
+          "letterSpacing": ".15em",
+          "lineHeight": "1.1",
+          "textTransform": "uppercase",
+        }
+      }
+    >
+      Book your seats
+    </h2>
+    <br />
+    <div
+      className="text-center card"
+      style={
+        Object {
+          "backgroundColor": "#212529",
+          "border": "solid",
+          "borderColor": "black",
+          "color": "white",
+        }
+      }
+    >
+      <div
+        className="card-header"
+      >
+        Screens Booking Information
+      </div>
+      <div
+        className="card-body"
+      >
+        <div
+          className="card-title h5"
+        >
+          Choose your seats
+        </div>
+        <p
+          className="card-text"
+        >
+          <img
+            alt="Image of seating plan"
+            src="SeatingPlan.jpg"
+            width="50%"
+          />
+          <br />
+          <br />
+          <p>
+            The theatre has a capacity of 566 seats, including 406 seats in the Stalls, 124 seats in the Circle and 33 seats in the Box.
+          </p>
+        </p>
+      </div>
+      <div
+        className="text-muted card-footer"
+      />
+    </div>
+    <br />
+    <div
+      className="text-center card"
+      style={
+        Object {
+          "backgroundColor": "#212529",
+          "border": "solid",
+          "borderColor": "black",
+          "color": "white",
+        }
+      }
+    >
+      <div
+        className="card-header"
+      >
+        Standard Seats
+      </div>
+      <div
+        className="card-body"
+      >
+        <div
+          className="card-title h5"
+        />
+        <p
+          className="card-text"
+        >
+          <img
+            alt="Image of seating plan"
+            src="TheatreSeats.jpg"
+            width="45%"
+          />
+          <br />
+          <br />
+          <p>
+            Seats in a theater with a thrust stage are arranged around the stage on three sides and raked so that the audience can see the action. In an arena theater with a circular stage, the seats ring the stage and the stage itself is raised for audience visibility. Black box theaters have no fixed seating and no fixed stage--they are adapted for each show.
+          </p>
+        </p>
+      </div>
+      <div
+        className="text-muted card-footer"
+      />
+    </div>
+    <br />
+    <div
+      className="text-center card"
+      style={
+        Object {
+          "backgroundColor": "#212529",
+          "border": "solid",
+          "borderColor": "black",
+          "color": "white",
+        }
+      }
+    >
+      <div
+        className="card-header"
+      >
+        Deluxe Seats
+      </div>
+      <div
+        className="card-body"
+      >
+        <div
+          className="card-title h5"
+        />
+        <p
+          className="card-text"
+        >
+          <img
+            alt="Image of seating plan"
+            src="deluxeBox.jpg"
+            width="45%"
+          />
+          <br />
+          <br />
+          <p>
+            Box seats ring around the screen, one level up. Boxes are divided by walls or curtains and the private compartments each have a few to half-a-dozen chairs arranged in rows. Sometimes, the back row of chairs is on a raised platform so that everyone in the box has an unobstructed view of the stage.
+          </p>
+        </p>
+      </div>
+      <div
+        className="text-muted card-footer"
+      />
+    </div>
+  </div>
+  <br />
+</div>
+`;
