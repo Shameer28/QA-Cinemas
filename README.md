@@ -6,8 +6,8 @@ We used the agile methodology to plan our project. The whole project was split i
 ## Installation
 
 For installation check:
-[Front-End](https://github.com/Shameer28/QA-Cinemas/blob/documentation_folder/qa-cinema/README.md)
-[Back-End](https://github.com/Shameer28/QA-Cinemas/blob/documentation_folder/back-end/README.md)
+- [Front-End](https://github.com/Shameer28/QA-Cinemas/blob/documentation_folder/qa-cinema/README.md)
+- [Back-End](https://github.com/Shameer28/QA-Cinemas/blob/documentation_folder/back-end/README.md)
 
 ## Documentation
 
