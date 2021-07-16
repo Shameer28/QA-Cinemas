@@ -13,7 +13,7 @@ npm install
 ```
 This will install dependancies
 
-Then create a secret.js and fill it with this information
+Then create a secret.json and fill it with this information
 ```
 {
 	"pv_stripe_key":"stripe_key",
@@ -24,6 +24,17 @@ Then create a secret.js and fill it with this information
 	"contactEmail": "emailToSend" 
 }
 ```
+
+Then create a badwords.json file and fill it with banned words
+Here is an example of what to put in the file (SFW)
+```
+[
+	"Cheese",
+	"Bananas"
+]
+
+```
+
 
 # How to run
 
