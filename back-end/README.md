@@ -6,7 +6,7 @@ Prerequisites
 NPM
 Mailserver
 ```
-How to install
+# How to install
 ```
 npm install
 ```
@@ -22,6 +22,18 @@ Then create a secret.js and fill it with this information
 	},
 	"contactEmail": "emailToSend" 
 }
+```
+
+# How to run
+
+Deploy it using nodemon to run the application
+```
+npm run dev
+```
+
+Deploy it for production
+```
+npm run prod
 ```
 
 # Authors
