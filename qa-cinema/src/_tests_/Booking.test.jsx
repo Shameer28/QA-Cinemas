@@ -5,7 +5,7 @@ import userEvent from "@testing-library/user-event";
 import {act} from 'react-dom/test-utils';
 import Cart from '../components/Bookings/Cart';
 
-describe(`All Gallery Page testing`, () => {
+describe(`Purchase Manager Page testing`, () => {
 
     it('Should match the snapshot', () => {
         const instance = create(<PurchaseManager/>).toJSON();

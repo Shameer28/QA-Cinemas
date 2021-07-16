@@ -1,5 +1,4 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
-
 exports[`All Gallery Page testing Cart - Empty & Full 1`] = `null`;
 
 exports[`All Gallery Page testing Cart - Empty & Full 2`] = `

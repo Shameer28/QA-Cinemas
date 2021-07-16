@@ -83,7 +83,7 @@ exports[`About Page testing Should match the snapshot 1`] = `
                 <b>
                   Role
                 </b>
-                 : Front-End Developer
+                 : Product Owner/Front-End Developer
               </h4>
               <br />
               <div
@@ -122,7 +122,28 @@ exports[`About Page testing Should match the snapshot 1`] = `
                       width="95%"
                     />
                   </a>
+                  <br />
+                  <br />
                 </div>
+                <h5
+                  className="text-center"
+                >
+                   Contact me via LinkedIn 
+                  <br />
+                  or 
+                  <br />
+                  via Contact Us Page 
+                  <br />
+                  <br />
+                  <a
+                    className="btn btn-primary"
+                    href="/contactpage"
+                    onClick={[Function]}
+                    onKeyDown={[Function]}
+                  >
+                    Contact Us
+                  </a>
+                </h5>
               </div>
             </div>
           </div>
@@ -214,7 +235,28 @@ exports[`About Page testing Should match the snapshot 1`] = `
                       width="95%"
                     />
                   </a>
+                  <br />
+                  <br />
                 </div>
+                <h5
+                  className="text-center"
+                >
+                   Contact me via LinkedIn 
+                  <br />
+                  or 
+                  <br />
+                  via Contact Us Page 
+                  <br />
+                  <br />
+                  <a
+                    className="btn btn-primary"
+                    href="/contactpage"
+                    onClick={[Function]}
+                    onKeyDown={[Function]}
+                  >
+                    Contact Us
+                  </a>
+                </h5>
               </div>
             </div>
           </div>
@@ -306,7 +348,28 @@ exports[`About Page testing Should match the snapshot 1`] = `
                       width="95%"
                     />
                   </a>
+                  <br />
+                  <br />
                 </div>
+                <h5
+                  className="text-center"
+                >
+                   Contact me via LinkedIn 
+                  <br />
+                  or 
+                  <br />
+                  via Contact Us Page 
+                  <br />
+                  <br />
+                  <a
+                    className="btn btn-primary"
+                    href="/contactpage"
+                    onClick={[Function]}
+                    onKeyDown={[Function]}
+                  >
+                    Contact Us
+                  </a>
+                </h5>
               </div>
             </div>
           </div>
@@ -354,14 +417,14 @@ exports[`About Page testing Should match the snapshot 1`] = `
                 <b>
                   Name
                 </b>
-                 : Oliver Dillion 
+                 : Oliver Dillon 
                 <br />
               </h4>
               <h4>
                 <b>
                   Role
                 </b>
-                 : Back-End Developer
+                 : Scrum Master/Back-End Developer
               </h4>
               <br />
               <div
@@ -398,7 +461,28 @@ exports[`About Page testing Should match the snapshot 1`] = `
                       width="95%"
                     />
                   </a>
+                  <br />
+                  <br />
                 </div>
+                <h5
+                  className="text-center"
+                >
+                   Contact me via LinkedIn 
+                  <br />
+                  or 
+                  <br />
+                  via Contact Us Page 
+                  <br />
+                  <br />
+                  <a
+                    className="btn btn-primary"
+                    href="/contactpage"
+                    onClick={[Function]}
+                    onKeyDown={[Function]}
+                  >
+                    Contact Us
+                  </a>
+                </h5>
               </div>
             </div>
           </div>
