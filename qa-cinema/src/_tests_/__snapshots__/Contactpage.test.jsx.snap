@@ -257,8 +257,8 @@ exports[`Contact Page testing Should match the snapshot 1`] = `
           className="text-center card"
           style={
             Object {
-              "backgroundColor": "white",
-              "color": "black",
+              "backgroundColor": "#212529",
+              "color": "white",
             }
           }
         >
@@ -358,10 +358,7 @@ exports[`Contact Page testing Should match the snapshot 1`] = `
                 <button
                   className="btn btn-primary"
                   disabled={false}
-<<<<<<< HEAD
-=======
                   id="submit"
->>>>>>> 536f0aa650161d56821d1ab74d31dd8c9485b4ac
                   type="submit"
                 >
                    Submit

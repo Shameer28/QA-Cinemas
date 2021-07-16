@@ -2,7 +2,7 @@
 
 exports[`Ticket Selector testing Should match the snapshot 1`] = `
 <div
-  class="background"
+  className="background"
 >
   <div
     className="carousel slide carousel-fade"

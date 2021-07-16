@@ -15,7 +15,6 @@ import image4 from './img/cinema2.jpg'
 
 const stripePromise = loadStripe('pk_test_51JAb8eJE1YNxquuDvcbs6vxzAMjXQfYDU5vS6FvOd35njC6Ceq9VIwWAPn9rK4Z7dMhaGrTyoA41Gw191ltILhIs00yuoTEWIx');
 
-
 const PurchaseManager = () => {
 
     const [getCart, setCart] = useState([]);

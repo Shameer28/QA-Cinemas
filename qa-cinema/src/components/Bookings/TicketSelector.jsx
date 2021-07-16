@@ -134,7 +134,7 @@ const TicketSelector = (props) => {
                                 <h5>Loading Form</h5>
                             ) : (
 
-                                <form onSubmit={handleSubmit}>
+                                <form data-testid="form" onSubmit={handleSubmit}>
 
                                     <select id="MovieId" onChange={updateForm}>
                                         <option value={null}> Select A Movie </option>

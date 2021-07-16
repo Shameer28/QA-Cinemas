@@ -337,7 +337,6 @@ exports[`Footer testing Should match the snapshot 1`] = `
                         </svg>
                       </div>
                     </a>
-<<<<<<< HEAD
                      Twitter
                   </a>
                 </li>
@@ -346,16 +345,6 @@ exports[`Footer testing Should match the snapshot 1`] = `
                     className="link"
                     href="https://www.facebook.com/"
                   >
-=======
-                     Twitter
-                  </li>
-                </a>
-                <a
-                  class="link"
-                  href="https://www.facebook.com/"
-                >
-                  <li>
->>>>>>> 536f0aa650161d56821d1ab74d31dd8c9485b4ac
                     <a
                       aria-label="facebook"
                       className="social-icon"
@@ -453,17 +442,10 @@ exports[`Footer testing Should match the snapshot 1`] = `
                         </svg>
                       </div>
                     </a>
-<<<<<<< HEAD
                     Facebook
                   </a>
                 </li>
               </ul>
-=======
-                     Facebook
-                  </li>
-                </a>
-              </ui>
->>>>>>> 536f0aa650161d56821d1ab74d31dd8c9485b4ac
             </div>
           </section>
         </div>
