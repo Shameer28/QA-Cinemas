@@ -12,4 +12,7 @@ const paymentSecret = (price) =>{
 	})
 }
 
-export default {createPaymentSecret: paymentSecret}
+
+const paymentObj = {createPaymentSecret: paymentSecret}
+
+export default paymentObj;

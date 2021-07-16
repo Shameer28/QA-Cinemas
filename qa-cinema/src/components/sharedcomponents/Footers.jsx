@@ -1,7 +1,6 @@
 import React from 'react'
 import "./Footer.css";
 import { Container } from 'react-bootstrap'
-import image1 from './../img/Logo.png'
 import { SocialIcon } from 'react-social-icons';
 
 

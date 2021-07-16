@@ -4,7 +4,7 @@ import Tab from 'react-bootstrap/Tab'
 import Tabs from 'react-bootstrap/Tabs'
 import DiscussionRatings from "./DiscussionRatings";
 import Forum from "./Forum";
-import { Button, Image, Container } from 'react-bootstrap';
+import { Image, Container } from 'react-bootstrap';
 import image1 from './../img/review.jpg';
 
 const DiscussionBoard = () => {

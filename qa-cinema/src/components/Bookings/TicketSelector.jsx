@@ -1,8 +1,8 @@
 import { useEffect, useState } from "react";
 import { Button, Container } from "react-bootstrap";
-import movieUtils from "./../../utils/movies";
-import payment from "../../utils/payment";
 import Carousel from 'react-bootstrap/Carousel'
+
+import movieUtils from "./../../utils/movies";
 
 import image1 from './img/theatre.jpg'
 import image2 from './img/set.png'
@@ -11,16 +11,22 @@ import image4 from './img/cinema2.jpg'
 import Card from 'react-bootstrap/Card'
 
 
+function leftPad(i, size) {
+	i = i.toString();
+	while (i.length < size) {
+		i = "0" + i;
+	}
+	return i;
+}
+
 const TicketSelector = (props) => {
 
-    // Get All .select only showingTimes & title
-    // Axios
-    // const data = [{"id":-1, "Title":"Detective", "ShowTimes":[81452812842129,20]},{"id":2, "Title":"Picka", "ShowTimes":[81452812842129]}];
-    const [movies, setMovies] = useState([]);
-    const [showtimes, setShowtiemes] = useState(<p>Loading Show Times</p>)
-    const { setPage, getCart, setCart, url } = props;
+	const [movies, setMovies] = useState([]);
+	const { setPage, getCart, setCart } = props;
 
-    const getData = () => {
+	
+
+	const getData = () => {
         setMovies([]);
         movieUtils.getAll().then((res) => {
             setMovies(res.data)
@@ -31,6 +37,7 @@ const TicketSelector = (props) => {
 
     useEffect(() => {
         getData();
+		// eslint-disable-next-line
     }, [])
 
     const updateForm = (e) => {
@@ -43,9 +50,10 @@ const TicketSelector = (props) => {
             if (res.data) {
                 const timming = e.target.parentElement.querySelector("#MovieTimings");
                 timming.innerHTML = "";
+				// eslint-disable-next-line
                 res.data.showTimes.map((t) => {
                     const time = new Date(t*1000)
-                    timming.innerHTML += `<option>${time.toLocaleDateString()+" - "+time.getHours()+":"+time.getMinutes()}</option>`
+                    timming.innerHTML += `<option>${time.toLocaleDateString()+" - "+ leftPad(time.getHours(), 2)+":"+ leftPad(time.getMinutes(), 2) }</option>`
                 })
             } else {
                 throw new Error("No body on responce")
@@ -62,7 +70,7 @@ const TicketSelector = (props) => {
         let formData = {};
 
         for (let i = 0; i < 6; i++) {
-            if (e.target[i].value == "Select A Movie" || e.target[i].value == "" || e.target[i].value < 0) {
+            if (e.target[i].value === "Select A Movie" || e.target[i].value === "" || e.target[i].value < 0) {
                 alert("Please Fill In All Inputs");
                 return;
             }
@@ -72,7 +80,6 @@ const TicketSelector = (props) => {
             } else if (i === 0) {
                 formData["MovieTitle"] = e.target[0][e.target[0].selectedIndex].text
             }
-
         }
         formData.price = (formData.Adults * 10) + (formData.Child * 5) + [0, 3, 5, 7.5][formData.Concessions]
         setCart(getCart => [...getCart, formData])
