@@ -11,10 +11,20 @@ import image4 from './img/cinema2.jpg'
 import Card from 'react-bootstrap/Card'
 
 
+function leftPad(i, size) {
+	i = i.toString();
+	while (i.length < size) {
+		i = "0" + i;
+	}
+	return i;
+}
+
 const TicketSelector = (props) => {
 
 	const [movies, setMovies] = useState([]);
 	const { setPage, getCart, setCart } = props;
+
+	
 
 	const getData = () => {
         setMovies([]);
@@ -43,7 +53,7 @@ const TicketSelector = (props) => {
 				// eslint-disable-next-line
                 res.data.showTimes.map((t) => {
                     const time = new Date(t*1000)
-                    timming.innerHTML += `<option>${time.toLocaleDateString()+" - "+time.getHours()+":"+time.getMinutes()}</option>`
+                    timming.innerHTML += `<option>${time.toLocaleDateString()+" - "+ leftPad(time.getHours(), 2)+":"+ leftPad(time.getMinutes(), 2) }</option>`
                 })
             } else {
                 throw new Error("No body on responce")
