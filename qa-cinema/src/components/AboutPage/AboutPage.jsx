@@ -7,7 +7,6 @@ import image1 from './../img/aboutus.png'
 import image2 from './../img/oliver.jpg'
 import image3 from './../img/haaris.jpg'
 import image4 from './../img/shameer.jpg'
-import image5 from './../img/social.jpg'
 import image6 from './../img/linkedin.jpg'
 import image7 from './../img/andrew.jpg'
 import image8 from './../img/Github.png'
@@ -16,7 +15,7 @@ import Container from 'react-bootstrap/Container';
 const AboutPage = () => {
     return (
         <div class="background">
-            <img src={image1} alt="About us photo" width="100%" fluid /><br /><br />
+            <img src={image1} alt="About us" width="100%" fluid /><br /><br />
             <div >
                 <Container className="p-3">
                     <Container>
@@ -32,10 +31,10 @@ const AboutPage = () => {
                                     <h4><b>Role</b> : Product Owner/Front-End Developer</h4><br />
                                     <Row>
                                         <Col class="col-sm">
-                                            <a href="https://www.linkedin.com/in/shameer-dar-91b120a5/" target="_blank"><Image src={image6} width="73%" height="100%" alt="LinkedIn" thumbnail /></a>
+                                            <a href="https://www.linkedin.com/in/shameer-dar-91b120a5/" target="_blank" rel="noreferrer"><Image src={image6} width="73%" height="100%" alt="LinkedIn" thumbnail /></a>
                                         </Col>
                                         <Col class="col-sm">
-                                            <a href="https://github.com/Shameer28" target="_blank"><Image src={image8} width="95%" height="100%" alt="Github" thumbnail /></a>
+                                            <a href="https://github.com/Shameer28" target="_blank" rel="noreferrer"><Image src={image8} width="95%" height="100%" alt="Github" thumbnail /></a>
                                             <br /><br />
                                         </Col>
                                         <h5 className="text-center"> Contact me via LinkedIn <br />
@@ -58,10 +57,10 @@ const AboutPage = () => {
                                     <h4><b>Role</b> : Front-End Developer</h4><br />
                                     <Row>
                                         <Col>
-                                            <a href="https://www.linkedin.com/in/haaris-moghal-60b8b0159/" target="_blank"><Image src={image6} width="73%" height="100%" alt="LinkedIn" thumbnail /></a>
+                                            <a href="https://www.linkedin.com/in/haaris-moghal-60b8b0159/" target="_blank" rel="noreferrer"><Image src={image6} width="73%" height="100%" alt="LinkedIn" thumbnail /></a>
                                         </Col>
                                         <Col>
-                                            <a href="https://github.com/HaarismoghalQA" target="_blank"><Image src={image8} width="95%" height="100%" alt="Github" thumbnail /></a>
+                                            <a href="https://github.com/HaarismoghalQA" target="_blank" rel="noreferrer"><Image src={image8} width="95%" height="100%" alt="Github" thumbnail /></a>
                                             <br /><br />
                                         </Col>
                                         <h5 className="text-center"> Contact me via LinkedIn <br />
@@ -85,10 +84,10 @@ const AboutPage = () => {
                                     <Row>
 
                                         <Col>
-                                            <a href="https://www.linkedin.com/in/shameer-dar-91b120a5/" target="_blank"><Image src={image6} width="73%" height="100%" alt="LinkedIn" thumbnail /></a>
+                                            <a href="https://www.linkedin.com/in/shameer-dar-91b120a5/" target="_blank" rel="noreferrer"><Image src={image6} width="73%" height="100%" alt="LinkedIn" thumbnail /></a>
                                         </Col>
                                         <Col>
-                                            <a href="https://github.com/Andrew-McCall" target="_blank"><Image src={image8} width="95%" height="100%" alt="Github" thumbnail /></a>
+                                            <a href="https://github.com/Andrew-McCall" target="_blank" rel="noreferrer"><Image src={image8} width="95%" height="100%" alt="Github" thumbnail /></a>
                                             <br /><br />
                                         </Col>
                                         <h5 className="text-center"> Contact me via LinkedIn <br />
@@ -112,10 +111,10 @@ const AboutPage = () => {
                                     <h4><b>Role</b> : Scrum Master/Back-End Developer</h4><br />
                                     <Row>
                                         <Col>
-                                            <a href="https://www.linkedin.com/in/oliverdillon" target="_blank"><Image src={image6} width="73%" height="100%" alt="LinkedIn" thumbnail /></a>
+                                            <a href="https://www.linkedin.com/in/oliverdillon" target="_blank" rel="noreferrer"><Image src={image6} width="73%" height="100%" alt="LinkedIn" thumbnail /></a>
                                         </Col>
                                         <Col>
-                                            <a href="https://github.com/StarLight-Oliver" target="_blank"><Image src={image8} width="95%" height="100%" alt="Github" thumbnail /></a>
+                                            <a href="https://github.com/StarLight-Oliver" target="_blank" rel="noreferrer"><Image src={image8} width="95%" height="100%" alt="Github" thumbnail /></a>
                                             <br /><br />
                                         </Col>
                                         <h5 className="text-center"> Contact me via LinkedIn <br />

@@ -3,7 +3,13 @@ import ListMovies from "./../sharedcomponents/ListMovies"
 
 const RecentMoviesPage = () => {
     const sortFunc = (a, b) => {
-        return a.releaseDate > b.releaseDate;
+
+		console.log(a.releaseDate, b.releaseDate)
+		if (a.releaseDate < b.releaseDate) {
+			return 1;
+		}else {
+			return -1;
+		}
     }
 
     return (

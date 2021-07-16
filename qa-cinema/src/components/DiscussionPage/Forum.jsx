@@ -3,17 +3,12 @@ import ForumCreate from "./ForumCreate";
 
 import { Link } from 'react-router-dom';
 import { useState, useEffect } from "react";
-import { Button, Card } from 'react-bootstrap';
+import { Card } from 'react-bootstrap';
 
 const Forum = () => {
 
 	const [forums, setForums] = useState([])
 
-	// const numcomms = (forums) => {
-	// 	let count = 0;
-	// 	for (let i = 0; i < forum.length; i++) {
-	// 		count++
-	// 	}
 	useEffect(() => {
 		forumUtils.getAll().then((resp) => {
 			console.log(resp.data);

@@ -1,4 +1,6 @@
+
 import { Container, Row } from "react-bootstrap";
+
 import ListMovies from "./../sharedcomponents/ListMovies"
 
 
@@ -12,7 +14,7 @@ const AllGalleryPage = () => {
                 <br></br>
                 <div>
                     <Row>
-                        <ListMovies url="http://localhost:3000/movies/getAll" />
+                        <ListMovies />
                     </Row>
                 </div>
 

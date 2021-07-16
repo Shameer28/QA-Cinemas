@@ -56,6 +56,23 @@ router.post("/create", async (req, res) => {
 	}
 });
 
+router.put("/update/:id", async (req, res) => {
+
+	let data = req.body;
+	data._id = req.params.id
+
+	try {
+		const film = new FilmDB(data);
+	
+		await film.save();
+	
+		res.send(film);
+		} catch (e) {
+			res.status(404).send(e.name + ': ' + e.message);
+		}
+});
+
+
 router.delete("/delete/:id", async (req, res)=> {
 	const id = req.params.id;
 

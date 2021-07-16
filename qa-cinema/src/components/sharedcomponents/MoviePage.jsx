@@ -4,7 +4,15 @@ import movieUtils from "../../utils/movies.js";
 import Container from 'react-bootstrap/Container'
 import Row from "react-bootstrap/Row";
 import Col from "react-bootstrap/Col";
-import Jumbotron from "react-bootstrap/Jumbotron";
+
+function leftPad(i, size) {
+	i = i.toString();
+	while (i.length < size) {
+		i = "0" + i;
+	}
+	return i;
+}
+
 
 const MoviePage = (url) => {
 
@@ -13,6 +21,7 @@ const MoviePage = (url) => {
 
     useEffect(() => {
         getData();
+		// eslint-disable-next-line
     }, [])
 
     const getData = () => {
@@ -46,9 +55,14 @@ const MoviePage = (url) => {
                                 <Col style={{ margin: "auto", width: "50%" }}>
                                     <div style={{ margin: "auto" }}>
                                         <h3 style={{ color: "white", fontWeight: "400", fontfamily: "isonormregular, sans-serif", letterSpacing: ".15em", textTransform: "uppercase", lineHeight: "1.1" }}><b>Director: </b> {movies.director} <br /><br></br>
-                                            <b>Actors: </b> {movies.actors.map(t => <span>{t.name}, </span>)} <br /><br></br>
+                                            <b>Actors </b> <br/> {movies.actors.map(t => <span>{t.name} <br></br> </span>)} <br /><br></br>
                                             <b>Plot</b>: {movies.plot} <br /><br></br>
-                                            <b>Show Times: </b> {movies.showTimes.map(t => <span>{t} </span>)} <br /><br></br>
+                                            <b>Show Times </b> <br></br> {movies.showTimes.map(t => {
+												const time = new Date(t*1000)
+												const timeStr =  time.toLocaleDateString()+" - "+ leftPad(time.getHours(), 2)+":"+ leftPad(time.getMinutes(), 2)
+											
+												return <span>{timeStr} <br></br> </span>})
+											} <br /><br></br>
                                         </h3>
                                     </div>
                                 </Col>

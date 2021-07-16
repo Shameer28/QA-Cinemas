@@ -20,6 +20,7 @@ const ThreadPage = () => {
 		forumUtils.get(id).then((resp) => {
 			setThread(resp.data);
 		});
+		// eslint-disable-next-line
 	}, []);
 
 
@@ -33,7 +34,6 @@ const ThreadPage = () => {
 		if (waitingResponse) { return };
 
 		waitingResponse = true;
-		const form = e.target.form
 		const data = {
 			author: name,
 			msg: msg,

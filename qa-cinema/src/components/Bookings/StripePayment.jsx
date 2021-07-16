@@ -1,7 +1,6 @@
 import { useState } from "react";
 import { CardElement, useStripe, useElements } from "@stripe/react-stripe-js";
 import { Button, Container } from "react-bootstrap";
-import movieUtils from "./../../utils/movies";
 import payment from "../../utils/payment";
 
 import Carousel from 'react-bootstrap/Carousel'
@@ -13,7 +12,7 @@ import image4 from './img/cinema2.jpg'
 
 const StripeCheckoutForm = (props) => {
 
-    const { setPage, getCart, setCart } = props;
+    const { setPage, getCart } = props;
     const [isProcessing, setProcessingTo] = useState(false);
     const [checkoutError, setCheckoutError] = useState();
 
@@ -119,7 +118,7 @@ const StripeCheckoutForm = (props) => {
                         <form onSubmit={handleFormSubmit} className="stripe-form w-308px lg:w-600px lg:px-8 py-6 lg:py-10 m-auto">
                             <h2 className="text-black mb-6 uppercase font-600">Stripe Payment: Pay with card</h2>
                             <div className="mb-4">
-                                <label htmlFor="name" >Biling Name:</label><br />
+                                <label htmlFor="name" >Billing Name:</label><br />
                                 <input type="text" id="name" /><br />
                                 <label htmlFor="email" >Email:</label><br />
                                 <input type="text" id="email" /><br />
@@ -128,8 +127,8 @@ const StripeCheckoutForm = (props) => {
 
                                 <h6>Card Information</h6>
                                 <div className="container" style={{ color: "white" }} >
-                                    <div style={{ width: "50%", margin: "auto" }}>
-                                        <CardElement onChange={handleCardDetailsChange} />
+                                    <div data-testid="card" style={{ width: "50%", margin: "auto" }}>
+                                        <CardElement  onChange={handleCardDetailsChange} />
                                     </div>
                                 </div>
 

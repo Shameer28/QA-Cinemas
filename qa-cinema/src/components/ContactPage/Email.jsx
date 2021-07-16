@@ -31,7 +31,7 @@ const Email = () => {
         setLastName('');
         setTextArea('');
 
-        axios.post("http://localhost:3000/email/send", dataToSend).then((response) => {
+        axios.post("http://5.226.143.166:3000/email/send", dataToSend).then((response) => {
             if (response.data.status === 'success') {
                 alert("Message Sent.");
             } else if (response.data.status === 'fail') {

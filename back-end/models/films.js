@@ -13,7 +13,7 @@ const filmSchema = new Schema({
     },
 	image: {
 		type: String,
-		require: true,
+		required: true,
 	},
 	runtime: {
 		type: String,
@@ -33,12 +33,13 @@ const filmSchema = new Schema({
 	},
 	actors: [actors],
 	showTimes: [{
-		type: String,
+		type: Number,
 	}],
-	releaseData: {
+	releaseDate: {
 		type: Number,
 		require: true,
 	}
 });
 
 module.exports = mongoose.model("Films", filmSchema);
+

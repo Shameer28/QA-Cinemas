@@ -47,11 +47,11 @@ const addThread = (data) => {
 }
 
 
-
-
-export default {
+const forumObj = {
 	getAll: getAll,
 	get: get,
 	addComment: addComment,
 	addThread: addThread
 }
+
+export default forumObj
