@@ -4,6 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
+    "prod": "node main",
     "dev": "nodemon main",
     "test": "mocha _tests_",
     "test-with-coverage": "nyc --reporter=html mocha _tests_"
