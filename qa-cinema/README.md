@@ -10,6 +10,7 @@ In order for the front-end to work, you need:
  - An accessible API. The back-end must be running, The current code is set to communicate with the back-end currently deployed. The /Utils Folder holds all the scripts that handle axios and back-end communication. *Change the url variable to set a new api ip*
  - node.js. Node is used as the runtime environment. *Latest Version is recommended*
  - NPM. The node package manager was used during development to handle the package.json and all project requirements. *Corrosponding version with node*
+ - Google Map's API Key. The Directions page uses a google maps embed that requires an API key. The key is storged in an ignored api.json file at the root of the front-end. *Add your own on clone*
 
 ## Executing the Project
 
