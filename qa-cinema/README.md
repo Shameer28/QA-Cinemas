@@ -11,6 +11,7 @@ In order for the front-end to work, you need:
  - node.js. Node is used as the runtime environment. *Latest Version is recommended*
  - NPM. The node package manager was used during development to handle the package.json and all project requirements. *Corrosponding version with node*
  - Google Map's API Key. The Directions page uses a google maps embed that requires an API key. The key is storged in an ignored api.json file at the root of the front-end. *Add your own on clone*
+ - Publishable Stripe Key. In the payment manager the public stripe key is set. *Change StripeKey Var to update stripe*
 
 ## Executing the Project
 
