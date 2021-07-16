@@ -8,7 +8,7 @@ Mailserver
 ```
 How to install
 ```
-run npm install
+npm install
 ```
 This will install dependancies
 
