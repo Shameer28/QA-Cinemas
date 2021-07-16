@@ -5,6 +5,7 @@ Prerequisites
 ```
 NPM
 Mailserver
+MongoDB 
 ```
 # How to install
 ```
@@ -34,6 +35,16 @@ npm run dev
 Deploy it for production
 ```
 npm run prod
+```
+
+# How to run tests
+Please send a message to Oliver to get a copy of the testing database
+```
+npm run test
+```
+Tests with coverage
+```
+npm run test-with-coverage
 ```
 
 # Authors
