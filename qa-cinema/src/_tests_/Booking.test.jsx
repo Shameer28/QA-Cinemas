@@ -5,7 +5,7 @@ import userEvent from "@testing-library/user-event";
 import {act} from 'react-dom/test-utils';
 import { useState } from 'react';
 
-describe(`All Gallery Page testing`, () => {
+describe(`Purchase Manager Page testing`, () => {
 
     // beforeAll(() => {
     //     const [getCart, setCart] = useState([]);
